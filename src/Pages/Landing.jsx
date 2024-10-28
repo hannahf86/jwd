@@ -499,7 +499,7 @@ const Landing = () => {
       </div>
 
       {/* FAQs */}
-      <div id="faqs-5"></div>
+      <div id="faqs-five"></div>
 
       {/* BOOKINGS */}
       <Bookings />
