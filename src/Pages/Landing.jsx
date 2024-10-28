@@ -30,6 +30,9 @@ import happy from "../Assets/happy.png";
 import matthew from "../Assets/mattAvatar.png";
 import mick from "../Assets/mickAvatar.png";
 
+// COMPONENTS
+import Bookings from "../Components/Bookings";
+
 const Landing = () => {
   const styles = {
     headline: "text-green text-2xl font-bold mb-2",
@@ -502,6 +505,12 @@ const Landing = () => {
           </div>
         </div>
       </div>
+
+      {/* FAQs */}
+      <div id="faqs-5"></div>
+
+      {/* BOOKINGS */}
+      <Bookings />
     </div>
   );
 };

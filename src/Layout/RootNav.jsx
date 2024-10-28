@@ -56,8 +56,9 @@ const RootNav = () => {
   };
 
   const desktopStyles = {
-    header: "flex justify-between items-center pt-16 px-16",
-    logo: "cursor-pointer",
+    header:
+      "fixed bg-white top-0 w-full flex justify-between items-center py-8 px-16 z-[99]",
+    logo: "flex cursor-pointer elf-center",
     link: "text-black hover:bg-accent hover:text-white py-2 px-4 rounded-md mx-8",
     button:
       "bg-green text-white text-center text-sm px-8 py-4 ml-4 rounded-md hover:bg-accent ",
