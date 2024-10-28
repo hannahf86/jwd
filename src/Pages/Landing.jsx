@@ -35,7 +35,7 @@ import Bookings from "../Components/Bookings";
 
 const Landing = () => {
   const styles = {
-    headline: "text-green text-2xl font-bold mb-2",
+    headline: "text-green text-2xl font-bold mb-4",
     subtitle: "text-blue font-bold text-lg mb-4",
     button:
       "bg-green text-white flex self-center text-center text-sm px-8 py-2 rounded-md hover:bg-accent cursor-pointer",
@@ -50,7 +50,7 @@ const Landing = () => {
         {/* BACKGROUND IMAGE */}
         <img src={background} className="relative w-screen h-screen" />
 
-        <div className="absolute top-48 mx-16 grid grid-cols-2 z-40">
+        <div className="absolute top-40 mx-16 grid grid-cols-2 ">
           {/* COL 01 - REWORD */}
           <div className="col-start-1">
             <h1 className={styles.headline}>
@@ -58,8 +58,7 @@ const Landing = () => {
               high-performance websites that drive results
             </h1>
             <h2 className={styles.subtitle}>
-              Boost your business with a <br />
-              high-performance website
+              Giving you peace of mind from a service you can trust
             </h2>
             {/* SALES POINTS */}
             <div className="text-base mb-4">
@@ -119,42 +118,38 @@ const Landing = () => {
             </Link>
           </div>
 
-          {/* COL 02 */}
-          <div>
-            <img src={webDesign} className="col-start-2 ml-12" />
-
-            <div className="col-start-2 flex flex-col justify-center border-4 border-green rounded-lg p-4 list-none">
-              <div className="flex justify-center mb-4">
-                <div className="flex items-center mx-8">
-                  <MdDraw size={22} className="mr-2 text-green" />
-                  <li className=" my-1 font-bold text-black/80">UI Design</li>
-                </div>
-                <div className="flex items-center mx-8">
-                  <BsClipboard2DataFill size={18} className="mr-2 text-green" />
-                  <li className=" my-1 font-bold text-black/80">UX Research</li>
-                </div>
-                <div className="flex items-center mx-8">
-                  <HiDesktopComputer size={22} className="mr-2 text-green" />
-                  <li className=" my-1 font-bold text-black/80">Development</li>
-                </div>
+          {/* SERVICES */}
+          <div className="col-span-2 flex flex-col border-4 border-green rounded-lg p-4 list-none mt-8 mb-40">
+            <div className="flex justify-center ">
+              <div className="flex items-center mx-16">
+                <MdDraw size={22} className="mr-2 text-green" />
+                <li className=" my-1 font-bold text-black/80">UI Design</li>
               </div>
-
-              <div className="flex justify-center mx-6">
-                <div className="flex items-center  mx-8">
-                  <HiMiniPresentationChartBar
-                    size={20}
-                    className="mr-2 text-green"
-                  />
-                  <li className=" my-1 font-bold text-black/80">
-                    SEO Services
-                  </li>
-                </div>
-                <div className="flex items-center mx-8">
-                  <FaServer size={18} className="mr-2 text-green" />
-                  <li className=" my-1 font-bold text-black/80">Hosting</li>
-                </div>
+              <div className="flex items-center mx-16">
+                <BsClipboard2DataFill size={18} className="mr-2 text-green" />
+                <li className=" my-1 font-bold text-black/80">UX Research</li>
+              </div>
+              <div className="flex items-center mx-16">
+                <HiDesktopComputer size={22} className="mr-2 text-green" />
+                <li className=" my-1 font-bold text-black/80">Development</li>
+              </div>
+              <div className="flex items-center  mx-16">
+                <HiMiniPresentationChartBar
+                  size={20}
+                  className="mr-2 text-green"
+                />
+                <li className=" my-1 font-bold text-black/80">SEO Services</li>
+              </div>
+              <div className="flex items-center mx-16">
+                <FaServer size={18} className="mr-2 text-green" />
+                <li className=" my-1 font-bold text-black/80">Hosting</li>
               </div>
             </div>
+          </div>
+
+          {/* COL 02 */}
+          <div className="col-start-2 row-start-1 self-center">
+            <img src={webDesign} className="w-5/6 ml-44" />
           </div>
         </div>
       </div>

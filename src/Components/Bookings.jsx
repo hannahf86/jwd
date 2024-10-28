@@ -1,11 +1,12 @@
 // CALENDLY
+import { InlineWidget } from "react-calendly";
 
 const Bookings = () => {
   return (
     <div id="bookings" className="my-40 mx-16">
       <div className="grid grid-cols-2 gap-20">
         {/* INFO */}
-        <div className="bg-green col-start-1 px-12 py-32">
+        <div className="bg-green col-start-1 px-12 py-32 self-center">
           <h1 className="text-3xl text-white font-bold mb-6">Sound good?</h1>
           <h2 className="text-lg text-white mb-6">
             Schedule a free, no obligation, no pressure, all chill phone call or
@@ -17,7 +18,9 @@ const Bookings = () => {
         </div>
 
         {/* WIDGET */}
-        <div></div>
+        <div>
+          <InlineWidget url="https://calendly.com/jorvikwebdev" />
+        </div>
       </div>
     </div>
   );
