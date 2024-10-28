@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 
 // LAYOUT
-import RootNav from "./Components/RootNav";
+import RootNav from "./Layout/RootNav";
 
 // PAGES
 import Landing from "./Pages/Landing";

@@ -445,6 +445,7 @@ const Landing = () => {
 
           {/* COL 02 */}
           <div className="col-start-2 row-start-1 px-8 pt-8">
+            {/* REVIEW 01*/}
             <div className="flex text-white justify-center">
               <FaQuoteLeft size={20} className="mr-2" />
               <h1 className="text-lg font-bold bg-accent ">
@@ -473,6 +474,7 @@ const Landing = () => {
             <p className="text-white text-right">Matthew, Oct 2024</p>
           </div>
 
+          {/* REVIEW 02*/}
           <div className="col-start-2 row-start-2 px-8 pt-8">
             <div className="flex text-white justify-center">
               <FaQuoteLeft size={20} className="mr-2" />
