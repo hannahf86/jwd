@@ -192,7 +192,7 @@ const Landing = () => {
       </div>
 
       {/* ABOUT US - SHORT */}
-      <div id="about-short" className="grid grid-cols-2 ">
+      <div id="about-short" className="grid grid-cols-2 mb-40">
         <div className="col-start-1 relative">
           <img
             src={hannah}
@@ -227,10 +227,20 @@ const Landing = () => {
               And that's what you should be doing!
             </h3>
           </p>
+          <p className="text-base text-left font-bold text-black ">
+            With a collective knowledge base of 12 years and a 5 star rating on
+            Google reviews, let us handle your online journey so you can focus
+            on what matters to you the most!
+          </p>
+          <Link to="about-us" className="cursor-point text-right">
+            <p className="my-6 px-20 underline text-black">
+              More about us here if you fancy...
+            </p>
+          </Link>
         </div>
       </div>
 
-      <div className="mb-40">
+      {/* <div className="mb-40">
         <p className="text-base text-center font-bold text-black mx-44">
           With a collective knowledge base of 12 years and a 5 star rating on
           Google reviews, let us handle your online journey so you can focus on
@@ -241,7 +251,7 @@ const Landing = () => {
             More about us here if you fancy...
           </p>
         </Link>
-      </div>
+      </div> */}
 
       {/* BENEFITS */}
       <div id="benefits" className="bg-green mx-16 p-12">
