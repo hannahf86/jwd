@@ -55,7 +55,7 @@ const Landing = () => {
         <div className="absolute top-24 mx-8 lg:top-40 lg:mx-16 grid grid-cols-1 md:grid md:grid-cols-2 ">
           {/* COL 01 - REWORD */}
           <div className="col-start-1">
-            <div className="flex flex-col justify-center items-center mb-8">
+            <div className="md:hidden flex flex-col justify-center items-center mb-8">
               <img src={navLogo} alt="jorvik web dev logo" className="mx-20" />
               <p className="text-grey tracking-wider text-base">
                 JORVIK WEB DEV

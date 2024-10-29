@@ -53,7 +53,6 @@ const RootNav = () => {
   // STYLES
   const mobileStyles = {
     container: "fixed md:hidden w-full h-20 bg-white z-40",
-    logo: "absolute right-16 z-[99] cursor-pointer",
     fullMenu:
       "bg-white fixed w-screen h-screen p-20 md:p-0 flex flex-col justify-center items-center z-30 ",
     menuItem:
@@ -62,9 +61,7 @@ const RootNav = () => {
   };
 
   const desktopStyles = {
-    header:
-      "hidden md:block fixed bg-white top-0 w-full flex justify-between items-center py-8 px-16 z-[99]",
-    logo: "flex cursor-pointer elf-center",
+    header: "hidden md:block fixed bg-white top-0 w-full py-8 z-[99]",
     link: "text-black hover:bg-accent hover:text-white py-2 px-4 rounded-md mx-8",
     button:
       "bg-green text-white text-center text-sm px-8 py-4 ml-4 rounded-md hover:bg-accent ",
@@ -127,32 +124,29 @@ const RootNav = () => {
       </motion.div>
 
       {/* DESKTOP NAV */}
-      <nav className={desktopStyles.header}>
-        <div className="flex items-center justify-center">
-          <img
-            src={navLogo}
-            width={60}
-            alt="jorvik web dev logo"
-            className={desktopStyles.logo}
-          />
-          <small className="pl-4 text-sm text-black">JORVIK WEB DEV</small>
-        </div>
+      <nav id="desktop-nav" className={desktopStyles.header}>
+        <div className="flex items-center justify-between mx-16">
+          <div className="flex items-center ">
+            <img src={navLogo} width={60} alt="jorvik web dev logo" />
+            <small className="pl-4 text-sm text-black">JORVIK WEB DEV</small>
+          </div>
 
-        {/* LINKS */}
-        <div>
-          <Link to="freebies" className={desktopStyles.link}>
-            FREEBIES
-          </Link>
-          <Link to="services" className={desktopStyles.link}>
-            SERVICES
-          </Link>
-          <Link to="faqs" className={desktopStyles.link}>
-            FAQs
-          </Link>
+          {/* LINKS */}
+          <div className="">
+            <Link to="freebies" className={desktopStyles.link}>
+              FREEBIES
+            </Link>
+            <Link to="services" className={desktopStyles.link}>
+              SERVICES
+            </Link>
+            <Link to="faqs" className={desktopStyles.link}>
+              FAQs
+            </Link>
 
-          <Link to="contact" className={desktopStyles.button}>
-            BOOK
-          </Link>
+            <Link to="contact" className={desktopStyles.button}>
+              BOOK
+            </Link>
+          </div>
         </div>
       </nav>
 
