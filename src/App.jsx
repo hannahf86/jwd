@@ -11,6 +11,7 @@ import RootNav from "./Layout/RootNav";
 
 // PAGES
 import Landing from "./Pages/Landing";
+import Freebies from "./Pages/Freebies";
 
 // ERROR AND HELPERS
 
@@ -18,6 +19,7 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootNav />}>
       <Route index element={<Landing />} />
+      <Route path="freebies" element={<Freebies />} />
     </Route>,
   ),
 );

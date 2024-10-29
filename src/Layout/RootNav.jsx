@@ -127,7 +127,9 @@ const RootNav = () => {
       <nav id="desktop-nav" className={desktopStyles.header}>
         <div className="flex items-center justify-between mx-16">
           <div className="flex items-center ">
-            <img src={navLogo} width={60} alt="jorvik web dev logo" />
+            <Link to="/">
+              <img src={navLogo} width={60} alt="jorvik web dev logo" />
+            </Link>
             <small className="pl-4 text-sm text-black">JORVIK WEB DEV</small>
           </div>
 
