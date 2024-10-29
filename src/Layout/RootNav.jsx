@@ -14,7 +14,13 @@ import ToggleButton from "./ToggleButton";
 import Footer from "./Footer";
 
 // ICONS
-import { HiHome, HiBriefcase, HiBookOpen, HiMail } from "react-icons/hi";
+import {
+  HiHome,
+  HiBriefcase,
+  HiBookOpen,
+  HiMail,
+  HiGift,
+} from "react-icons/hi";
 
 // IMAGES
 import navLogo from "../Assets/navLogo.webp";
@@ -49,15 +55,15 @@ const RootNav = () => {
     container: "fixed md:hidden w-full h-20 bg-white z-40",
     logo: "absolute right-16 z-[99] cursor-pointer",
     fullMenu:
-      "bg-white fixed w-full h-screen p-20 md:p-0 flex flex-col justify-center items-center z-30 md:w-2/6",
+      "bg-white fixed w-screen h-screen p-20 md:p-0 flex flex-col justify-center items-center z-30 ",
     menuItem:
-      "bg-accent text-white w-60 h-16 rounded-lg flex justify-center items-center my-8 hover:bg-black hover:text-attention",
+      "bg-green text-white w-60 h-16 rounded-lg flex justify-center items-center my-8 hover:bg-blue ",
     menuIcon: "mr-2 tracking-widest text-md sm:text-md",
   };
 
   const desktopStyles = {
     header:
-      "fixed bg-white top-0 w-full flex justify-between items-center py-8 px-16 z-[99]",
+      "hidden md:block fixed bg-white top-0 w-full flex justify-between items-center py-8 px-16 z-[99]",
     logo: "flex cursor-pointer elf-center",
     link: "text-black hover:bg-accent hover:text-white py-2 px-4 rounded-md mx-8",
     button:
@@ -71,10 +77,6 @@ const RootNav = () => {
         id="nav"
         className={mobileStyles.container}
         animate={open ? "open" : "closed"}>
-        <div className={mobileStyles.logo}>
-          <img src={navLogo} width={91} alt="jorvik web dev logo" />
-        </div>
-
         <motion.div variants={variants} className={mobileStyles.fullMenu}>
           <motion.div onClick={handleNav}>
             <Link to="/">
@@ -100,7 +102,7 @@ const RootNav = () => {
 
             <Link to="freebies">
               <span className={mobileStyles.menuItem}>
-                <HiBookOpen className={mobileStyles.menuIcon} />
+                <HiGift className={mobileStyles.menuIcon} />
                 <p className="text-sm sm:text-md">Freebies</p>
               </span>
             </Link>

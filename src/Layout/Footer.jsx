@@ -10,8 +10,8 @@ import { FaInstagramSquare } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div id="footer" className="mt-40">
-      <div className="mx-40">
+    <div id="footer" className="bottom-0 mt-20">
+      <div className="mx-8 md:mx-40">
         <div className="flex items-center mb-8">
           <img src={logo} alt="jorvik web dev viking helment logo" />
           <small className="text-grey text-md ml-3">JORVIK WEB DEV</small>

@@ -29,6 +29,7 @@ import code from "../Assets/code.png";
 import happy from "../Assets/happy.png";
 import matthew from "../Assets/mattAvatar.png";
 import mick from "../Assets/mickAvatar.png";
+import navLogo from "../Assets/navLogo.webp";
 
 // COMPONENTS
 import Bookings from "../Components/Bookings";
@@ -41,7 +42,7 @@ const Landing = () => {
     button:
       "bg-green text-white flex self-center text-center text-sm px-8 py-2 rounded-md hover:bg-accent cursor-pointer",
     ghostButton:
-      "bg-white flex self-center text-black text-center ml-6 text-sm px-8 py-4 rounded-md border-4 border-green hover:bg-green hover:text-white cursor-pointer",
+      "bg-white flex self-center text-black text-center md:ml-6 mt-6 md:mt-0 text-sm px-16 py-4 rounded-md border-4 border-green hover:bg-green hover:text-white cursor-pointer",
   };
 
   return (
@@ -51,36 +52,41 @@ const Landing = () => {
         {/* BACKGROUND IMAGE */}
         <img src={background} className="relative w-screen h-screen" />
 
-        <div className="absolute top-40 mx-16 grid grid-cols-2 ">
+        <div className="absolute top-24 mx-8 lg:top-40 lg:mx-16 grid grid-cols-1 md:grid md:grid-cols-2 ">
           {/* COL 01 - REWORD */}
           <div className="col-start-1">
+            <div className="flex flex-col justify-center items-center mb-8">
+              <img src={navLogo} alt="jorvik web dev logo" className="mx-20" />
+              <p className="text-grey tracking-wider text-base">
+                JORVIK WEB DEV
+              </p>
+            </div>
             <h1 className={styles.headline}>
-              Building custom, <br />
-              high-performance websites that drive results
+              Building custom, high performance websites that drive results
             </h1>
             <h2 className={styles.subtitle}>
               Giving you peace of mind from a service you can trust
             </h2>
             {/* SALES POINTS */}
-            <div className="text-base mb-4">
-              <div className="flex items-center">
+            <div className="text-md md:text-base mb-4">
+              <div className="flex items-center mb-3">
                 <FaCheck className="mr-2 text-green" />
                 <h3>Increase visibility</h3>
               </div>
 
-              <div className="flex items-center">
+              <div className="flex items-center mb-3">
                 <FaCheck className="mr-2 text-green" />
                 <h3>Engage customers</h3>
               </div>
 
-              <div className="flex items-center">
+              <div className="flex items-center mb-3">
                 <FaCheck className="mr-2 text-green" />
-                <h3>Drive more sales with faster load times</h3>
+                <h3>Drive more sales </h3>
               </div>
             </div>
 
             {/* C2A BUTTONS */}
-            <div className="flex h-20 my-8">
+            <div className="flex flex-col md:flex-row justify-center h-20 my-8 pt-16">
               <div className={styles.button}>
                 <Link to="appointments">
                   BOOK A FREE <br />
@@ -95,14 +101,14 @@ const Landing = () => {
 
             {/* REVIEWS */}
             <Link to="reviews">
-              <div className="flex">
+              <div className="flex flex-col md:flex-row justify-center items-center pt-20">
                 <img
                   src={reviews}
-                  className="h-16"
+                  className="h-16 hidden md:block"
                   alt="images of google review profiles"
                 />
-                <div className="flex flex-col ml-6">
-                  <Link className="mb-2">
+                <div className="flex flex-col ml-6 justify-center items-center">
+                  <Link to="reviews" className="mb-2">
                     <small className="text-sm text-black font-bold flex items-center">
                       Happy customer stories this way...
                     </small>
@@ -120,7 +126,7 @@ const Landing = () => {
           </div>
 
           {/* SERVICES */}
-          <div className="col-span-2 flex flex-col border-4 border-green rounded-lg p-4 list-none mt-8 mb-40">
+          <div className="hidden md:block col-span-2 flex flex-col border-4 border-green rounded-lg p-4 list-none mt-8 mb-40">
             <div className="flex justify-center ">
               <div className="flex items-center mx-16">
                 <MdDraw size={22} className="mr-2 text-green" />
@@ -149,43 +155,55 @@ const Landing = () => {
           </div>
 
           {/* COL 02 */}
-          <div className="col-start-2 row-start-1 self-center">
+          <div className="hidden md:block md:col-start-2 md:row-start-1 self-center">
             <img src={webDesign} className="w-5/6 ml-44" />
           </div>
         </div>
       </div>
 
       {/* QUESTION 01 */}
-      <div id="tired" className="text-center my-32">
-        <h1 className="text-3xl text-green font-bold mb-12">
+      <div id="tired" className="text-center my-32 mx-8">
+        <h1 className="text-3xl text-green font-bold mb-6 md:mb-12">
           Tired of tech talk and sneaky fees?
         </h1>
         <div className="flex justify-center items-center">
-          <FaArrowAltCircleRight size={30} className="text-green mr-4" />
-          <h2 className="text-lg text-black font-bold my-8">
+          <FaArrowAltCircleRight
+            size={30}
+            className="text-green mr-4 hidden md:block"
+          />
+          <h2 className="text-base md:text-lg text-black font-bold my-4 md:my-8">
             Sick of features on website builder sites being stuck behind pay
             walls??
           </h2>
         </div>
 
-        <div className="flex justify-center items-center">
-          <FaArrowAltCircleRight size={30} className="text-green mr-4" />
-          <h2 className="text-lg text-black font-bold my-8">
+        <div className="flex justify-center items-center ">
+          <FaArrowAltCircleRight
+            size={30}
+            className="text-green mr-4 hidden md:block"
+          />
+          <h2 className="text-base md:text-lg text-black font-bold my-4 md:my-8">
             Are you spending too much time learning skills you&apos;re not
             interested in??
           </h2>
         </div>
 
         <div className="flex justify-center items-center">
-          <FaArrowAltCircleRight size={30} className="text-green mr-4" />
-          <h2 className="text-lg text-black font-bold my-8">
+          <FaArrowAltCircleRight
+            size={30}
+            className="text-green mr-4 hidden md:block"
+          />
+          <h2 className="text-base md:text-lg text-black font-bold my-4 md:my-8">
             You feel like you&apos;re working all the time but getting nowhere??
           </h2>
         </div>
 
         <div className="flex justify-center items-center">
-          <FaArrowAltCircleRight size={30} className="text-green mr-4" />
-          <h2 className="text-lg text-black font-bold my-8">
+          <FaArrowAltCircleRight
+            size={30}
+            className="text-green mr-4 hidden md:block"
+          />
+          <h2 className="text-base md:text-lg text-black font-bold my-4 md:my-8">
             Confused by UI, UX, PCP, LCP, INP, CLS and just far too many
             anagrams??
           </h2>
@@ -193,8 +211,10 @@ const Landing = () => {
       </div>
 
       {/* ABOUT US - SHORT */}
-      <div id="about-short" className="grid grid-cols-2 mb-40">
-        <div className="col-start-1 relative">
+      <div
+        id="about-short"
+        className="grid grid-cols-1 md:grid-cols-2 mb-40 mx-8">
+        <div className="col-start-1 relative hidden md:block">
           <img
             src={hannah}
             alt="picture of director and lead designer Hannah Feehan"
@@ -205,16 +225,16 @@ const Landing = () => {
           </h3>
         </div>
 
-        <div className="col-start-2 pt-16 px-12">
+        <div className="col-start-2 pt-4 md:pt-16 px-4 md:px-12">
           <h1 className="text-green font-bold text-xl mb-4">
             Hi! We&apos;re Jorvik Web Dev, a small but mighty web design agency
             based in York, UK.
           </h1>
-          <p className="text-base mb-8">
+          <p className="text-lg mb-8">
             At our core, we here at JWD want to help you and your business.
             <br />
           </p>
-          <p className="text-md mb-4">
+          <p className="text-md mb-4 text-center">
             Starting your own business is SO hard! <br />
             We know!
             <br /> We&apos;ve just done it!
@@ -224,7 +244,7 @@ const Landing = () => {
             we&apos;re computer folks and we wanted to do what we love.
             <br />
             <br />
-            <h3 className="text-green font-bold text-base">
+            <h3 className="text-green font-bold text-lg text-center md:text-left mt-6 mb-12">
               And that&apos;s what you should be doing!
             </h3>
           </p>
@@ -234,7 +254,7 @@ const Landing = () => {
             on what matters to you the most!
           </p>
           <Link to="about-us" className="cursor-point text-right">
-            <p className="my-6 px-20 underline text-black">
+            <p className="my-6 md:px-20 underline text-black">
               More about us here if you fancy...
             </p>
           </Link>
@@ -242,22 +262,22 @@ const Landing = () => {
       </div>
 
       {/* BENEFITS */}
-      <div id="benefits" className="bg-green mx-16 p-12">
+      <div id="benefits" className="bg-green mx-8 md:mx-16 p-4 md:p-12">
         <h1 className="text-center text-white font-bold text-3xl my-8">
           The benefits of working with us
         </h1>
 
-        <div className="grid grid-cols-3 gap-16 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-0 md:gap-16 mb-12">
           <div className="col-start-1 flex flex-col justify-center">
             <img
               src={fees}
               alt="a british pound sign representing no hidden fees"
-              className="m-20"
+              className="m-12 md:m-20"
             />
             <h2 className="text-lg font-bold text-center text-accent mb-4">
               No Hidden Fees
             </h2>
-            <p className="text-white text-center text-md">
+            <p className="text-white text-center text-md mb-12">
               Through our own experience as customers, we hate it when fees are
               added at the end or they&apos;re not displayed on the website.{" "}
               <br />
@@ -268,17 +288,17 @@ const Landing = () => {
             </p>
           </div>
 
-          <div className="col-start-2 flex flex-col justify-center">
+          <div className="md:col-start-2 flex flex-col justify-center">
             <img
               src={efficient}
               alt="a clock representing efficient use of time"
-              className="m-20"
+              className="m-12 md:m-20"
             />
 
             <h2 className="text-lg font-bold text-center text-accent mb-4">
               Efficient Service
             </h2>
-            <p className="text-white text-center text-md">
+            <p className="text-white text-center text-md mb-12">
               We make web development a breeze with a fast and efficient
               service.
               <br />
@@ -289,16 +309,16 @@ const Landing = () => {
             </p>
           </div>
 
-          <div className="col-start-3 flex flex-col justify-center">
+          <div className="md:col-start-3 flex flex-col justify-center">
             <img
               src={peace}
               alt="a peace sign representing peace of mind"
-              className="m-20"
+              className="m-12 md:m-20"
             />
             <h2 className="text-lg font-bold text-center text-accent mb-4">
               Peace of Mind
             </h2>
-            <p className="text-white text-center text-md">
+            <p className="text-white text-center text-md mb-12">
               Join our ever growing list of happy clients and like them, trust
               us to take care of this section of your business. <br />
               <br /> We work quickly and with empathy, providing you with top
@@ -310,13 +330,19 @@ const Landing = () => {
       </div>
 
       {/* HOW DOES IT WORK */}
-      <div id="how-it-works" className="my-40 ml-40 mr-20">
+      <div id="how-it-works" className="mx-8 my-40 md:ml-40 md:mr-20">
         <h1 className="text-3xl text-green font-bold mb-12 text-center">
           OK, so how does this work?
         </h1>
         {/* GRID */}
-        <div className="grid grid-cols-3 gap-12">
-          <div className="col-start-1 col-span-2 row-start-1 mb-12">
+        <div className="grid grid-cols-1 gap-0 md:grid-cols-3 md:gap-12">
+          <div className="col-start-1 md:col-span-2 row-start-1 mb-12">
+            <div className="md:hidden col-start-1 mx-8">
+              <img
+                src={contact}
+                alt="red haired cartoon woman happily talking on the phone"
+              />
+            </div>
             <h2 className="text-blue text-xl font-bold">#01</h2>
             <h1 className="text-green text-2xl font-bold mb-6">Get in touch</h1>
             <p className="text-md text-black">
@@ -347,14 +373,17 @@ const Landing = () => {
               </div>
             </p>
           </div>
-          <div className="col-start-3 row-start-1 m-auto">
+          <div className="hidden md:block col-start-1 md:col-start-3 row-start-1 m-auto">
             <img
               src={contact}
               alt="red haired cartoon woman happily talking on the phone"
             />
           </div>
 
-          <div className="grid-start-1 col-span-2 mb-12">
+          <div className="grid-start-1 md:col-span-2 mb-12">
+            <div className="md:hidden col-start-1 mx-8">
+              <img src={code} alt="some hands typing some code" />
+            </div>
             <h2 className="text-blue text-xl font-bold">#02</h2>
             <h1 className="text-green text-2xl font-bold mb-6">
               We do our jobs
@@ -386,11 +415,17 @@ const Landing = () => {
               magical SEO tricks.
             </p>
           </div>
-          <div className="col-start-3  m-auto">
+          <div className="hidden md:block md:col-start-3 m-auto">
             <img src={code} alt="some hands typing some code" />
           </div>
 
-          <div className="grid-start-1 col-span-2 mb-12">
+          <div className="grid-start-1 md:col-span-2 mb-12">
+            <div className="md:hidden col-start-1 mx-8">
+              <img
+                src={happy}
+                alt="multi racial people cheering at a big complete sign"
+              />
+            </div>
             <h2 className="text-blue text-xl font-bold">#03</h2>
             <h1 className="text-green text-2xl font-bold mb-6">
               Handover and everyone is happy
@@ -413,7 +448,7 @@ const Landing = () => {
               drop us a line with what you need and we&apos;ll crack right on!
             </p>
           </div>
-          <div className="col-start-3 m-auto">
+          <div className="hidden md:block md:col-start-3 m-auto">
             <img
               src={happy}
               alt="multi racial people cheering at a big complete sign"
@@ -423,10 +458,10 @@ const Landing = () => {
       </div>
 
       {/* REVIEWS */}
-      <div id="reviews" className="bg-green mx-16 p-12">
-        <div className="grid grid-cols-2 grid-rows-2 gap-x-20">
+      <div id="reviews" className="bg-green mx-8 p-4 md:mx-16 md:p-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 md:gap-x-20">
           {/* COL 01 */}
-          <div className="col-start-1 row-span-2 p-8 justify-center m-auto">
+          <div className="col-start-1 md:row-span-2 md:p-8 justify-center m-auto">
             <h1 className="text-center text-white font-bold text-3xl my-8">
               Happy Client Reviews
             </h1>
@@ -441,9 +476,9 @@ const Landing = () => {
           </div>
 
           {/* COL 02 */}
-          <div className="col-start-2 row-start-1 px-8 pt-8">
+          <div className="col-start-1 md:col-start-2 md:row-start-1 px-4 md:px-8 pt-8">
             {/* REVIEW 01*/}
-            <div className="flex text-white justify-center">
+            <div className="flex text-white justify-center mt-20">
               <FaQuoteLeft size={20} className="mr-2" />
               <h1 className="text-lg font-bold bg-accent ">
                 Very friendly and thorough
@@ -468,15 +503,15 @@ const Landing = () => {
                 <TiStarFullOutline size={30} />
               </div>
             </div>
-            <p className="text-white text-right">Matthew, Oct 2024</p>
+            <p className="text-white text-right mb-12">Matthew, Oct 2024</p>
           </div>
 
           {/* REVIEW 02*/}
-          <div className="col-start-2 row-start-2 px-8 pt-8">
+          <div className="col-start-1 md:col-start-2 row-start-2 px-4 md:px-8 pt-8 mt-20">
             <div className="flex text-white justify-center">
               <FaQuoteLeft size={20} className="mr-2" />
-              <h1 className="text-lg font-bold bg-accent ">
-                process was really easy
+              <h1 className="text-lg font-bold bg-accent p-2">
+                ... process was really easy ...
               </h1>
               <FaQuoteRight size={20} className="ml-2" />
             </div>
@@ -501,7 +536,7 @@ const Landing = () => {
       </div>
 
       {/* FAQs */}
-      <div id="faqs-five" className="mx-80 my-40">
+      <div id="faqs-five" className="mx-8 md:mx-80 my-40">
         <h1 className="text-3xl text-green font-bold mb-12 text-center">
           FAQs
         </h1>
