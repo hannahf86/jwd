@@ -52,7 +52,7 @@ const RootNav = () => {
 
   // STYLES
   const mobileStyles = {
-    container: "fixed md:hidden w-full h-20 bg-white z-40",
+    container: "fixed lg:hidden w-screen h-20 bg-white z-40",
     fullMenu:
       "bg-white fixed w-screen h-screen p-20 md:p-0 flex flex-col justify-center items-center z-30 ",
     menuItem:
@@ -61,7 +61,7 @@ const RootNav = () => {
   };
 
   const desktopStyles = {
-    header: "hidden md:block fixed bg-white top-0 w-full py-8 z-[99]",
+    header: "hidden lg:block fixed bg-white top-0 w-full py-8 z-[99]",
     link: "text-black hover:bg-accent hover:text-white py-2 px-4 rounded-md mx-8",
     button:
       "bg-green text-white text-center text-sm px-8 py-4 ml-4 rounded-md hover:bg-accent ",

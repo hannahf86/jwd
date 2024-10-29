@@ -262,7 +262,7 @@ const Landing = () => {
       </div>
 
       {/* BENEFITS */}
-      <div id="benefits" className="bg-green mx-8 md:mx-16 p-4 md:p-12">
+      <div id="benefits" className="bg-green mx-8 md:mx-16 p-8 md:p-12">
         <h1 className="text-center text-white font-bold text-3xl my-8">
           The benefits of working with us
         </h1>
@@ -272,9 +272,9 @@ const Landing = () => {
             <img
               src={fees}
               alt="a british pound sign representing no hidden fees"
-              className="m-12 md:m-20"
+              className="m-20"
             />
-            <h2 className="text-lg font-bold text-center text-accent mb-4">
+            <h2 className="text-2xl font-bold text-center text-accent mb-4">
               No Hidden Fees
             </h2>
             <p className="text-white text-center text-md mb-12">
@@ -292,10 +292,10 @@ const Landing = () => {
             <img
               src={efficient}
               alt="a clock representing efficient use of time"
-              className="m-12 md:m-20"
+              className="m-20"
             />
 
-            <h2 className="text-lg font-bold text-center text-accent mb-4">
+            <h2 className="text-2xl font-bold text-center text-accent mb-4">
               Efficient Service
             </h2>
             <p className="text-white text-center text-md mb-12">
@@ -313,9 +313,9 @@ const Landing = () => {
             <img
               src={peace}
               alt="a peace sign representing peace of mind"
-              className="m-12 md:m-20"
+              className="m-20"
             />
-            <h2 className="text-lg font-bold text-center text-accent mb-4">
+            <h2 className="text-2xl font-bold text-center text-accent mb-4">
               Peace of Mind
             </h2>
             <p className="text-white text-center text-md mb-12">
