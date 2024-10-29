@@ -16,14 +16,14 @@ export default function Faqs() {
       <AccordionItem className="mb-6">
         <AccordionItemHeading>
           <AccordionItemButton>
-            <h2 className="font-bold text-black text-base">
+            <h2 className="font-bold text-white text-base">
               Why does working with a design agency cost more than using a
               website builder?
             </h2>
           </AccordionItemButton>
         </AccordionItemHeading>
         <AccordionItemPanel>
-          <p className="text-black">
+          <p className="text-black text-md">
             <strong className="text-green">Answer:</strong> Unlike website
             builders, a design agency offers a team of experienced professionals
             who tailor every detail of your site to reflect your brand identity,
@@ -40,14 +40,14 @@ export default function Faqs() {
       <AccordionItem className="mb-6">
         <AccordionItemHeading>
           <AccordionItemButton>
-            <h2 className="font-bold text-black text-base">
+            <h2 className="font-bold text-white text-base">
               What added value do I get by investing in a design agency instead
               of using a DIY website builder?
             </h2>
           </AccordionItemButton>
         </AccordionItemHeading>
         <AccordionItemPanel>
-          <p className="text-black">
+          <p className="text-black text-md">
             <strong className="text-green">Answer:</strong> Design agencies
             bring a high level of customization, design precision, and brand
             strategy that website builders cannot achieve. They focus on
@@ -64,14 +64,14 @@ export default function Faqs() {
       <AccordionItem className="mb-6">
         <AccordionItemHeading>
           <AccordionItemButton>
-            <h2 className="font-bold text-black text-base">
+            <h2 className="font-bold text-white text-base">
               Can a website builder deliver the same results as a design agency
               for my business?
             </h2>
           </AccordionItemButton>
         </AccordionItemHeading>
         <AccordionItemPanel>
-          <p className="text-black">
+          <p className="text-black text-md">
             <strong className="text-green">Answer:</strong> While website
             builders are a budget-friendly solution and work well for simple
             websites, they can lack the flexibility, functionality, and depth of
@@ -87,14 +87,14 @@ export default function Faqs() {
       <AccordionItem className="mb-6">
         <AccordionItemHeading>
           <AccordionItemButton>
-            <h2 className="font-bold text-black text-base">
+            <h2 className="font-bold text-white text-base">
               What long-term benefits can I expect from investing in a
               professional design agency?
             </h2>
           </AccordionItemButton>
         </AccordionItemHeading>
         <AccordionItemPanel>
-          <p className="text-black">
+          <p className="text-black text-md">
             <strong className="text-green">Answer:</strong> An agency-developed
             website is built with scalability, SEO, and adaptability in mind,
             ensuring your site can grow with your business and remain current in

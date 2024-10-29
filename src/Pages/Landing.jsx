@@ -219,13 +219,13 @@ const Landing = () => {
             We know!
             <br /> We&apos;ve just done it!
             <br /> <br />
-            There's far too much to manage and so many new skills to learn. If
-            we're completely honest, we're not business folks, we're computer
-            folks and we wanted to do what we love.
+            There&apos;s far too much to manage and so many new skills to learn.
+            If we&apos;re completely honest, we&apos;re not business folks,
+            we&apos;re computer folks and we wanted to do what we love.
             <br />
             <br />
             <h3 className="text-green font-bold text-base">
-              And that's what you should be doing!
+              And that&apos;s what you should be doing!
             </h3>
           </p>
           <p className="text-base text-left font-bold text-black ">
@@ -259,8 +259,9 @@ const Landing = () => {
             </h2>
             <p className="text-white text-center text-md">
               Through our own experience as customers, we hate it when fees are
-              added at the end or they're not displayed on the website. <br />
-              <br /> We don't do that here.
+              added at the end or they&apos;re not displayed on the website.{" "}
+              <br />
+              <br /> We don&apos;t do that here.
               <br />
               <br /> We believe in transparency and clear communication. No
               smoke and mirrors here - just honest work!
@@ -329,7 +330,7 @@ const Landing = () => {
               <br />
               <br />
               You absolutely will NOT be pressured into buying anything you are
-              not 100% comfortable with. We're here to help you, not take
+              not 100% comfortable with. We&apos;re here to help you, not take
               advantage.
               <FaInfinity size={35} className="text-accent" />{" "}
               <div className="flex text-green mb-8">
@@ -375,9 +376,9 @@ const Landing = () => {
               SEO SERVICES
             </h3>
             <p className="text-md text-black">
-              We being with a thorough "crawl" of your website and provide you
-              with an ULTRA geeky report that highlights where we need to focus
-              our efforts to help improve those rankings. <br />
+              We being with a thorough &quot;crawl&quot; of your website and
+              provide you with an ULTRA geeky report that highlights where we
+              need to focus our efforts to help improve those rankings. <br />
               <br />
               Working together, we create a marketing strategy with clear steps
               and deadlines for you to follow, giving you plenty of time to
@@ -409,7 +410,7 @@ const Landing = () => {
               We offer our clients a{" "}
               <strong className="text-green">15% reduction</strong> in any
               future products. For example, a blog or a booking system. Simply
-              drop us a line with what you need and we'll crack right on!
+              drop us a line with what you need and we&apos;ll crack right on!
             </p>
           </div>
           <div className="col-start-3 m-auto">
@@ -431,8 +432,8 @@ const Landing = () => {
             </h1>
             <p className="text-white text-center text-base">
               Here are some of our most recent reviews. <br />
-              <br /> We're very proud to say we have 100% client satisfaction
-              and 5 star reviews on Google.
+              <br /> We&apos;re very proud to say we have 100% client
+              satisfaction and 5 star reviews on Google.
               <br />
               <br />
               Thank you to all of our amazing clients!
@@ -450,8 +451,8 @@ const Landing = () => {
               <FaQuoteRight size={20} className="ml-2" />
             </div>
             <p className="text-white text-md text-left my-8">
-              "Amazing person to work with. Very friendly and thorough. I would
-              definitely recommend 😊"
+              &quot;Amazing person to work with. Very friendly and thorough. I
+              would definitely recommend 😊&quot;
             </p>
             <div className="m-auto flex items-center justify-start ">
               <img
@@ -480,9 +481,9 @@ const Landing = () => {
               <FaQuoteRight size={20} className="ml-2" />
             </div>
             <p className="text-white text-md text-left my-8">
-              "Thanks for help with my new website from start to finish Hannah
-              was really helpful and made the whole process really easy … Would
-              highly recommend"
+              &quot;Thanks for help with my new website from start to finish
+              Hannah was really helpful and made the whole process really easy …
+              Would highly recommend&quot;
             </p>
             <div className="m-auto flex items-center justify-start ">
               <img src={mick} alt="avatar of matthew palmer" className="h-16" />
@@ -500,11 +501,18 @@ const Landing = () => {
       </div>
 
       {/* FAQs */}
-      <div id="faqs-five" className="mx-60 my-40">
+      <div id="faqs-five" className="mx-80 my-40">
         <h1 className="text-3xl text-green font-bold mb-12 text-center">
           FAQs
         </h1>
         <Faqs />
+        <div className="mt-12 text-right w-fit">
+          <Link to="faqs">
+            <h3 className="text-white bg-blue p-4 tracking-widest">
+              FULL LIST OF FAQs
+            </h3>
+          </Link>
+        </div>
       </div>
 
       {/* BOOKINGS */}
