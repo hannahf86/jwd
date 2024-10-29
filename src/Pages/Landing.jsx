@@ -17,7 +17,6 @@ import { FaQuoteLeft } from "react-icons/fa";
 import { FaQuoteRight } from "react-icons/fa";
 
 // IMAGES
-import background from "../Assets/jwdBackground.jpeg";
 import webDesign from "../Assets/web-design.webp";
 import reviews from "../Assets/reviews.png";
 import hannah from "../Assets/hannah.webp";
@@ -37,24 +36,22 @@ import Faqs from "../Components/FAQs";
 
 const Landing = () => {
   const styles = {
-    headline: "text-green text-2xl font-bold mb-4",
-    subtitle: "text-blue font-bold text-lg mb-4",
+    headline: "text-green text-4xl font-bold mb-4 text-center md:text-left",
+    subtitle: "text-blue font-bold text-lg mb-4 text-center md:text-left",
     button:
       "bg-green text-white flex self-center text-center text-sm px-8 py-2 rounded-md hover:bg-accent cursor-pointer",
     ghostButton:
-      "bg-white flex self-center text-black text-center md:ml-6 mt-6 md:mt-0 text-sm px-16 lg:px-8 py-4 rounded-md border-4 border-green hover:bg-green hover:text-white cursor-pointer",
+      "bg-white flex self-center text-black text-center md:ml-6 mt-6 md:mt-0 text-sm px-10 lg:px-8 py-4 rounded-md border-4 border-green hover:bg-green hover:text-white cursor-pointer",
   };
 
   return (
     <div id="home">
       {/* LANDING */}
-      <div id="landing">
-        {/* BACKGROUND IMAGE */}
-        <img src={background} className="relative w-screen h-screen" />
-
-        <div className="absolute top-24 mx-8 lg:top-40 lg:mx-16 grid grid-cols-1 md:grid md:grid-cols-2 ">
-          {/* COL 01 - REWORD */}
-          <div className="col-start-1">
+      <div id="landing" className="">
+        <div className="mx-6 lg:mx-16 md:grid md:grid-cols-2">
+          {/* COL 01 */}
+          <div className="pt-20">
+            {/* LOGO*/}
             <div className="md:hidden flex flex-col justify-center items-center mb-8">
               <img src={navLogo} alt="jorvik web dev logo" className="mx-20" />
               <p className="text-grey tracking-wider text-base">
@@ -62,6 +59,7 @@ const Landing = () => {
               </p>
             </div>
 
+            {/* TITLE */}
             <h1 className={styles.headline}>
               Building custom, high performance websites that drive results
             </h1>
@@ -108,15 +106,15 @@ const Landing = () => {
 
             {/* REVIEWS */}
             <Link to="reviews">
-              <div className="flex flex-col md:flex-row justify-start items-center pt-12">
+              <div className="flex flex-col md:flex-row md:col-start-1 justify-start items-center mt-32 md:pt-12">
                 <img
                   src={reviews}
                   className="h-16 hidden md:block"
                   alt="images of google review profiles"
                 />
-                <div className="flex flex-col ml-6 justify-center items-center">
+                <div className="flex flex-col md:ml-6 justify-center items-center">
                   <Link to="reviews" className="mb-2">
-                    <p className="text-sm text-black font-bold flex items-center">
+                    <p className="text-sm text-black font-bold flex items-center text-center md:text-left">
                       Happy customer stories this way...
                     </p>
                   </Link>
@@ -131,46 +129,53 @@ const Landing = () => {
                 </div>
               </div>
             </Link>
-          </div>
 
-          {/* SERVICES */}
-          <div className="hidden md:block md:col-span-2 border-4 border-green rounded-lg p-4 list-none mt-8 mb-40">
-            <div className="flex flex-wrap justify-center ">
-              <div className="flex items-center mx-16">
-                <MdDraw size={22} className="mr-2 text-green" />
-                <li className=" my-1 font-bold text-black/80">UI Design</li>
-              </div>
-              <div className="flex items-center mx-16">
-                <BsClipboard2DataFill size={18} className="mr-2 text-green" />
-                <li className=" my-1 font-bold text-black/80">UX Research</li>
-              </div>
-              <div className="flex items-center mx-16">
-                <HiDesktopComputer size={22} className="mr-2 text-green" />
-                <li className=" my-1 font-bold text-black/80">Development</li>
-              </div>
-              <div className="flex items-center  mx-16">
-                <HiMiniPresentationChartBar
-                  size={20}
-                  className="mr-2 text-green"
-                />
-                <li className=" my-1 font-bold text-black/80">SEO Services</li>
-              </div>
-              <div className="flex items-center mx-16">
-                <FaServer size={18} className="mr-2 text-green" />
-                <li className=" my-1 font-bold text-black/80">Hosting</li>
+            {/* SERVICES */}
+            <div className="hidden md:block md:col-span-2 border-4 border-green rounded-lg p-4 list-none mt-20 ">
+              <div className="flex flex-wrap justify-center ">
+                <div className="flex items-center mx-16">
+                  <MdDraw size={22} className="mr-2 text-green" />
+                  <li className=" my-1 font-bold text-black/80">UI Design</li>
+                </div>
+                <div className="flex items-center mx-16">
+                  <BsClipboard2DataFill size={18} className="mr-2 text-green" />
+                  <li className=" my-1 font-bold text-black/80">UX Research</li>
+                </div>
+                <div className="flex items-center mx-16">
+                  <HiDesktopComputer size={22} className="mr-2 text-green" />
+                  <li className=" my-1 font-bold text-black/80">Development</li>
+                </div>
+                <div className="flex items-center  mx-16">
+                  <HiMiniPresentationChartBar
+                    size={20}
+                    className="mr-2 text-green"
+                  />
+                  <li className=" my-1 font-bold text-black/80">
+                    SEO Services
+                  </li>
+                </div>
+                <div className="flex items-center mx-16">
+                  <FaServer size={18} className="mr-2 text-green" />
+                  <li className=" my-1 font-bold text-black/80">Hosting</li>
+                </div>
               </div>
             </div>
           </div>
 
           {/* COL 02 */}
-          <div className="hidden md:block md:col-start-2 md:row-start-1 self-center">
-            <img src={webDesign} className=" ml-8 justify-self-start" />
+          <div className="hidden md:block col-start-2 self-center">
+            <img
+              src={webDesign}
+              className="justify-center w-5/6 mt-60 ml-32 mb-20"
+            />
           </div>
         </div>
       </div>
 
       {/* QUESTION 01 */}
-      <div id="tired" className="text-center mt-56 mb-40 mx-8">
+      <div
+        id="tired"
+        className="text-center mt-32 md:mt-56 md:mb-40 mb-32 mx-8">
         <h1 className="text-3xl text-green font-bold mb-6 md:mb-12">
           Tired of tech talk and sneaky fees?
         </h1>
@@ -221,7 +226,7 @@ const Landing = () => {
       {/* ABOUT US - SHORT */}
       <div
         id="about-short"
-        className="grid grid-cols-1 md:grid-cols-2 mb-40 mx-8">
+        className="grid grid-cols-1 md:grid-cols-2 mb-40 mx-6">
         <div className="col-start-1 relative hidden md:block">
           <img
             src={hannah}
@@ -231,20 +236,22 @@ const Landing = () => {
         </div>
 
         <div className="col-start-2 pt-4 md:pt-16 px-4 md:px-12">
-          <h1 className="text-green font-bold text-2xl mb-4">
+          <h1 className="text-green font-bold text-2xl mb-4 text-center md:text-left">
             Hi! We&apos;re Jorvik Web Dev, <br />a small but mighty web design
             agency based in York, UK.
           </h1>
-          <p className="text-lg mb-8">At our core, we are problem solvers.</p>
-          <p className="text-base mb-4 text-center md:text-left">
+          <p className="text-lg mb-8 text-center md:text-left">
+            At our core, we are problem solvers.
+          </p>
+          <p className="text-base mb-4 text-center md:text-left ">
             Starting your own business is so hard! We know!
             <br />
-            <strong className="text-green underline">
+            <strong className="text-green underline text-center md:text-left">
               We&apos;ve just done it!
             </strong>
           </p>
 
-          <p className="text-md">
+          <p className="text-md text-center md:text-left">
             There&apos;s far too much to manage and so many new skills to learn.
             If we&apos;re completely honest, we&apos;re not business folks,
             we&apos;re computer folks and we wanted to do what we love.
@@ -256,14 +263,14 @@ const Landing = () => {
         </div>
 
         <div className="col-start-2 md:grid-col-start-1 md:col-span-2 md:mx-20">
-          <p className="text-base text-left font-bold text-black ">
+          <p className="text-base text-center md:text-left font-bold text-black ">
             With a collective knowledge base of{" "}
             <strong className="text-accent">12 years</strong> and a{" "}
             <strong className="text-accent">5 star rating</strong> on Google
             reviews, let us handle your online journey so you can focus on what
             matters to you the most!
           </p>
-          <Link to="about-us" className="cursor-point text-right">
+          <Link to="about" className="cursor-point text-right">
             <p className="my-6 underline text-black">Read our full story...</p>
           </Link>
         </div>
@@ -280,7 +287,7 @@ const Landing = () => {
             <img
               src={fees}
               alt="a british pound sign representing no hidden fees"
-              className="m-20"
+              className="m-12 md:m-20"
             />
             <h2 className="text-2xl font-bold text-center text-accent mb-4">
               No Hidden Fees
@@ -300,7 +307,7 @@ const Landing = () => {
             <img
               src={efficient}
               alt="a clock representing efficient use of time"
-              className="m-20"
+              className="m-12 md:m-20"
             />
 
             <h2 className="text-2xl font-bold text-center text-accent mb-4">
@@ -321,7 +328,7 @@ const Landing = () => {
             <img
               src={peace}
               alt="a peace sign representing peace of mind"
-              className="m-20"
+              className="m-12 md:m-20"
             />
             <h2 className="text-2xl font-bold text-center text-accent mb-4">
               Peace of Mind
@@ -332,8 +339,6 @@ const Landing = () => {
               <br /> We work quickly and with empathy, providing you with top
               quality websites, knowing how important your online presence is
               for every business, especially in this financial climate.
-              <br />
-              <br />
             </p>
           </div>
         </div>
@@ -486,9 +491,9 @@ const Landing = () => {
           </div>
 
           {/* COL 02 */}
-          <div className="col-start-1 md:col-start-2 md:row-start-1 px-4 md:px-8 pt-8">
+          <div className="col-start-1 md:col-start-2 md:row-start-1 px-4 md:px-8 ">
             {/* REVIEW 01*/}
-            <div className="flex text-white justify-center mt-20">
+            <div className="flex text-white justify-center md:mt-0">
               <FaQuoteLeft size={20} className="mr-2" />
               <h1 className="text-lg font-bold bg-accent ">
                 Very friendly and thorough
@@ -513,11 +518,11 @@ const Landing = () => {
                 <TiStarFullOutline size={30} />
               </div>
             </div>
-            <p className="text-white text-right mb-12">Matthew, Oct 2024</p>
+            <p className="text-white text-right md:mb-12">Matthew, Oct 2024</p>
           </div>
 
           {/* REVIEW 02*/}
-          <div className="col-start-1 md:col-start-2 row-start-2 px-4 md:px-8 pt-8 mt-20">
+          <div className="col-start-1 md:col-start-2 row-start-2 px-4 md:px-8 pt-8 mt-20 md:mt-0">
             <div className="flex text-white justify-center">
               <FaQuoteLeft size={20} className="mr-2" />
               <h1 className="text-lg font-bold bg-accent p-2">
@@ -540,7 +545,7 @@ const Landing = () => {
                 <TiStarFullOutline size={30} />
               </div>
             </div>
-            <p className="text-white text-right">Mike, Oct 2024</p>
+            <p className="text-white text-right mb-12">Mike, Oct 2024</p>
           </div>
         </div>
       </div>
