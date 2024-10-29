@@ -32,6 +32,7 @@ import mick from "../Assets/mickAvatar.png";
 
 // COMPONENTS
 import Bookings from "../Components/Bookings";
+import Faqs from "../Components/FAQs";
 
 const Landing = () => {
   const styles = {
@@ -499,7 +500,12 @@ const Landing = () => {
       </div>
 
       {/* FAQs */}
-      <div id="faqs-five"></div>
+      <div id="faqs-five" className="mx-60 my-40">
+        <h1 className="text-3xl text-green font-bold mb-12 text-center">
+          FAQs
+        </h1>
+        <Faqs />
+      </div>
 
       {/* BOOKINGS */}
       <Bookings />
