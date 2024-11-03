@@ -630,10 +630,10 @@ const Landing = () => {
       </div>
 
       {/*  --------------------------- REVIEWS  --------------------------- */}
-      <div id="reviews" className="bg-green mx-8 p-4 md:mx-16 md:p-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 md:gap-x-20">
+      <div id="reviews" className="bg-green mx-8 p-4 md:p-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 md:gap-x-12">
           {/* COL 01 */}
-          <div className="col-start-1 md:row-span-2 md:p-8 justify-center m-auto">
+          <div className="col-start-1 md:row-span-2 justify-start content-start md:mt-60">
             <h1 className="text-center text-white font-bold text-3xl my-8">
               Happy Client Reviews
             </h1>
@@ -648,16 +648,16 @@ const Landing = () => {
           </div>
 
           {/* COL 02 */}
-          <div className="col-start-1 md:col-start-2 md:row-start-1 px-4 md:px-8 ">
+          <div className="col-start-1 md:col-start-2 md:row-start-1 ">
             {/* REVIEW 01*/}
-            <div className="flex text-white justify-center md:mt-0">
+            <div className="flex text-white justify-center md:mt-20">
               <FaQuoteLeft size={20} className="mr-2" />
-              <h1 className="text-lg font-bold bg-accent ">
+              <h1 className="text-lg text-center font-bold bg-accent ">
                 Very friendly and thorough
               </h1>
-              <FaQuoteRight size={20} className="ml-2" />
+              <FaQuoteRight size={20} className="ml-2 mt-20" />
             </div>
-            <p className="text-white text-md text-left my-8">
+            <p className="text-white  text-md text-center my-8">
               &quot;Amazing person to work with. Very friendly and thorough. I
               would definitely recommend 😊&quot;
             </p>
@@ -675,19 +675,19 @@ const Landing = () => {
                 <TiStarFullOutline size={30} />
               </div>
             </div>
-            <p className="text-white text-right md:mb-12">Matthew, Oct 2024</p>
+            <p className="text-white text-right ">Matthew, Oct 2024</p>
           </div>
 
           {/* REVIEW 02*/}
-          <div className="col-start-1 md:col-start-2 row-start-2 px-4 md:px-8 pt-8 mt-20 md:mt-0">
+          <div className="col-start-1 md:col-start-2 row-start-2 pt-12 ">
             <div className="flex text-white justify-center">
               <FaQuoteLeft size={20} className="mr-2" />
-              <h1 className="text-lg font-bold bg-accent p-2">
+              <h1 className="text-lg text-center font-bold bg-accent p-2">
                 ... process was really easy ...
               </h1>
-              <FaQuoteRight size={20} className="ml-2" />
+              <FaQuoteRight size={20} className="ml-2 mt-20" />
             </div>
-            <p className="text-white text-md text-left my-8">
+            <p className="text-white text-center text-md text-left my-8">
               &quot;Thanks for help with my new website from start to finish
               Hannah was really helpful and made the whole process really easy …
               Would highly recommend&quot;
@@ -708,7 +708,7 @@ const Landing = () => {
       </div>
 
       {/*  --------------------------- FAQs  --------------------------- */}
-      <div id="faqs-five" className="mx-8 md:mx-80 my-40">
+      <div id="faqs-five" className="mx-8 md:mx-20 lg:mx-80 my-40">
         <h1 className="text-3xl text-green font-bold mb-12 text-center">
           FAQs
         </h1>
