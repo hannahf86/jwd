@@ -50,7 +50,7 @@ const Landing = () => {
       <div id="landing" className="">
         <div className="mx-6 lg:mx-16 md:grid md:grid-cols-2">
           {/* COL 01 */}
-          <div className="pt-20">
+          <div className="pt-32">
             {/* LOGO*/}
             <div className="md:hidden flex flex-col justify-center items-center mb-8">
               <img src={navLogo} alt="jorvik web dev logo" className="mx-20" />
