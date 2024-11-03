@@ -493,17 +493,18 @@ const Landing = () => {
       </div>
 
       {/*  --------------------------- HOW DOES IT WORK  --------------------------- */}
-      <div id="how-it-works" className="mx-8 my-40 md:ml-40 md:mr-20">
+      <div id="how-it-works" className="mx-8 my-40 md:ml-20 lg:ml-40 md:mr-20">
         <h1 className="text-3xl text-black/80 font-bold mb-12 text-left">
           OK, so how does this work?
         </h1>
         {/* GRID */}
-        <div className="grid grid-cols-1 gap-0 md:grid-cols-3 md:gap-12">
+        <div className="grid grid-cols-1 gap-0 md:grid-cols-3 md:gap-4">
           <div className="col-start-1 md:col-span-2 row-start-1 mb-12">
-            <div className="md:hidden col-start-1 mx-8">
+            <div className="md:hidden col-start-3 self-start">
               <img
                 src={contact}
                 alt="red haired cartoon woman happily talking on the phone"
+                className="w-80 md:w-full m-auto "
               />
             </div>
             <h2 className="text-blue text-xl font-bold">#01</h2>
@@ -536,23 +537,28 @@ const Landing = () => {
               </div>
             </p>
           </div>
-          <div className="hidden md:block col-start-1 md:col-start-3 row-start-1 m-auto">
+          <div className="hidden md:block md:col-start-3 row-start-1 justify-start mt-20">
             <img
               src={contact}
               alt="red haired cartoon woman happily talking on the phone"
             />
           </div>
 
+          {/* WORK */}
           <div className="grid-start-1 md:col-span-2 mb-12">
             <div className="md:hidden col-start-1 mx-8">
-              <img src={code} alt="some hands typing some code" />
+              <img
+                src={code}
+                alt="some hands typing some code"
+                className="w-80 m-auto"
+              />
             </div>
             <h2 className="text-blue text-xl font-bold">#02</h2>
             <h1 className="text-green text-2xl font-bold mb-6">
               We do our jobs
             </h1>
             <h3 className="text-md text-green/80 mb-2 font-bold">
-              UI/UX, BRANDING & WEB DESIGN
+              UI/UX & WEB DESIGN
             </h3>
             <p className="text-md text-black">
               Once the design is complete, we will send you a link to a
@@ -578,17 +584,19 @@ const Landing = () => {
               magical SEO tricks.
             </p>
           </div>
-          <div className="hidden md:block md:col-start-3 m-auto">
+          <div className="hidden md:block md:col-start-3 row-start-2 justify-start mt-20">
             <img src={code} alt="some hands typing some code" />
           </div>
 
           <div className="grid-start-1 md:col-span-2 mb-12">
-            <div className="md:hidden col-start-1 mx-8">
+            <div className="md:hidden col-start-1 mx-8 ">
               <img
                 src={happy}
                 alt="multi racial people cheering at a big complete sign"
               />
             </div>
+
+            {/* HANDOVER */}
             <h2 className="text-blue text-xl font-bold">#03</h2>
             <h1 className="text-green text-2xl font-bold mb-6">
               Handover and everyone is happy
@@ -611,10 +619,11 @@ const Landing = () => {
               drop us a line with what you need and we&apos;ll crack right on!
             </p>
           </div>
-          <div className="hidden md:block md:col-start-3 m-auto">
+          <div className="hidden md:block md:col-start-3 row-start-3 justify-start mt-20">
             <img
               src={happy}
-              alt="multi racial people cheering at a big complete sign"
+              alt="multi racial people cheering at a big complete sign "
+              className="w-80 m-auto"
             />
           </div>
         </div>
