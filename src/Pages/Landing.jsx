@@ -328,8 +328,8 @@ const Landing = () => {
             className="text-green mr-4 hidden md:block"
           />
           <h2 className="text-base md:text-lg text-black font-bold my-4 md:my-8">
-            Sick of features on website builder sites being stuck behind pay
-            walls??
+            Are you sick of features on website builder sites being stuck behind
+            pay walls??
           </h2>
         </div>
 
@@ -339,8 +339,8 @@ const Landing = () => {
             className="text-green mr-4 hidden md:block"
           />
           <h2 className="text-base md:text-lg text-black font-bold my-4 md:my-8">
-            Are you spending too much time learning skills you&apos;re not
-            interested in??
+            Do you find yourself spending too much time learning skills
+            you&apos;re not interested in??
           </h2>
         </div>
 
@@ -350,7 +350,8 @@ const Landing = () => {
             className="text-green mr-4 hidden md:block"
           />
           <h2 className="text-base md:text-lg text-black font-bold my-4 md:my-8">
-            You feel like you&apos;re working all the time but getting nowhere??
+            Do you feel like you&apos;re working all the time but getting
+            nowhere??
           </h2>
         </div>
 
@@ -366,7 +367,7 @@ const Landing = () => {
         </div>
       </div>
 
-      {/* ABOUT US - SHORT */}
+      {/* --------------------------- ABOUT US - SHORT  --------------------------- */}
       <div
         id="about-short"
         className="grid grid-cols-1 md:grid-cols-2 mb-40 mx-6">
@@ -380,10 +381,10 @@ const Landing = () => {
 
         <div className="col-start-2 pt-4 md:pt-16 px-4 md:px-12">
           <h1 className="text-green font-bold text-2xl mb-4 text-center md:text-left">
-            Hi! We&apos;re Jorvik Web Dev, <br />a small but mighty web design
-            agency based in York, UK.
+            Hi! We&apos;re Jorvik Web Dev, a small but mighty web design agency
+            based in York.
           </h1>
-          <p className="text-lg mb-8 text-center md:text-left">
+          <p className="text-lg mb-8 text-center md:text-left font-bold">
             At our core, we are problem solvers.
           </p>
           <p className="text-base mb-4 text-center md:text-left ">
@@ -397,7 +398,11 @@ const Landing = () => {
           <p className="text-md text-center md:text-left">
             There&apos;s far too much to manage and so many new skills to learn.
             If we&apos;re completely honest, we&apos;re not business folks,
-            we&apos;re computer folks and we wanted to do what we love.
+            we&apos;re techno nerds who are passionate about helping others.
+            <br />
+            <br />
+            We wanted to crack on with designing, building and planning, i.e.
+            doing what love!
           </p>
 
           <h3 className="text-green font-bold text-lg text-center md:text-left mt-6 mb-12">
@@ -408,7 +413,7 @@ const Landing = () => {
         <div className="col-start-2 md:grid-col-start-1 md:col-span-2 md:mx-20">
           <p className="text-base text-center md:text-left font-bold text-black ">
             With a collective knowledge base of{" "}
-            <strong className="text-accent">12 years</strong> and a{" "}
+            <strong className="text-accent">16 years</strong> and a{" "}
             <strong className="text-accent">5 star rating</strong> on Google
             reviews, let us handle your online journey so you can focus on what
             matters to you the most!
@@ -419,23 +424,23 @@ const Landing = () => {
         </div>
       </div>
 
-      {/* BENEFITS */}
-      <div id="benefits" className="bg-green mx-8 md:mx-16 p-8 md:p-12">
-        <h1 className="text-center text-white font-bold text-3xl my-8">
+      {/*  --------------------------- BENEFITS  --------------------------- */}
+      <div id="benefits" className="bg-green p-8 lg:p-12">
+        <h1 className="text-center text-white font-bold text-4xl lg:text-3xl my-8">
           The benefits of working with us
         </h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-0 md:gap-16 mb-12">
-          <div className="col-start-1 flex flex-col justify-center">
+        <div className="lg:grid grid-cols-1 lg:grid-cols-3 gap-0 lg:gap-12 mb-12">
+          <div className="col-start-1 flex flex-col justify-start items-center">
             <img
               src={fees}
               alt="a british pound sign representing no hidden fees"
-              className="m-12 md:m-20"
+              className="m-12 xs:w-40 self-center"
             />
-            <h2 className="text-2xl font-bold text-center text-accent mb-4">
+            <h2 className="text-2xl lg:text-xl font-bold text-center text-accent mb-4">
               No Hidden Fees
             </h2>
-            <p className="text-white text-center text-md mb-12">
+            <p className="text-white text-center text-md mb-12 sm:mx-16 lg:mx-2">
               Through our own experience as customers, we hate it when fees are
               added at the end or they&apos;re not displayed on the website.{" "}
               <br />
@@ -446,17 +451,17 @@ const Landing = () => {
             </p>
           </div>
 
-          <div className="md:col-start-2 flex flex-col justify-center">
+          <div className="md:col-start-2 flex flex-col justify-start items-center">
             <img
               src={efficient}
               alt="a clock representing efficient use of time"
-              className="m-12 md:m-20"
+              className="m-12 xs:w-40 self-center"
             />
 
-            <h2 className="text-2xl font-bold text-center text-accent mb-4">
+            <h2 className="text-2xl lg:text-xl font-bold text-center text-accent mb-4 ">
               Efficient Service
             </h2>
-            <p className="text-white text-center text-md mb-12">
+            <p className="text-white text-center text-md mb-12 sm:mx-16 lg:mx-2">
               We make web development a breeze with a fast and efficient
               service.
               <br />
@@ -467,16 +472,16 @@ const Landing = () => {
             </p>
           </div>
 
-          <div className="md:col-start-3 flex flex-col justify-center">
+          <div className="md:col-start-3 flex flex-col justify-start items-center">
             <img
               src={peace}
               alt="a peace sign representing peace of mind"
-              className="m-12 md:m-20"
+              className="m-12 xs:w-40 self-center"
             />
-            <h2 className="text-2xl font-bold text-center text-accent mb-4">
+            <h2 className="text-2xl lg:text-xl font-bold text-center text-accent mb-4 ">
               Peace of Mind
             </h2>
-            <p className="text-white text-center text-md mb-12">
+            <p className="text-white text-center text-md mb-12 sm:mx-16 lg:mx-2">
               Join our ever growing list of happy clients and like them, trust
               us to take care of this section of your business. <br />
               <br /> We work quickly and with empathy, providing you with top
@@ -487,7 +492,7 @@ const Landing = () => {
         </div>
       </div>
 
-      {/* HOW DOES IT WORK */}
+      {/*  --------------------------- HOW DOES IT WORK  --------------------------- */}
       <div id="how-it-works" className="mx-8 my-40 md:ml-40 md:mr-20">
         <h1 className="text-3xl text-black/80 font-bold mb-12 text-left">
           OK, so how does this work?
@@ -615,7 +620,7 @@ const Landing = () => {
         </div>
       </div>
 
-      {/* REVIEWS */}
+      {/*  --------------------------- REVIEWS  --------------------------- */}
       <div id="reviews" className="bg-green mx-8 p-4 md:mx-16 md:p-12">
         <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 md:gap-x-20">
           {/* COL 01 */}
@@ -693,7 +698,7 @@ const Landing = () => {
         </div>
       </div>
 
-      {/* FAQs */}
+      {/*  --------------------------- FAQs  --------------------------- */}
       <div id="faqs-five" className="mx-8 md:mx-80 my-40">
         <h1 className="text-3xl text-green font-bold mb-12 text-center">
           FAQs
