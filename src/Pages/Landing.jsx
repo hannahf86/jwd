@@ -38,28 +38,162 @@ const Landing = () => {
   return (
     <div id="home">
       {/* --------------------------- LANDING  --------------------------- */}
-      <div id="landing" className="mx-6 md:mx-16 lg:mx-16 pt-28">
-        {/* MOBILE LOGO*/}
-        <div className="lg:hidden flex flex-col justify-center items-center mb-8">
-          <img src={navLogo} alt="jorvik web dev logo" className="mx-20" />
-          <p className="text-grey tracking-wider text-base">JORVIK WEB DEV</p>
-        </div>
+      <div id="landing" className="mx-6 md:mx-12 lg:mx-16 pt-28">
+        {/* MOBILE & TABLET */}
+        <div className="lg:hidden mb-44">
+          {/* LOGO */}
+          <div className=" flex flex-col justify-center items-center">
+            <img src={navLogo} alt="jorvik web dev logo" className="mx-20" />
+            <p className="text-grey tracking-wider text-base">JORVIK WEB DEV</p>
+          </div>
 
-        {/* GRID */}
-        <div
-          id="landing-grid"
-          className="lg:grid lg:grid-cols-2 lg:grid-rows-1">
-          {/* COL 01 */}
-          <h1 className="text-green text-5xl lg:text-3xl leading-snug font-bold my-8 text-center md:text-left lg:col-start-1 lg:row-start-1 ">
+          {/* TITLES */}
+          <h1 className="text-green text-5xl leading-snug font-bold my-8 text-center md:text-left ">
             Building high performance, custom websites
           </h1>
 
-          <h2 className="text-blue font-bold text-lg my-8 lg:pt-56 text-center md:text-left lg:col-start-1 lg:row-start-1 ">
+          <h2 className="text-blue font-bold text-xl mb-8 text-center md:text-left ">
             Giving you peace of mind from a service you can trust
           </h2>
 
-          {/* SALES POINTS & DESKTOP C2A BUTTONS */}
-          <div className="xs:flex xs:flex-col xs:items-center md:items-start text-md lg:text-base pt-96 lg:col-start-1 lg:row-start-1">
+          {/* SALES POINT */}
+          <div className="flex flex-col items-center md:flex-row md:items-between mb-8">
+            <div className="flex items-center mb-3 md:mx-4">
+              <FaCheck className="mr-2 text-green" />
+              <h3 className="text-lg md:text-md uppercase">
+                Increase visibility
+              </h3>
+            </div>
+
+            <div className="flex items-center mb-3 md:mx-4">
+              <FaCheck className="mr-2 text-green" />
+              <h3 className="text-lg md:text-md uppercase">Engage customers</h3>
+            </div>
+
+            <div className="flex items-center mb-3 md:mx-4">
+              <FaCheck className="mr-2 text-green" />
+              <h3 className="text-lg md:text-md uppercase">
+                Drive more sales{" "}
+              </h3>
+            </div>
+          </div>
+
+          {/* SERVICES */}
+          <div className="list-none flex flex-wrap justify-center border-4 border-green rounded-md py-1 mb-12 xs:mx-4">
+            <div className="flex items-center mx-5">
+              <MdDraw size={22} className="mr-2 text-green" />
+              <li className="text-sm my-3 font-bold text-black/80">
+                UI Design
+              </li>
+            </div>
+
+            <div className="flex items-center mx-5">
+              <BsClipboard2DataFill size={18} className="mr-2 text-green" />
+              <li className="text-sm my-3 font-bold text-black/80">
+                UX Research
+              </li>
+            </div>
+
+            <div className="flex items-center mx-5">
+              <FaServer size={18} className="mr-2 text-green" />
+              <li className="text-sm my-3 font-bold text-black/80">Hosting</li>
+            </div>
+
+            <div className="flex items-center mx-5">
+              <HiDesktopComputer size={22} className="mr-2 text-green" />
+              <li className="text-sm my-3 font-bold text-black/80">
+                Development
+              </li>
+            </div>
+
+            <div className="flex items-center mx-5">
+              <HiMiniPresentationChartBar
+                size={20}
+                className="mr-2 text-green"
+              />
+              <li className="text-sm my-3 font-bold text-black/80">
+                SEO Services
+              </li>
+            </div>
+          </div>
+
+          {/* REVIEWS */}
+          <div className="flex flex-col items-center justify-center mb-8">
+            <img
+              src={faces}
+              className="w-28 mb-4 md:w-40"
+              alt="collection of client review avatars from Google reviews"
+            />
+            <div className="flex flex-col justify-center text-yellow-500 ml-6">
+              <div>
+                <Link to="reviews" className="">
+                  <h3 className="text-sm md:text-md font-bold text-black mb-4 underline">
+                    Happy customer stories this way...
+                  </h3>
+                </Link>
+              </div>
+              <div className="flex justify-center">
+                <TiStarFullOutline size={40} />
+                <TiStarFullOutline size={40} />
+                <TiStarFullOutline size={40} />
+                <TiStarFullOutline size={40} />
+                <TiStarFullOutline size={40} />
+              </div>
+            </div>
+
+            {/* DESKTOP C2A BUTTONS */}
+            <div className="hidden lg:block lg:flex lg:flex-row my-8 lg:justify-end xl:justify-center xl:">
+              <div className="bg-green text-white flex self-center text-center text-sm px-20 lg:px-8 py-2 rounded-md hover:bg-accent cursor-pointer">
+                <Link to="appointments">
+                  <p>
+                    BOOK A FREE <br />
+                    CONSULTATION
+                  </p>
+                </Link>
+              </div>
+
+              <div className="bg-white flex self-center text-black text-center lg:ml-6 mt-6 lg:mt-0 text-sm px-20 lg:px-8 py-4 rounded-md border-4 border-green hover:bg-accent hover:border-accent hover:text-white cursor-pointer">
+                <Link to="appointments">
+                  <p>LEARN MORE</p>
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          {/* MOBILE C2A BUTTONS */}
+          <div className="flex flex-col sm:flex-row justify-center mt-8">
+            <div className="bg-green text-white flex self-center text-center text-sm px-12 py-2 mx-6 rounded-md hover:bg-accent cursor-pointer">
+              <Link to="appointments">
+                <p>
+                  BOOK A FREE <br />
+                  CONSULTATION
+                </p>
+              </Link>
+            </div>
+
+            <div className="bg-white flex self-center text-black text-center mt-6 sm:mt-0 text-sm px-12 py-4 rounded-md border-4 border-green hover:bg-accent hover:border-accent hover:text-white cursor-pointer">
+              <Link to="appointments">
+                <p>LEARN MORE</p>
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        {/* DESKTOP */}
+        <div
+          id="landing-grid"
+          className="hidden lg:block lg:grid lg:grid-cols-2 lg:grid-rows-1">
+          {/* COL 01 */}
+          <h1 className="text-green text-5xl lg:text-3xl leading-snug font-bold my-8 xl:mt-12 text-center md:text-left lg:col-start-1 lg:row-start-1 ">
+            Building high performance, custom websites
+          </h1>
+
+          <h2 className="text-blue font-bold text-lg my-8 lg:pt-56 xl:pt-60 text-center md:text-left lg:col-start-1 lg:row-start-1 ">
+            Giving you peace of mind from a service you can trust
+          </h2>
+
+          {/* SALES POINTS, REVIEWS & DESKTOP C2A */}
+          <div className="xs:flex xs:flex-col xs:items-center md:items-start text-md lg:text-base pt-96 xl:pt-90 lg:col-start-1 lg:row-start-1">
             <div className="flex justify-self-start items-center mb-3">
               <FaCheck className="mr-2 text-green" />
               <h3 className="text-lg lg:text-base uppercase">
@@ -107,23 +241,23 @@ const Landing = () => {
                 </div>
               </div>
             </div>
-          </div>
 
-          {/* MOBILE C2A BUTTONS */}
-          <div className="lg:hidden flex flex-col justify-start h-20 ">
-            <div className="bg-green text-white flex self-center text-center text-sm px-20 lg:px-8 py-2 mx-6 rounded-md hover:bg-accent cursor-pointer">
-              <Link to="appointments">
-                <p>
-                  BOOK A FREE <br />
-                  CONSULTATION
-                </p>
-              </Link>
-            </div>
+            {/* DESKTOP C2A BUTTONS */}
+            <div className="hidden lg:block lg:flex lg:flex-row my-8 lg:justify-end xl:justify-center xl:">
+              <div className="bg-green text-white flex self-center text-center text-sm px-20 lg:px-8 py-2 rounded-md hover:bg-accent cursor-pointer">
+                <Link to="appointments">
+                  <p>
+                    BOOK A FREE <br />
+                    CONSULTATION
+                  </p>
+                </Link>
+              </div>
 
-            <div className="bg-white flex self-center text-black text-center lg:ml-6 mt-6 lg:mt-0 text-sm px-20 lg:px-8 py-4 rounded-md border-4 border-green hover:bg-accent hover:border-accent hover:text-white cursor-pointer">
-              <Link to="appointments">
-                <p>LEARN MORE</p>
-              </Link>
+              <div className="bg-white flex self-center text-black text-center lg:ml-6 mt-6 lg:mt-0 text-sm px-20 lg:px-8 py-4 rounded-md border-4 border-green hover:bg-accent hover:border-accent hover:text-white cursor-pointer">
+                <Link to="appointments">
+                  <p>LEARN MORE</p>
+                </Link>
+              </div>
             </div>
           </div>
 
@@ -169,30 +303,14 @@ const Landing = () => {
           </div>
 
           {/* COL 02 */}
-          <div id="col-02" className="hidden lg:block col-start-2 row-start-1">
+          <div
+            id="col-02"
+            className="hidden lg:block col-start-2 row-start-1 lg:mt-20">
             <img
               src={webDesign}
               alt="image of a local business website on different screen sizes with responsive design"
               className="ml-8"
             />
-
-            {/* DESKTOP C2A BUTTONS */}
-            <div className="hidden lg:block lg:flex lg:flex-row my-8 justify-end">
-              <div className="bg-green text-white flex self-center text-center text-sm px-20 lg:px-8 py-2 rounded-md hover:bg-accent cursor-pointer">
-                <Link to="appointments">
-                  <p>
-                    BOOK A FREE <br />
-                    CONSULTATION
-                  </p>
-                </Link>
-              </div>
-
-              <div className="bg-white flex self-center text-black text-center lg:ml-6 mt-6 lg:mt-0 text-sm px-20 lg:px-8 py-4 rounded-md border-4 border-green hover:bg-accent hover:border-accent hover:text-white cursor-pointer">
-                <Link to="appointments">
-                  <p>LEARN MORE</p>
-                </Link>
-              </div>
-            </div>
           </div>
         </div>
       </div>
