@@ -18,7 +18,7 @@ import { FaQuoteRight } from "react-icons/fa";
 
 // IMAGES
 import webDesign from "../Assets/web-design.webp";
-import reviews from "../Assets/reviews.png";
+import faces from "../Assets/reviews.png";
 import hannah from "../Assets/hannah.webp";
 import fees from "../Assets/fees.png";
 import efficient from "../Assets/efficient.png";
@@ -35,91 +35,69 @@ import Bookings from "../Components/Bookings";
 import Faqs from "../Components/FAQs";
 
 const Landing = () => {
-  const styles = {
-    headline: "text-green text-4xl font-bold mb-4 text-center md:text-left",
-    subtitle: "text-blue font-bold text-lg mb-4 text-center md:text-left",
-    button:
-      "bg-green text-white flex self-center text-center text-sm px-8 py-2 rounded-md hover:bg-accent cursor-pointer",
-    ghostButton:
-      "bg-white flex self-center text-black text-center md:ml-6 mt-6 md:mt-0 text-sm px-10 lg:px-8 py-4 rounded-md border-4 border-green hover:bg-green hover:text-white cursor-pointer",
-  };
-
   return (
     <div id="home">
-      {/* LANDING */}
-      <div id="landing" className="">
-        <div className="mx-6 lg:mx-16 md:grid md:grid-cols-2">
+      {/* --------------------------- LANDING  --------------------------- */}
+      <div id="landing" className="mx-6 md:mx-16 lg:mx-16 pt-28">
+        {/* MOBILE LOGO*/}
+        <div className="lg:hidden flex flex-col justify-center items-center mb-8">
+          <img src={navLogo} alt="jorvik web dev logo" className="mx-20" />
+          <p className="text-grey tracking-wider text-base">JORVIK WEB DEV</p>
+        </div>
+
+        {/* GRID */}
+        <div
+          id="landing-grid"
+          className="lg:grid lg:grid-cols-2 lg:grid-rows-1">
           {/* COL 01 */}
-          <div className="pt-32">
-            {/* LOGO*/}
-            <div className="md:hidden flex flex-col justify-center items-center mb-8">
-              <img src={navLogo} alt="jorvik web dev logo" className="mx-20" />
-              <p className="text-grey tracking-wider text-base">
-                JORVIK WEB DEV
-              </p>
+          <h1 className="text-green text-5xl lg:text-3xl leading-snug font-bold my-8 text-center md:text-left lg:col-start-1 lg:row-start-1 ">
+            Building high performance, custom websites
+          </h1>
+
+          <h2 className="text-blue font-bold text-lg my-8 lg:pt-56 text-center md:text-left lg:col-start-1 lg:row-start-1 ">
+            Giving you peace of mind from a service you can trust
+          </h2>
+
+          {/* SALES POINTS & DESKTOP C2A BUTTONS */}
+          <div className="xs:flex xs:flex-col xs:items-center md:items-start text-md lg:text-base pt-96 lg:col-start-1 lg:row-start-1">
+            <div className="flex justify-self-start items-center mb-3">
+              <FaCheck className="mr-2 text-green" />
+              <h3 className="text-lg lg:text-base uppercase">
+                Increase visibility
+              </h3>
             </div>
 
-            {/* TITLE */}
-            <h1 className={styles.headline}>
-              Building custom, high performance websites that drive results
-            </h1>
-
-            <h2 className={styles.subtitle}>
-              Giving you peace of mind from a service you can trust
-            </h2>
-
-            {/* SALES POINTS */}
-            <div className="text-md md:text-base my-8">
-              <div className="flex items-center mb-3">
-                <FaCheck className="mr-2 text-green" />
-                <h3>Increase visibility</h3>
-              </div>
-
-              <div className="flex items-center mb-3">
-                <FaCheck className="mr-2 text-green" />
-                <h3>Engage customers</h3>
-              </div>
-
-              <div className="flex items-center mb-3">
-                <FaCheck className="mr-2 text-green" />
-                <h3>Drive more sales </h3>
-              </div>
+            <div className="flex justify-self-start items-center mb-3">
+              <FaCheck className="mr-2 text-green" />
+              <h3 className="text-lg lg:text-base uppercase">
+                Engage customers
+              </h3>
             </div>
 
-            {/* C2A BUTTONS */}
-            <div className="flex flex-col md:flex-row justify-start h-20 pt-4">
-              <div className={styles.button}>
-                <Link to="appointments">
-                  <p>
-                    BOOK A FREE <br />
-                    CONSULTATION
-                  </p>
-                </Link>
-              </div>
-
-              <div className={styles.ghostButton}>
-                <Link to="appointments">
-                  <p>LEARN MORE</p>
-                </Link>
-              </div>
+            <div className="flex justify-self-start items-center mb-3">
+              <FaCheck className="mr-2 text-green" />
+              <h3 className="text-lg lg:text-base uppercase">
+                Drive more sales{" "}
+              </h3>
             </div>
 
             {/* REVIEWS */}
-            <Link to="reviews">
-              <div className="flex flex-col md:flex-row md:col-start-1 justify-start items-center mt-32 md:pt-12">
+            <div className="flex flex-col mb-8 lg:col-start-1 ">
+              <div className="flex items-center mt-4">
                 <img
-                  src={reviews}
-                  className="h-16 hidden md:block"
-                  alt="images of google review profiles"
+                  src={faces}
+                  className="w-40"
+                  alt="collection of client review avatars from Google reviews"
                 />
-                <div className="flex flex-col md:ml-6 justify-center items-center">
-                  <Link to="reviews" className="mb-2">
-                    <p className="text-sm text-black font-bold flex items-center text-center md:text-left">
-                      Happy customer stories this way...
-                    </p>
-                  </Link>
-
-                  <div className="flex text-yellow-500">
+                <div className="flex flex-col text-yellow-500 ml-6">
+                  <div>
+                    <Link to="reviews" className="">
+                      <h3 className="text-sm font-bold text-black">
+                        Happy customer stories this way...
+                      </h3>
+                    </Link>
+                  </div>
+                  <div className="flex">
                     <TiStarFullOutline size={40} />
                     <TiStarFullOutline size={40} />
                     <TiStarFullOutline size={40} />
@@ -128,51 +106,98 @@ const Landing = () => {
                   </div>
                 </div>
               </div>
-            </Link>
+            </div>
+          </div>
 
-            {/* SERVICES */}
-            <div className="hidden md:block md:col-span-2 border-4 border-green rounded-lg p-4 list-none mt-20 ">
-              <div className="flex flex-wrap justify-center ">
-                <div className="flex items-center mx-16">
-                  <MdDraw size={22} className="mr-2 text-green" />
-                  <li className=" my-1 font-bold text-black/80">UI Design</li>
-                </div>
-                <div className="flex items-center mx-16">
-                  <BsClipboard2DataFill size={18} className="mr-2 text-green" />
-                  <li className=" my-1 font-bold text-black/80">UX Research</li>
-                </div>
-                <div className="flex items-center mx-16">
-                  <HiDesktopComputer size={22} className="mr-2 text-green" />
-                  <li className=" my-1 font-bold text-black/80">Development</li>
-                </div>
-                <div className="flex items-center  mx-16">
-                  <HiMiniPresentationChartBar
-                    size={20}
-                    className="mr-2 text-green"
-                  />
-                  <li className=" my-1 font-bold text-black/80">
-                    SEO Services
-                  </li>
-                </div>
-                <div className="flex items-center mx-16">
-                  <FaServer size={18} className="mr-2 text-green" />
-                  <li className=" my-1 font-bold text-black/80">Hosting</li>
-                </div>
-              </div>
+          {/* MOBILE C2A BUTTONS */}
+          <div className="lg:hidden flex flex-col justify-start h-20 ">
+            <div className="bg-green text-white flex self-center text-center text-sm px-20 lg:px-8 py-2 mx-6 rounded-md hover:bg-accent cursor-pointer">
+              <Link to="appointments">
+                <p>
+                  BOOK A FREE <br />
+                  CONSULTATION
+                </p>
+              </Link>
+            </div>
+
+            <div className="bg-white flex self-center text-black text-center lg:ml-6 mt-6 lg:mt-0 text-sm px-20 lg:px-8 py-4 rounded-md border-4 border-green hover:bg-accent hover:border-accent hover:text-white cursor-pointer">
+              <Link to="appointments">
+                <p>LEARN MORE</p>
+              </Link>
+            </div>
+          </div>
+
+          {/* SERVICES */}
+          <div className="list-none col-start-1 col-span-2 flex justify-between border-4 border-green rounded-md p-4">
+            {/* 01 */}
+            <div className="flex items-center mx-6">
+              <MdDraw size={22} className="mr-2 text-green" />
+              <li className="text-sm my-3 font-bold text-black/80">
+                UI Design
+              </li>
+            </div>
+
+            <div className="flex items-center mx-6">
+              <BsClipboard2DataFill size={18} className="mr-2 text-green" />
+              <li className="text-sm my-3 font-bold text-black/80">
+                UX Research
+              </li>
+            </div>
+
+            <div className="flex items-center mx-6">
+              <FaServer size={18} className="mr-2 text-green" />
+              <li className="text-sm my-3 font-bold text-black/80">Hosting</li>
+            </div>
+
+            <div className="flex items-center mx-6">
+              <HiDesktopComputer size={22} className="mr-2 text-green" />
+              <li className="text-sm my-3 font-bold text-black/80">
+                Development
+              </li>
+            </div>
+
+            {/* SEO */}
+            <div className="flex items-center  mx-6">
+              <HiMiniPresentationChartBar
+                size={20}
+                className="mr-2 text-green"
+              />
+              <li className="text-sm my-3 font-bold text-black/80">
+                SEO Services
+              </li>
             </div>
           </div>
 
           {/* COL 02 */}
-          <div className="hidden md:block col-start-2 self-center">
+          <div id="col-02" className="hidden lg:block col-start-2 row-start-1">
             <img
               src={webDesign}
-              className="justify-center w-5/6 mt-60 ml-32 mb-20"
+              alt="image of a local business website on different screen sizes with responsive design"
+              className="ml-8"
             />
+
+            {/* DESKTOP C2A BUTTONS */}
+            <div className="hidden lg:block lg:flex lg:flex-row my-8 justify-end">
+              <div className="bg-green text-white flex self-center text-center text-sm px-20 lg:px-8 py-2 rounded-md hover:bg-accent cursor-pointer">
+                <Link to="appointments">
+                  <p>
+                    BOOK A FREE <br />
+                    CONSULTATION
+                  </p>
+                </Link>
+              </div>
+
+              <div className="bg-white flex self-center text-black text-center lg:ml-6 mt-6 lg:mt-0 text-sm px-20 lg:px-8 py-4 rounded-md border-4 border-green hover:bg-accent hover:border-accent hover:text-white cursor-pointer">
+                <Link to="appointments">
+                  <p>LEARN MORE</p>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      {/* QUESTION 01 */}
+      {/* --------------------------- QUESTION 01  --------------------------- */}
       <div
         id="tired"
         className="text-center mt-32 md:mt-56 md:mb-40 mb-32 mx-8">
