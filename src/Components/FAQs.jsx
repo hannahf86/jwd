@@ -15,8 +15,8 @@ export default function Faqs() {
       {/* Q1 */}
       <AccordionItem className="mb-6">
         <AccordionItemHeading>
-          <AccordionItemButton>
-            <h2 className="font-bold text-white text-base">
+          <AccordionItemButton className="bg-green px-2 py-4 flex flex-col">
+            <h2 className="font-bold text-white text-base text-center">
               Why does working with a design agency cost more than using a
               website builder?
             </h2>
@@ -39,8 +39,8 @@ export default function Faqs() {
       {/* Q2 */}
       <AccordionItem className="mb-6">
         <AccordionItemHeading>
-          <AccordionItemButton>
-            <h2 className="font-bold text-white text-base">
+          <AccordionItemButton className="bg-green px-2 py-4 flex flex-col">
+            <h2 className="font-bold text-white text-base text-center">
               What added value do I get by investing in a design agency instead
               of using a DIY website builder?
             </h2>
@@ -63,8 +63,8 @@ export default function Faqs() {
       {/* Q3 */}
       <AccordionItem className="mb-6">
         <AccordionItemHeading>
-          <AccordionItemButton>
-            <h2 className="font-bold text-white text-base">
+          <AccordionItemButton className="bg-green px-2 py-4 flex flex-col">
+            <h2 className="font-bold text-white text-base text-center">
               Can a website builder deliver the same results as a design agency
               for my business?
             </h2>
@@ -86,8 +86,8 @@ export default function Faqs() {
       {/* Q4 */}
       <AccordionItem className="mb-6">
         <AccordionItemHeading>
-          <AccordionItemButton>
-            <h2 className="font-bold text-white text-base">
+          <AccordionItemButton className="bg-green px-2 py-4 flex flex-col">
+            <h2 className="font-bold text-white text-base text-center">
               What long-term benefits can I expect from investing in a
               professional design agency?
             </h2>

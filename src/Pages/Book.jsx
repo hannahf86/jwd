@@ -39,10 +39,13 @@ const Book = () => {
             <Link
               to="https://www.facebook.com/profile.php?id=61562515362932"
               target="_blank">
-              <FaFacebookSquare size={35} className="ml-6" />
+              <FaFacebookSquare size={35} className="ml-6 hover:text-accent" />
             </Link>
             <Link to="https://www.instagram.com/jorvikwebdev/" target="_blank">
-              <FaInstagramSquare size={35} className="mx-6 " />
+              <FaInstagramSquare
+                size={35}
+                className="mx-6 hover:text-accent "
+              />
             </Link>
           </div>
         </div>

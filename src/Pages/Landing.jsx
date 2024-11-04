@@ -712,6 +712,9 @@ const Landing = () => {
         <h1 className="text-3xl text-green font-bold mb-12 text-center">
           FAQs
         </h1>
+        <h2 className="text-base text-center mb-12">
+          Tap on one of our FAQs to reveal the answer
+        </h2>
         <Faqs />
         <div className="mt-12 text-right w-fit">
           <Link to="faqs">

@@ -401,7 +401,7 @@ const Services = () => {
       <div
         id="desktop-c2a"
         className="bg-green p-20 hidden lg:block flex flex-col justify-center items-center">
-        <h2 className="text-xl text-accent font-bold mb-8 text-center">
+        <h2 className="text-xl text-white font-bold mb-8 text-center">
           Not quite sure?
         </h2>
         <p className="text-base text-white text-center mb-6">
