@@ -708,7 +708,7 @@ const Landing = () => {
       </div>
 
       {/*  --------------------------- FAQs  --------------------------- */}
-      <div id="faqs-five" className="mx-8 md:mx-20 lg:mx-80 my-40">
+      <div id="faqs-five" className="mx-8 md:mx-20 lg:mx-60 my-40">
         <h1 className="text-3xl text-green font-bold mb-12 text-center">
           FAQs
         </h1>
