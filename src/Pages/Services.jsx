@@ -1,10 +1,6 @@
 // REACT ROUTER DOM
 import { Link } from "react-router-dom";
 
-// IMAGES
-import fast from "../Assets/FastTrack.webp";
-import startup from "../Assets/Startup.webp";
-
 // ICONS
 import { FaArrowAltCircleRight } from "react-icons/fa";
 
@@ -36,7 +32,7 @@ const Services = () => {
           id="fasttrack"
           className="border-4 border-green p-6 sm:p-12 rounded-md mb-20">
           <img
-            src={fast}
+            src="./FastTrack.webp"
             alt="computer with clocks to show fast track build"
             className="w-48 m-auto"
           />
@@ -208,7 +204,7 @@ const Services = () => {
           id="fasttrack"
           className="border-4 border-green p-6 rounded-md mb-40 sm:p-12">
           <img
-            src={startup}
+            src="StartUp.webp"
             alt="computer with clocks to show fast track build"
             className="w-48 m-auto"
           />

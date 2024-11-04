@@ -30,6 +30,7 @@ const Book = () => {
           <InlineWidget url="https://calendly.com/jorvikwebdev" />
         </div>
 
+        {/* SOCIALS */}
         <div className="flex flex-col lg:flex-row justify-start lg:justify-center items-center text-white my-8 lg:mb-12 lg:col-start-1 lg:col-span-2 lg:-m-8">
           <div className="flex items-center bg-green px-8 py-4 xl:px-20 xl:py-6 xl:my-16 rounded-md ">
             <p className="md:text-md">
