@@ -15,6 +15,7 @@ import Freebies from "./Pages/Freebies";
 import Contact from "./Pages/Contact";
 import Book from "./Pages/Book";
 import Services from "./Pages/Services";
+import FaqsFull from "./Pages/FaqsFull";
 
 // ERROR AND HELPERS
 
@@ -26,6 +27,7 @@ const router = createBrowserRouter(
       <Route path="book" element={<Book />} />
       <Route path="contact" element={<Contact />} />
       <Route path="services" element={<Services />} />
+      <Route path="faqs-full" element={<FaqsFull />} />
     </Route>,
   ),
 );
