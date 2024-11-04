@@ -1,5 +1,395 @@
+// REACT ROUTER DOM
+import { Link } from "react-router-dom";
+
+// IMAGES
+import fast from "../Assets/FastTrack.webp";
+import startup from "../Assets/Startup.webp";
+
+// ICONS
+import { FaArrowAltCircleRight } from "react-icons/fa";
+
 const Services = () => {
-  return <div>Services</div>;
+  return (
+    <div id="services" className="pt-24 mx-6">
+      <h1 className="text-green text-5xl lg:text-3xl leading-snug font-bold mb-8 xl:mt-12 text-center md:text-left ">
+        Services
+      </h1>
+      <h2 className="text-base text-center mx-2 mb-12">
+        Here you can find a detailed look at our most common packages. <br />
+        <br />
+        However, if you cannot find what you&apos;re looking for or you&apos;re
+        unsure of which package would suit your business, we encourage you to
+        get in book a free consultation for a no obligation chat.
+        <br />
+        <br />
+        All packages can be paid in a way that suits you and your business needs
+        in the best way, but an up-front deposit is required before designing
+        can begin.
+      </h2>
+
+      {/* MOBILE */}
+      <div id="mobile">
+        {/* #01 - FAST TRACK */}
+        <div
+          id="fasttrack"
+          className="border-4 border-green p-6 rounded-md mb-20">
+          <img
+            src={fast}
+            alt="computer with clocks to show fast track build"
+            className="w-48 m-auto"
+          />
+          <h2 className="text-green font-bold text-3xl mt-6 text-center md:text-left ">
+            FastTrack Build
+          </h2>
+          <small className="text-black flex justify-end text-sm my-1 italic">
+            from £195
+          </small>
+
+          {/* IN THIS PACKAGE */}
+          <div id="package">
+            <h3 className="text-black font-bold text-md mt-8 mb-2">
+              Included in this package...
+            </h3>
+            <ul>
+              <div className="flex flex-row items-center mb-2">
+                <div>
+                  <FaArrowAltCircleRight className="text-green" />
+                </div>
+                <li className="ml-2 font-bold text-green">
+                  Up to 6 pages or sections
+                </li>{" "}
+              </div>
+
+              <div className="flex flex-row items-center mb-2">
+                <div>
+                  <FaArrowAltCircleRight className="text-green" />
+                </div>
+                <li className="ml-2 font-bold text-green">
+                  Modern, responsive design
+                </li>{" "}
+              </div>
+
+              <div className="flex flex-row items-start mb-2">
+                <div>
+                  <FaArrowAltCircleRight className="text-green mt-1" />
+                </div>
+                <li className="ml-2 font-bold text-green">
+                  Up to 5 stock photos can be used
+                </li>{" "}
+              </div>
+
+              <div className="flex flex-row items-start mb-2">
+                <div>
+                  <FaArrowAltCircleRight className="text-green mt-1" />
+                </div>
+                <li className="ml-2 font-bold text-green">
+                  Desktop and mobile navigation
+                </li>{" "}
+              </div>
+
+              <div className="flex flex-row items-center mb-2">
+                <div>
+                  <FaArrowAltCircleRight className="text-green mt-1" />
+                </div>
+                <li className="ml-2 font-bold text-green">Contact form</li>{" "}
+              </div>
+
+              <div className="flex flex-row items-center mb-2">
+                <div>
+                  <FaArrowAltCircleRight className="text-green" />
+                </div>
+                <li className="ml-2 font-bold text-green">
+                  Professional email address
+                </li>{" "}
+              </div>
+
+              <div className="flex flex-row items-start mb-2">
+                <div>
+                  <FaArrowAltCircleRight className="text-green mt-1" />
+                </div>
+                <li className="ml-2 font-bold text-green">
+                  On-page SEO and use of keywords and phrases
+                </li>{" "}
+              </div>
+
+              <div className="flex flex-row items-center mb-2">
+                <div>
+                  <FaArrowAltCircleRight className="text-green" />
+                </div>
+                <li className="ml-2 font-bold text-green">Domain set-up</li>{" "}
+              </div>
+
+              <div className="flex flex-row items-start mb-2">
+                <div>
+                  <FaArrowAltCircleRight className="text-green mt-1" />
+                </div>
+                <li className="ml-2 font-bold text-green">
+                  One year FREE hosting service
+                </li>{" "}
+              </div>
+            </ul>
+          </div>
+
+          {/* THIS IS FOR YOU IF... */}
+          <div id="for-you">
+            <h3 className="text-black font-bold text-md mt-8 mb-2">
+              This is for you, if...
+            </h3>
+            <ul className="disc-none">
+              <div className="flex flex-col mb-4">
+                <div className="flex flex-row items-center">
+                  <FaArrowAltCircleRight className="text-green" />
+                  <li className="ml-2 font-bold text-green">
+                    You need a website, now!
+                  </li>{" "}
+                </div>
+                <p className="italic text-sm my-2">
+                  You are looking to establish an online presence to get you
+                  started.
+                </p>
+              </div>
+
+              <div className="flex flex-col mb-4">
+                <div className="flex flex-row items-center">
+                  <FaArrowAltCircleRight className="text-green" />
+                  <li className="ml-2 font-bold text-green">
+                    Your needs are simple
+                  </li>{" "}
+                </div>
+                <p className="italic text-sm my-2">
+                  This means you do not require a booking system, calendar,
+                  blog, e-store etc etc.
+                </p>
+              </div>
+
+              <div className="flex flex-col mb-4">
+                <div className="flex flex-row items-center">
+                  <FaArrowAltCircleRight className="text-green" />
+                  <li className="ml-2 font-bold text-green">
+                    You have a basic logo
+                  </li>{" "}
+                </div>
+                <p className="italic text-sm my-2">
+                  To create an entirely new brand does cost extra, but we can
+                  work with a simple logo and create the look of the website
+                  from that.
+                </p>
+              </div>
+            </ul>
+          </div>
+
+          {/* C2A */}
+          <div
+            id="c2a"
+            className="flex flex-col items-center justify-center my-4">
+            <Link
+              to="../book"
+              className="bg-green text-white text-center text-sm px-16 py-4 rounded-md hover:bg-accent my-4">
+              <p>BOOK</p>
+            </Link>
+
+            <p className="text-md my-2">Not quite sure?</p>
+            <Link
+              to="contact"
+              className="bg-white flex text-black text-center text-sm px-4 py-2 rounded-md border-4 border-green hover:bg-accent hover:border-accent hover:text-white cursor-pointer">
+              <p> Get in touch</p>
+            </Link>
+          </div>
+        </div>
+
+        {/* #02 - SMALL BUSINESS */}
+        <div id="fasttrack" className="border-4 border-green p-6 rounded-md">
+          <img
+            src={startup}
+            alt="computer with clocks to show fast track build"
+            className="w-48 m-auto"
+          />
+          <h2 className="text-green font-bold text-3xl mt-6 text-center md:text-left ">
+            StartUp Build
+          </h2>
+          <small className="text-black flex justify-end text-sm my-1 italic">
+            from £1500
+          </small>
+
+          {/* IN THIS PACKAGE */}
+          <div id="package-start">
+            <h3 className="text-black font-bold text-md mt-8 mb-2">
+              Included in this package...
+            </h3>
+            <ul>
+              <div className="flex flex-row items-start mb-2">
+                <div>
+                  <FaArrowAltCircleRight className="text-green mt-1" />
+                </div>
+                <li className="ml-2 font-bold text-green">
+                  Unlimited amount of pages or sections
+                </li>{" "}
+              </div>
+
+              <div className="flex flex-row items-center mb-2">
+                <div>
+                  <FaArrowAltCircleRight className="text-green" />
+                </div>
+                <li className="ml-2 font-bold text-green">
+                  Modern, responsive design
+                </li>{" "}
+              </div>
+
+              <div className="flex flex-row items-start mb-2">
+                <div>
+                  <FaArrowAltCircleRight className="text-green mt-1" />
+                </div>
+                <li className="ml-2 font-bold text-green">
+                  Unlimited stock photo useage
+                </li>{" "}
+              </div>
+
+              <div className="flex flex-row items-start mb-2">
+                <div>
+                  <FaArrowAltCircleRight className="text-green mt-1" />
+                </div>
+                <li className="ml-2 font-bold text-green">
+                  Desktop and mobile navigation
+                </li>{" "}
+              </div>
+
+              <div className="flex flex-row items-center mb-2">
+                <div>
+                  <FaArrowAltCircleRight className="text-green mt-1" />
+                </div>
+                <li className="ml-2 font-bold text-green">Contact form</li>{" "}
+              </div>
+
+              <div className="flex flex-row items-center mb-2">
+                <div>
+                  <FaArrowAltCircleRight className="text-green" />
+                </div>
+                <li className="ml-2 font-bold text-green">
+                  Professional email address
+                </li>{" "}
+              </div>
+
+              <div className="flex flex-row items-start mb-2">
+                <div>
+                  <FaArrowAltCircleRight className="text-green mt-1" />
+                </div>
+                <li className="ml-2 font-bold text-green">
+                  On-page SEO and use of keywords and phrases
+                </li>{" "}
+              </div>
+
+              <div className="flex flex-row items-start mb-2">
+                <div>
+                  <FaArrowAltCircleRight className="text-green mt-1" />
+                </div>
+                <li className="ml-2 font-bold text-green">
+                  Technical SEO included behind the scenes
+                </li>{" "}
+              </div>
+
+              <div className="flex flex-row items-start mb-2">
+                <div>
+                  <FaArrowAltCircleRight className="text-green mt-1" />
+                </div>
+                <li className="ml-2 font-bold text-green">
+                  SEO &quot;crawl&quot; reports for 2 months
+                </li>{" "}
+              </div>
+
+              <div className="flex flex-row items-center mb-2">
+                <div>
+                  <FaArrowAltCircleRight className="text-green" />
+                </div>
+                <li className="ml-2 font-bold text-green">Domain set-up</li>{" "}
+              </div>
+
+              <div className="flex flex-row items-start mb-2">
+                <div>
+                  <FaArrowAltCircleRight className="text-green mt-1" />
+                </div>
+                <li className="ml-2 font-bold text-green">
+                  One year FREE hosting service
+                </li>{" "}
+              </div>
+            </ul>
+          </div>
+
+          {/* THIS IS FOR YOU IF... */}
+          <div id="for-you-start">
+            <h3 className="text-black font-bold text-md mt-8 mb-2">
+              This is for you, if...
+            </h3>
+            <ul className="disc-none">
+              <div className="flex flex-col mb-4">
+                <div className="flex flex-row items-start">
+                  <div>
+                    <FaArrowAltCircleRight className="text-green mt-1" />
+                  </div>
+                  <li className="ml-2 font-bold text-green">
+                    You are looking to grow your business
+                  </li>{" "}
+                </div>
+                <p className="italic text-sm my-2">
+                  You want to start climbing the search rankings in order to
+                  increase sales.
+                </p>
+              </div>
+
+              <div className="flex flex-col mb-4">
+                <div className="flex flex-row items-start">
+                  <div>
+                    <FaArrowAltCircleRight className="text-green mt-1" />
+                  </div>
+                  <li className="ml-2 font-bold text-green">
+                    Your website requires extra features
+                  </li>{" "}
+                </div>
+                <p className="italic text-sm my-2">
+                  This could include a booking system or a blog to keep your
+                  page active, for example.
+                </p>
+              </div>
+
+              <div className="flex flex-col mb-4">
+                <div className="flex flex-row items-start">
+                  <div>
+                    <FaArrowAltCircleRight className="text-green mt-1" />
+                  </div>
+                  <li className="ml-2 font-bold text-green">
+                    You want to challenge your local and national competitors
+                  </li>{" "}
+                </div>
+                <p className="italic text-sm my-2">
+                  Using our SEO tools, we will build a top spec website to
+                  fulfil Google&apos;s criteria to improve your rankings. We
+                  will also guide you with optimal content to keep your page
+                  active.
+                </p>
+              </div>
+            </ul>
+          </div>
+
+          {/* C2A */}
+          <div
+            id="c2a-start"
+            className="flex flex-col items-center justify-center my-4">
+            <Link
+              to="../book"
+              className="bg-green text-white text-center text-sm px-16 py-4 rounded-md hover:bg-accent my-4">
+              <p>BOOK</p>
+            </Link>
+
+            <p className="text-md my-2">Not quite sure?</p>
+            <Link
+              to="contact"
+              className="bg-white flex text-black text-center text-sm px-4 py-2 rounded-md border-4 border-green hover:bg-accent hover:border-accent hover:text-white cursor-pointer">
+              <p> Get in touch</p>
+            </Link>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Services;

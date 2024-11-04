@@ -14,6 +14,7 @@ import Landing from "./Pages/Landing";
 import Freebies from "./Pages/Freebies";
 import Contact from "./Pages/Contact";
 import Book from "./Pages/Book";
+import Services from "./Pages/Services";
 
 // ERROR AND HELPERS
 
@@ -24,6 +25,7 @@ const router = createBrowserRouter(
       <Route path="freebies" element={<Freebies />} />
       <Route path="book" element={<Book />} />
       <Route path="contact" element={<Contact />} />
+      <Route path="services" element={<Services />} />
     </Route>,
   ),
 );
