@@ -137,11 +137,11 @@ const RootNav = () => {
           <div className="">
             {/* <Link to="freebies" className={desktopStyles.link}>
               FREEBIES
-            </Link>
+            </Link> */}
             <Link to="services" className={desktopStyles.link}>
               SERVICES
             </Link>
-            <Link to="faqs" className={desktopStyles.link}>
+            {/* <Link to="faqs" className={desktopStyles.link}>
               FAQs
             </Link> */}
 
