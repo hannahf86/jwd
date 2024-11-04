@@ -723,6 +723,24 @@ const Landing = () => {
             </h3>
           </Link>
         </div>
+
+        {/* DESKTOP C2A */}
+        <div
+          id="desktop-c2a"
+          className="bg-green p-8 lg:p-20 mt-12 flex flex-col justify-center items-center">
+          <h2 className="text-xl text-white font-bold mb-8 text-center">
+            Not quite sure?
+          </h2>
+          <p className="text-base text-white text-center mb-6">
+            If you don&apos;t know which package your website falls into, or you
+            think it falls somewhere in between, please do get in touch.
+          </p>
+          <Link to="contact">
+            <p className="bg-blue text-white text-md text-center px-8 lg:mx-32 py-4 mt-12 rounded-md hover:bg-accent">
+              Get in touch
+            </p>
+          </Link>
+        </div>
       </div>
 
       {/* BOOKINGS */}
