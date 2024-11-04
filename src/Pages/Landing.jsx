@@ -163,7 +163,7 @@ const Landing = () => {
           {/* MOBILE C2A BUTTONS */}
           <div className="flex flex-col sm:flex-row justify-center mt-8">
             <div className="bg-green text-white flex self-center text-center text-sm px-12 py-2 mx-6 rounded-md hover:bg-accent cursor-pointer">
-              <Link to="appointments">
+              <Link to="bookings">
                 <p>
                   BOOK A FREE <br />
                   CONSULTATION
@@ -172,7 +172,7 @@ const Landing = () => {
             </div>
 
             <div className="bg-white flex self-center text-black text-center mt-6 sm:mt-0 text-sm px-12 py-4 rounded-md border-4 border-green hover:bg-accent hover:border-accent hover:text-white cursor-pointer">
-              <Link to="appointments">
+              <Link to="services">
                 <p>LEARN MORE</p>
               </Link>
             </div>
@@ -245,7 +245,7 @@ const Landing = () => {
             {/* DESKTOP C2A BUTTONS */}
             <div className="hidden lg:block lg:flex lg:flex-row my-8 lg:justify-end xl:justify-center xl:">
               <div className="bg-green text-white flex self-center text-center text-sm px-20 lg:px-8 py-2 rounded-md hover:bg-accent cursor-pointer">
-                <Link to="appointments">
+                <Link to="book">
                   <p>
                     BOOK A FREE <br />
                     CONSULTATION

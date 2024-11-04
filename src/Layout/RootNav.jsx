@@ -135,7 +135,7 @@ const RootNav = () => {
 
           {/* LINKS */}
           <div className="">
-            <Link to="freebies" className={desktopStyles.link}>
+            {/* <Link to="freebies" className={desktopStyles.link}>
               FREEBIES
             </Link>
             <Link to="services" className={desktopStyles.link}>
@@ -143,7 +143,7 @@ const RootNav = () => {
             </Link>
             <Link to="faqs" className={desktopStyles.link}>
               FAQs
-            </Link>
+            </Link> */}
 
             <Link to="contact" className={desktopStyles.button}>
               BOOK
