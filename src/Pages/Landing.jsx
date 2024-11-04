@@ -179,7 +179,7 @@ const Landing = () => {
           </div>
         </div>
 
-        {/* DESKTOP */}
+        {/* ------------- DESKTOP ------------- */}
         <div
           id="landing-grid"
           className="hidden lg:block lg:grid lg:grid-cols-2 lg:grid-rows-1">

@@ -10,44 +10,39 @@ import { FaInstagramSquare } from "react-icons/fa";
 
 const Book = () => {
   return (
-    <div id="book">
-      <div id="bookings" className="mx-4 md:my-40 md:mx-16">
-        <div className="grid md:grid-cols-2 md:gap-8 lg:gap-20">
-          {/* INFO */}
-          <div className="bg-green col-start-1 px-8 py-12 mb-8 md:px-12 md:py-32 self-center">
-            <h1 className="text-3xl text-white font-bold mb-6">
-              Book an appointment
-            </h1>
-            <h2 className="text-lg md:text-base text-white mb-6">
-              Schedule a free, no obligation, no pressure, all chill phone call
-              or DM chat to find out how we can help you
-            </h2>
+    <div
+      id="book"
+      className="mx-4 pt-32 lg:mt-20 lg:mb-12 xl:mt-20 xl:mb-20 md:mx-16">
+      <div className="lg:grid grid-cols-2 lg:gap-20">
+        {/* INFO */}
+        <div className="bg-green lg:col-start-1 px-8 lg:px-6 pt-12 lg:pt-40 xl:pb-44 mb-8 md:px-12 ">
+          <h1 className="text-4xl sm:text-3xl leading-tight text-white font-bold mb-6">
+            Book an appointment
+          </h1>
+          <h2 className="text-lg md:text-base text-white ">
+            Schedule a free, no obligation, no pressure, all chill phone call or
+            DM chat to find out how we can help you
+          </h2>
+        </div>
 
-            <div className="flex justify-start items-center text-blue mb-8">
-              <Link
-                to="../contact"
-                className="bg-blue text-white flex w-40 text-center text-sm px-12 py-3 rounded-md hover:bg-accent cursor-pointer">
-                <p>Email Us</p>
-              </Link>
-              <div className="flex items-center bg-white px-2 py-1 rounded-md ml-6">
-                <p>Feel free to DM us on either of our socials</p>
-                <Link
-                  to="https://www.facebook.com/profile.php?id=61562515362932"
-                  target="_blank">
-                  <FaFacebookSquare size={35} className="ml-6" />
-                </Link>
-                <Link
-                  to="https://www.instagram.com/jorvikwebdev/"
-                  target="_blank">
-                  <FaInstagramSquare size={35} className="mx-6 " />
-                </Link>
-              </div>
-            </div>
-          </div>
+        {/* WIDGET */}
+        <div className="col-start-1 md:col-start-2 sm:-mt-12 lg:mt-3 xl:mt-20">
+          <InlineWidget url="https://calendly.com/jorvikwebdev" />
+        </div>
 
-          {/* WIDGET */}
-          <div className="col-start-1 md:col-start-2">
-            <InlineWidget url="https://calendly.com/jorvikwebdev" />
+        <div className="flex flex-col lg:flex-row justify-start lg:justify-center items-center text-white my-8 lg:mb-12 lg:col-start-1 lg:col-span-2 lg:-m-8">
+          <div className="flex items-center bg-green px-8 py-4 xl:px-20 xl:py-6 xl:my-16 rounded-md ">
+            <p className="md:text-md">
+              Feel free to DM us on either of our socials
+            </p>
+            <Link
+              to="https://www.facebook.com/profile.php?id=61562515362932"
+              target="_blank">
+              <FaFacebookSquare size={35} className="ml-6" />
+            </Link>
+            <Link to="https://www.instagram.com/jorvikwebdev/" target="_blank">
+              <FaInstagramSquare size={35} className="mx-6 " />
+            </Link>
           </div>
         </div>
       </div>

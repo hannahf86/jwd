@@ -88,7 +88,9 @@ const Contact = () => {
       id="contact">
       <div className={layoutStyles.logo}>
         <img src="/logo.png" alt="jorvik web dev logo" />
-        <motion.h1 variants={variants} className={textStyles.title}>
+        <motion.h1
+          variants={variants}
+          className="text-green text-5xl lg:text-3xl leading-snug font-bold mb-8 text-center ">
           Contact
         </motion.h1>
         <motion.h2 variants={variants} className={textStyles.desc}>

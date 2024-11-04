@@ -415,7 +415,7 @@ const Services = () => {
           Prices are ballparks, not set in stone, and can be negotiated
           depending on your needs.
         </p>
-        <Link to="contact">
+        <Link to="../contact">
           <p className="bg-blue text-white text-md text-center px-16 mx-60 xl:mx-80 py-4 mt-12 rounded-md hover:bg-accent">
             Get in touch
           </p>
