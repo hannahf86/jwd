@@ -125,8 +125,8 @@ const RootNav = () => {
 
       {/* DESKTOP NAV */}
       <nav id="desktop-nav" className={desktopStyles.header}>
-        <div className="flex items-center justify-between mx-16">
-          <div className="flex items-center ">
+        <div className="flex items-center justify-between px-16 shadow-md">
+          <div className="flex items-center pb-6">
             <Link to="/">
               <img src={navLogo} width={60} alt="jorvik web dev logo" />
             </Link>
@@ -134,7 +134,7 @@ const RootNav = () => {
           </div>
 
           {/* LINKS */}
-          <div className="">
+          <div className="pb-6">
             {/* <Link to="freebies" className={desktopStyles.link}>
               FREEBIES
             </Link> */}
