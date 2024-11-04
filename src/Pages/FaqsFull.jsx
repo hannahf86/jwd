@@ -1,11 +1,13 @@
 const FaqsFull = () => {
   return (
-    <div id="faqs-full" className="pt-52">
-      <h1 className="text-green text-5xl lg:text-3xl leading-snug font-bold mb-20 text-center ">
+    <div
+      id="faqs-full"
+      className="pt-24 lg:pt-52 mx-8 md:mx-12 lg:mx-20 xl:mx-60 mb-40">
+      <h1 className="text-green text-5xl sm:text-3xl leading-snug font-bold mb-12 lg:mb-20 text-center ">
         Frequently Asked Questions
       </h1>
 
-      <div className="mx-6 lg:mx-20 xl:mx-60 mb-40">
+      <div>
         <h3 className="text-lg mb-2 font-bold">
           How long does it take to design a website?
         </h3>

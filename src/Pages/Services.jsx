@@ -6,7 +6,7 @@ import { FaArrowAltCircleRight } from "react-icons/fa";
 
 const Services = () => {
   return (
-    <div id="services" className="pt-24 lg:pt-32 mx-6 sm:mx-16 lg:mx-8">
+    <div id="services" className="pt-24 lg:pt-40 mx-6 sm:mx-16 lg:mx-8">
       <h1 className="text-green text-5xl lg:text-3xl leading-snug font-bold mb-8 text-center ">
         Services
       </h1>
