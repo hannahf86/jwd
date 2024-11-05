@@ -39,7 +39,7 @@ const Contact = () => {
     formContainer: "flex flex-col justify-center items-center w-full mb-12",
     input: "my-2 py-2 pl-2 border-4 border-green rounded-md lg:w-2/6 w-4/6",
     phoneSVG: "text-accent absolute m-auto z-10",
-    logo: "flex flex-col justify-center items-center pt-24",
+    logo: "flex flex-col justify-center items-center pt-24 lg:pt-40",
   };
 
   const textStyles = {
@@ -90,10 +90,10 @@ const Contact = () => {
       whileInView="animate"
       id="contact">
       <div className={layoutStyles.logo}>
-        <img src={navLogo} alt="jorvik web dev logo" />
+        <img src={navLogo} alt="jorvik web dev logo" className="mb-8" />
         <motion.h1
           variants={variants}
-          className="text-green text-5xl lg:text-3xl leading-snug font-bold mb-8 text-center ">
+          className="text-green text-5xl lg:text-4xl leading-snug font-bold mb-8 text-center ">
           Contact
         </motion.h1>
         <motion.h2 variants={variants} className={textStyles.desc}>
