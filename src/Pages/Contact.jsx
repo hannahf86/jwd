@@ -10,6 +10,9 @@ import emailjs from "@emailjs/browser";
 // TOAST
 import toast, { Toaster } from "react-hot-toast";
 
+// IMAGES
+import navLogo from "../Assets/navLogo.webp";
+
 const variants = {
   initial: {
     y: 500,
@@ -87,7 +90,7 @@ const Contact = () => {
       whileInView="animate"
       id="contact">
       <div className={layoutStyles.logo}>
-        <img src="/logo.png" alt="jorvik web dev logo" />
+        <img src={navLogo} alt="jorvik web dev logo" />
         <motion.h1
           variants={variants}
           className="text-green text-5xl lg:text-3xl leading-snug font-bold mb-8 text-center ">

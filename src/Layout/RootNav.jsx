@@ -90,12 +90,12 @@ const RootNav = () => {
               </span>
             </Link>
 
-            <Link to="about">
+            {/* <Link to="about">
               <span className={mobileStyles.menuItem}>
                 <HiBookOpen className={mobileStyles.menuIcon} />
                 <p className="text-sm sm:text-md">Who are we?</p>
               </span>
-            </Link>
+            </Link> */}
 
             <Link to="freebies">
               <span className={mobileStyles.menuItem}>
@@ -104,7 +104,7 @@ const RootNav = () => {
               </span>
             </Link>
 
-            <Link to="faqs">
+            <Link to="faqs-full">
               <span className={mobileStyles.menuItem}>
                 <HiBookOpen className={mobileStyles.menuIcon} />
                 <p className="text-sm sm:text-md">FAQs</p>

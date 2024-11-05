@@ -418,9 +418,9 @@ const Landing = () => {
             reviews, let us handle your online journey so you can focus on what
             matters to you the most!
           </p>
-          <Link to="about" className="cursor-point text-right">
+          {/* <Link to="about" className="cursor-point text-right">
             <p className="my-6 underline text-black">Read our full story...</p>
-          </Link>
+          </Link> */}
         </div>
       </div>
 
@@ -630,7 +630,7 @@ const Landing = () => {
       </div>
 
       {/*  --------------------------- REVIEWS  --------------------------- */}
-      <div id="reviews" className="bg-green mx-8 p-4 md:p-12">
+      <div id="reviews" className="bg-green mx-8 p-8 md:p-12">
         <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 md:gap-x-12">
           {/* COL 01 */}
           <div className="col-start-1 md:row-span-2 justify-start content-start md:mt-60">
@@ -650,7 +650,7 @@ const Landing = () => {
           {/* COL 02 */}
           <div className="col-start-1 md:col-start-2 md:row-start-1 ">
             {/* REVIEW 01*/}
-            <div className="flex text-white justify-center md:mt-20">
+            <div className="flex text-white justify-center md:mt-20 mt-4 mb-12">
               <FaQuoteLeft size={20} className="mr-2" />
               <h1 className="text-lg text-center font-bold bg-accent ">
                 Very friendly and thorough
@@ -679,7 +679,7 @@ const Landing = () => {
           </div>
 
           {/* REVIEW 02*/}
-          <div className="col-start-1 md:col-start-2 row-start-2 pt-12 ">
+          <div className="col-start-1 md:col-start-2 row-start-2 py-12 ">
             <div className="flex text-white justify-center">
               <FaQuoteLeft size={20} className="mr-2" />
               <h1 className="text-lg text-center font-bold bg-accent p-2">
@@ -717,28 +717,10 @@ const Landing = () => {
         </h2>
         <Faqs />
         <div className="mt-12 text-right w-fit">
-          <Link to="faqs">
+          <Link to="faqs-full">
             <h3 className="text-white bg-blue p-4 tracking-widest">
               FULL LIST OF FAQs
             </h3>
-          </Link>
-        </div>
-
-        {/* DESKTOP C2A */}
-        <div
-          id="desktop-c2a"
-          className="bg-green p-8 lg:p-20 mt-12 flex flex-col justify-center items-center">
-          <h2 className="text-xl text-white font-bold mb-8 text-center">
-            Not quite sure?
-          </h2>
-          <p className="text-base text-white text-center mb-6">
-            If you don&apos;t know which package your website falls into, or you
-            think it falls somewhere in between, please do get in touch.
-          </p>
-          <Link to="contact">
-            <p className="bg-blue text-white text-md text-center px-8 lg:mx-32 py-4 mt-12 rounded-md hover:bg-accent">
-              Get in touch
-            </p>
           </Link>
         </div>
       </div>

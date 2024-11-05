@@ -15,7 +15,7 @@ const Book = () => {
       className="mx-4 pt-32 lg:mt-20 lg:mb-12 xl:mt-20 xl:mb-20 md:mx-16">
       <div className="lg:grid grid-cols-2 lg:gap-20">
         {/* INFO */}
-        <div className="bg-green lg:col-start-1 px-8 lg:px-6 pt-12 lg:pt-40 xl:pb-44 mb-8 md:px-12 ">
+        <div className="bg-green lg:col-start-1 p-8 lg:px-6 pt-12 lg:pt-40 xl:pb-44 mb-8 md:px-12 ">
           <h1 className="text-4xl sm:text-3xl leading-tight text-white font-bold mb-6">
             Book an appointment
           </h1>
