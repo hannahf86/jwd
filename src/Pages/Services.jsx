@@ -3,27 +3,31 @@ import { Link } from "react-router-dom";
 
 // ICONS
 import { FaArrowAltCircleRight } from "react-icons/fa";
+import { MdDraw } from "react-icons/md";
+import { BsClipboard2DataFill } from "react-icons/bs";
+import { HiDesktopComputer } from "react-icons/hi";
+import { HiMiniPresentationChartBar } from "react-icons/hi2";
+import { FaServer } from "react-icons/fa6";
 
 const Services = () => {
   return (
-    <div id="services" className="pt-24 lg:pt-40 mx-6 sm:mx-16 lg:mx-8">
+    <div id="services" className="pt-24 lg:pt-40 mx-6 sm:mx-16 lg:mx-20">
       <h1 className="text-green text-5xl lg:text-3xl leading-snug font-bold mb-8 text-center ">
         Services
       </h1>
-      <h2 className="text-base text-center mx-2 lg:mx-12 mb-12">
+      <h2 className="text-base text-center mx-2 lg:mx-40 mb-12">
         Here you can find a detailed look at our most common packages. <br />
         <br />
         However, if you cannot find what you&apos;re looking for or you&apos;re
-        unsure of which package would suit your business, we encourage you to
-        get in book a free consultation for a no obligation chat.
+        unsure which package would suit your business, we encourage you to book
+        a free consultation for a no obligation chat.
         <br />
         <br />
         Prices are ballparks; they are not set in stone, so there is wiggle room
         depending on your needs. <br />
         <br />
-        All packages can be paid in a way that suits you and your business needs
-        in the best way, but an up-front deposit is required before designing
-        can begin.
+        All packages can be paid in a way that suits you and your business in
+        the best way, but an up-front deposit is required before we can begin.
       </h2>
 
       <div className="xs:mx-4 sm:mx-8 lg:mx-2 lg:grid grid-cols-2 gap-12 xl:gap-32 xl:mx-24 justify-start">
@@ -202,7 +206,7 @@ const Services = () => {
         {/* #02 - SMALL BUSINESS */}
         <div
           id="fasttrack"
-          className="border-4 border-green p-6 rounded-md mb-40 sm:p-12">
+          className="border-4 border-green p-6 rounded-md mb-20 sm:p-12">
           <img
             src="StartUp.webp"
             alt="computer with clocks to show fast track build"
@@ -392,6 +396,66 @@ const Services = () => {
               to="contact"
               className="lg:hidden bg-white flex text-black text-center text-sm px-4 py-2 sm:px-6 sm:py-3 rounded-md border-4 border-green hover:bg-accent hover:border-accent hover:text-white cursor-pointer">
               <p> Get in touch</p>
+            </Link>
+          </div>
+        </div>
+
+        {/* SERVICES */}
+        <div className="mb-40">
+          <h2 className="text-3xl font-bold text-green mb-4 text-center">
+            Other Services
+          </h2>
+
+          <p className="text-black mx-8 text-center mb-4">
+            Below is a complete list of our current services. <br />
+            <br />
+            Select any to find out more details.
+          </p>
+
+          <div className="list-none flex flex-wrap justify-center border-4 border-green rounded-md py-1 mb-12 xs:mx-4">
+            <Link
+              to="../ui-design"
+              className="text-green rounded-md hover:bg-green hover:text-white">
+              <div className="flex items-center mx-5 ">
+                <MdDraw size={22} className="mr-2" />
+                <li className="text-sm my-3 font-bold ">UI Design</li>
+              </div>
+            </Link>
+
+            <Link
+              to="../ux-research"
+              className="text-green rounded-md hover:bg-green hover:text-white">
+              <div className="flex items-center mx-5">
+                <BsClipboard2DataFill size={18} className="mr-2" />
+                <li className="text-sm my-3 font-bold ">UX Research</li>
+              </div>
+            </Link>
+
+            <Link
+              to="../hosting"
+              className="text-green rounded-md hover:bg-green hover:text-white">
+              <div className="flex items-center mx-5">
+                <FaServer size={18} className="mr-2" />
+                <li className="text-sm my-3 font-bold ">Hosting</li>
+              </div>{" "}
+            </Link>
+
+            <Link
+              to="../development"
+              className="text-green rounded-md hover:bg-green hover:text-white">
+              <div className="flex items-center mx-5">
+                <HiDesktopComputer size={22} className="mr-2 " />
+                <li className="text-sm my-3 font-bold ">Development</li>
+              </div>{" "}
+            </Link>
+
+            <Link
+              to="../seo-services"
+              className="text-green rounded-md hover:bg-green hover:text-white">
+              <div className="flex items-center mx-5">
+                <HiMiniPresentationChartBar size={20} className="mr-2 " />
+                <li className="text-sm my-3 font-bold">SEO Services</li>
+              </div>
             </Link>
           </div>
         </div>

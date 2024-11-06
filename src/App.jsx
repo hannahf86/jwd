@@ -16,6 +16,11 @@ import Contact from "./Pages/Contact";
 import Book from "./Pages/Book";
 import Services from "./Pages/Services";
 import FaqsFull from "./Pages/FaqsFull";
+import UIDesign from "./Pages/Services/UIDesign";
+import UXResearch from "./Pages/Services/UXResearch";
+import Hosting from "./Pages/Services/Hosting";
+import Development from "./Pages/Services/Development";
+import SEO from "./Pages/Services/SEO";
 
 // ERROR AND HELPERS
 
@@ -26,8 +31,14 @@ const router = createBrowserRouter(
       <Route path="freebies" element={<Freebies />} />
       <Route path="book" element={<Book />} />
       <Route path="contact" element={<Contact />} />
-      <Route path="services" element={<Services />} />
       <Route path="faqs-full" element={<FaqsFull />} />
+      <Route path="services" element={<Services />} />
+      {/* SERVICES */}
+      <Route path="ui-design" element={<UIDesign />} />
+      <Route path="ux-research" element={<UXResearch />} />
+      <Route path="hosting" element={<Hosting />} />
+      <Route path="development" element={<Development />} />
+      <Route path="seo-services" element={<SEO />} />
     </Route>,
   ),
 );
