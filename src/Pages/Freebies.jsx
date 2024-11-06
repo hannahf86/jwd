@@ -1,5 +1,5 @@
 // COMPONENTS
-import ComingSoon from "./ComingSoon";
+// import ComingSoon from "./ComingSoon";
 
 // IMAGES
 import topTips from "../Assets/topTips.png";
@@ -33,7 +33,10 @@ const Freebies = () => {
             alt="cover for free pdf with tips on local seo"
             className="w-80 self-center border-2 border-green"
           />
-          <FetchPdf />
+          <FetchPdf
+            pdfUrl={"../Assets/PDFs/TopTips.pdf"}
+            filename="top-5-seo-tips.pdf"
+          />
         </div>
       </div>
     </div>
