@@ -24,6 +24,8 @@ import Seo from "./Pages/Services/SEO";
 
 // ERROR AND HELPERS
 
+// TECHNICAL
+
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootNav />}>
@@ -42,7 +44,13 @@ const router = createBrowserRouter(
       <Route path="seo-services" element={<Seo />} />
 
       {/* TECHNICAL */}
-
+      <Route
+        path="/sitemap.xml"
+        element={() => {
+          window.location.href = "/sitemap.xml";
+          return null;
+        }}
+      />
       {/* ERROR HANDLING */}
     </Route>,
   ),

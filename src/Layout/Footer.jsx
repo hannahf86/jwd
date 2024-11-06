@@ -38,9 +38,9 @@ const Footer = () => {
         </div>
       </div>
       <div className="bg-green h-32 w-screen px-40 py-8">
-        <a href="sitemap.xml">
+        <Link to="/sitemap.xml">
           <small className="text-white text-sm tracking-widest">SITEMAP</small>
-        </a>
+        </Link>
       </div>
     </div>
   );
