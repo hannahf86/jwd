@@ -1,0 +1,9 @@
+# https://www.jorvikweb.dev/
+User-agent: *
+Allow: /
+
+# Allow all bots to crawl the site
+Sitemap: https://www.jorvikweb.dev/sitemap.xml
+
+# Common crawl rate control
+Crawl-delay: 10
