@@ -37,7 +37,11 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="bg-green h-32 w-screen"></div>
+      <div className="bg-green h-32 w-screen p-8">
+        {/* <Link to="sitemap.xml">
+          <small className="text-white text-sm tracking-widest">SITEMAP</small>
+        </Link> */}
+      </div>
     </div>
   );
 };
