@@ -30,7 +30,7 @@ const Services = () => {
         the best way, but an up-front deposit is required before we can begin.
       </h2>
 
-      <div className="xs:mx-4 sm:mx-8 lg:mx-2 lg:grid grid-cols-2 grid-rows-2 gap-x-12 xl:gap-x-32 xl:mx-24 justify-start">
+      <div className="xs:mx-4 sm:mx-8 lg:mx-2 lg:grid grid-cols-2 gap-x-12 xl:gap-x-32 xl:mx-24 justify-start ">
         {/* #01 - FAST TRACK */}
         <div
           id="fasttrack"
@@ -206,7 +206,7 @@ const Services = () => {
         </div>
 
         {/* SERVICES */}
-        <div className="mb-40 lg:col-start-1 lg:row-start-2 lg:col-span-2">
+        <div className="lg:col-start-1 lg:row-start-2 lg:col-span-2 ">
           <h2 className="text-3xl font-bold text-green mb-8 text-left">
             Other Services
           </h2>
