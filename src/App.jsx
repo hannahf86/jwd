@@ -33,12 +33,17 @@ const router = createBrowserRouter(
       <Route path="contact" element={<Contact />} />
       <Route path="faqs-full" element={<FaqsFull />} />
       <Route path="services" element={<Services />} />
+
       {/* SERVICES */}
       <Route path="ui-design" element={<UIDesign />} />
       <Route path="ux-research" element={<UXResearch />} />
       <Route path="hosting" element={<Hosting />} />
       <Route path="development" element={<Development />} />
       <Route path="seo-services" element={<Seo />} />
+
+      {/* TECHNICAL */}
+
+      {/* ERROR HANDLING */}
     </Route>,
   ),
 );

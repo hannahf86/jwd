@@ -37,10 +37,10 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="bg-green h-32 w-screen p-8">
-        {/* <Link to="sitemap.xml">
+      <div className="bg-green h-32 w-screen px-40 py-8">
+        <a href="sitemap.xml">
           <small className="text-white text-sm tracking-widest">SITEMAP</small>
-        </Link> */}
+        </a>
       </div>
     </div>
   );
