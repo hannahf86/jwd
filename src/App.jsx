@@ -20,7 +20,7 @@ import UIDesign from "./Pages/Services/UIDesign";
 import UXResearch from "./Pages/Services/UXResearch";
 import Hosting from "./Pages/Services/Hosting";
 import Development from "./Pages/Services/Development";
-import SEO from "./Pages/Services/SEO";
+import Seo from "./Pages/Services/SEO";
 
 // ERROR AND HELPERS
 
@@ -38,7 +38,7 @@ const router = createBrowserRouter(
       <Route path="ux-research" element={<UXResearch />} />
       <Route path="hosting" element={<Hosting />} />
       <Route path="development" element={<Development />} />
-      <Route path="seo-services" element={<SEO />} />
+      <Route path="seo-services" element={<Seo />} />
     </Route>,
   ),
 );
