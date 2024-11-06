@@ -6,11 +6,10 @@ import topTips from "../Assets/PDFs/TopTips.pdf";
 
 const FetchPdf = () => {
   const onButtonClick = () => {
-    const url = { topTips };
-    fetch(url)
+    fetch("../Assets/PDFs/TopTips.pdf")
       .then((response) => response.blob())
       .then((blob) => {
-        const file = new File([blob], "seo-top-tips.pdf", {
+        const file = new File([blob], "seo-top-5-tips.pdf", {
           type: "application/pdf",
         });
         const fileURL = URL.createObjectURL(file);

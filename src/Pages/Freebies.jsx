@@ -13,10 +13,10 @@ const Freebies = () => {
       <h1 className="text-3xl text-green font-bold mb-6 md:mb-8 pt-40 text-center">
         Freebies
       </h1>
-      <ComingSoon />
+      {/* <ComingSoon /> */}
       <div className="lg:mx-40 flex bg-white lg:py-8">
         {/* #01 */}
-        {/* <div className="flex flex-col">
+        <div className="flex flex-col">
           <h3 className="text-blue font-bold text-center text-base mb-2 underline">
             #01
           </h3>
@@ -34,7 +34,7 @@ const Freebies = () => {
             className="w-80 self-center border-2 border-green"
           />
           <FetchPdf />
-        </div> */}
+        </div>
       </div>
     </div>
   );
