@@ -3,20 +3,9 @@
 // REACT
 import { useState } from "react";
 
-// ICONS
-
-// FILES
-// import topTips from "../Assets/PDFs/TopTips.pdf";
-
 const FetchPdf = ({ pdfUrl, filename }) => {
-  const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState(null);
-
   // fetch pdf
   const onButtonClick = () => {
-    setIsLoading(true);
-    setError(null);
-
     fetch(pdfUrl)
       .then((response) => response.blob())
       .then((blob) => {
@@ -41,12 +30,10 @@ const FetchPdf = ({ pdfUrl, filename }) => {
 
   return (
     <div>
-      <button onClick={onButtonClick}>
-        {
-          <p className="text-white bg-blue p-4 tracking-widest text-center mx-20 mt-8 hover:bg-accent">
-            DOWNLOAD FOR FREE
-          </p>
-        }
+      <button
+        onClick={onButtonClick}
+        className="text-white bg-blue p-4 tracking-widest text-center mx-20 mt-8 hover:bg-accent">
+        DOWNLOAD FOR FREE
       </button>
     </div>
   );
