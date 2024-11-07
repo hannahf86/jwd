@@ -21,6 +21,7 @@ import UXResearch from "./Pages/Services/UXResearch";
 import Hosting from "./Pages/Services/Hosting";
 import Development from "./Pages/Services/Development";
 import Seo from "./Pages/Services/SEO";
+import PrivacyPolicy from "./Pages/Security/PrivacyPolicy";
 
 // ERROR AND HELPERS
 
@@ -43,7 +44,7 @@ const router = createBrowserRouter(
       <Route path="development" element={<Development />} />
       <Route path="seo-services" element={<Seo />} />
 
-      {/* TECHNICAL */}
+      {/* TECHNICAL & Security */}
       <Route
         path="/sitemap.xml"
         element={() => {
@@ -51,6 +52,8 @@ const router = createBrowserRouter(
           return null;
         }}
       />
+
+      <Route path="privacy-policy" element={<PrivacyPolicy />} />
       {/* ERROR HANDLING */}
     </Route>,
   ),
