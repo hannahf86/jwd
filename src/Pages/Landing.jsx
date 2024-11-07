@@ -170,20 +170,18 @@ const Landing = () => {
         </div>
 
         {/* ------------- DESKTOP ------------- */}
-        <div
-          id="landing-grid"
-          className="hidden lg:grid lg:grid-cols-2 lg:grid-rows-1">
+        <div id="landing-grid" className="hidden lg:grid lg:grid-cols-2  ">
           {/* COL 01 */}
-          <h1 className="text-green text-5xl lg:text-3xl leading-snug font-bold my-8 xl:mt-12 text-center md:text-left lg:col-start-1 lg:row-start-1 ">
+          <h1 className="text-green text-5xl lg:text-3xl leading-snug font-bold my-8 text-center md:text-left lg:col-start-1 lg:row-start-1 ">
             Building high performance, custom websites
           </h1>
 
-          <h2 className="text-blue font-bold text-lg my-8 lg:pt-56 xl:pt-60 text-center md:text-left lg:col-start-1 lg:row-start-1 ">
+          <h2 className="text-blue font-bold text-lg mb-8 text-center md:text-left lg:col-start-1 lg:row-start-2 ">
             Giving you peace of mind from a service you can trust
           </h2>
 
           {/* SALES POINTS, REVIEWS & DESKTOP C2A */}
-          <div className="xs:flex xs:flex-col xs:items-center md:items-start text-md lg:text-base pt-96 xl:pt-90 lg:col-start-1 lg:row-start-1">
+          <div className="xs:flex xs:flex-col xs:items-center md:items-start text-md lg:text-base lg:col-start-1 lg:row-start-2 mt-28">
             <div className="flex justify-self-start items-center mb-3">
               <FaCheck className="mr-2 text-green" />
               <h3 className="text-lg lg:text-base uppercase">
@@ -231,28 +229,10 @@ const Landing = () => {
                 </div>
               </div>
             </div>
-
-            {/* DESKTOP C2A BUTTONS */}
-            <div className="hidden lg:block lg:flex lg:flex-row my-8 lg:justify-end xl:justify-center xl:">
-              <div className="bg-green text-white flex self-center text-center text-sm px-20 lg:px-8 py-2 rounded-md hover:bg-accent cursor-pointer">
-                <Link to="book">
-                  <p>
-                    BOOK A FREE <br />
-                    CONSULTATION
-                  </p>
-                </Link>
-              </div>
-
-              <div className="bg-white flex self-center text-black text-center lg:ml-6 mt-6 lg:mt-0 text-sm px-20 lg:px-8 py-4 rounded-md border-4 border-green hover:bg-accent hover:border-accent hover:text-white cursor-pointer">
-                <Link to="services">
-                  <p>LEARN MORE</p>
-                </Link>
-              </div>
-            </div>
           </div>
 
           {/* SERVICES */}
-          <div className="list-none col-start-1 col-span-2 flex justify-between border-4 border-green rounded-md p-4">
+          <div className="list-none col-start-1 col-span-2 row-start-3 flex justify-between border-4 border-green rounded-md p-4">
             {/* 01 */}
             <div className="flex items-center mx-6">
               <MdDraw size={22} className="mr-2 text-green" />
@@ -295,12 +275,29 @@ const Landing = () => {
           {/* COL 02 */}
           <div
             id="col-02"
-            className="hidden lg:block col-start-2 row-start-1 lg:mt-20">
+            className="hidden lg:block col-start-2 row-start-1 row-span-2 lg:mt-20 xl:mt-6">
             <img
               src={webDesign}
               alt="image of a local business website on different screen sizes with responsive design"
-              className="ml-8"
+              className="ml-8 xl:w-5/6 xl:ml-40"
             />
+          </div>
+          {/* DESKTOP C2A BUTTONS */}
+          <div className="hidden lg:flex lg:flex-row col-start-2 row-start-2 pt-60 my-8 lg:justify-end ">
+            <div className="bg-green text-white flex self-center text-center text-sm px-20 lg:px-8 py-2 rounded-md hover:bg-accent cursor-pointer">
+              <Link to="book">
+                <p>
+                  BOOK A FREE <br />
+                  CONSULTATION
+                </p>
+              </Link>
+            </div>
+
+            <div className="bg-white flex self-center text-black text-center lg:ml-6 mt-6 lg:mt-0 text-sm px-20 lg:px-8 py-4 rounded-md border-4 border-green hover:bg-accent hover:border-accent hover:text-white cursor-pointer">
+              <Link to="services">
+                <p>LEARN MORE</p>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
