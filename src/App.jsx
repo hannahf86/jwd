@@ -21,6 +21,7 @@ import UXResearch from "./Pages/Services/UXResearch";
 import Hosting from "./Pages/Services/Hosting";
 import Development from "./Pages/Services/Development";
 import Seo from "./Pages/Services/SEO";
+import ReviewsFull from "./Pages/ReviewsFull";
 
 // ERROR AND HELPERS
 
@@ -35,6 +36,7 @@ const router = createBrowserRouter(
       <Route path="contact" element={<Contact />} />
       <Route path="faqs-full" element={<FaqsFull />} />
       <Route path="services" element={<Services />} />
+      <Route path="reviews-full" element={<ReviewsFull />} />
 
       {/* SERVICES */}
       <Route path="ui-design" element={<UIDesign />} />

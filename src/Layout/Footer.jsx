@@ -38,23 +38,23 @@ const Footer = () => {
         </div>
       </div>
       <div className="bg-green h-32 w-screen px-40 py-8 flex">
-        <a href="/sitemap.xml">
+        <a href="/sitemap.xml" target="_blank">
           <small className="text-white text-sm tracking-widest">SITEMAP</small>
         </a>
 
-        <a href="/CookiePolicy.html">
+        <a href="/CookiePolicy.html" target="_blank">
           <small className="text-white text-sm tracking-widest ml-8">
             COOKIE POLICY
           </small>
         </a>
 
-        <a href="/TermsOfUse.html">
+        <a href="/TermsOfUse.html" target="_blank">
           <small className="text-white text-sm tracking-widest ml-8">
             TERMS OF USE
           </small>
         </a>
 
-        <a href="/TermsOfUse.html">
+        <a href="/PrivacyPolicy.html" target="_blank">
           <small className="text-white text-sm tracking-widest ml-8">
             PRIVACY POLICY
           </small>

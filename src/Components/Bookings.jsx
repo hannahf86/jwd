@@ -23,7 +23,7 @@ const Bookings = () => {
                 BOOK A NO OBLIGATION CHAT
               </Link>
               <Link
-                to="contact"
+                to="services"
                 className="bg-white font-bold text-green text-center mt-4 text-sm px-20 py-4 rounded-md border-4 border-blue hover:bg-accent hover:border-accent hover:text-white cursor-pointer">
                 MORE INFO
               </Link>
