@@ -53,6 +53,12 @@ const Footer = () => {
             TERMS OF USE
           </small>
         </a>
+
+        <a href="/TermsOfUse.html">
+          <small className="text-white text-sm tracking-widest ml-8">
+            PRIVACY POLICY
+          </small>
+        </a>
       </div>
     </div>
   );
