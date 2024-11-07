@@ -70,41 +70,50 @@ const Landing = () => {
 
           {/* SERVICES */}
           <div className="list-none flex flex-wrap justify-center border-4 border-green rounded-md py-1 mb-12 xs:mx-4">
-            <div className="flex items-center mx-5">
-              <MdDraw size={22} className="mr-2 text-green" />
-              <li className="text-sm my-3 font-bold text-black/80">
-                UI Design
-              </li>
-            </div>
+            <Link
+              to="../ui-design"
+              className="text-green rounded-md hover:bg-accent hover:text-white">
+              <div className="flex items-center mx-8 ">
+                <MdDraw size={28} className="mr-2" />
+                <li className="text-sm my-3 font-bold ">UI Design</li>
+              </div>
+            </Link>
 
-            <div className="flex items-center mx-5">
-              <BsClipboard2DataFill size={18} className="mr-2 text-green" />
-              <li className="text-sm my-3 font-bold text-black/80">
-                UX Research
-              </li>
-            </div>
+            <Link
+              to="../ux-research"
+              className="text-green rounded-md hover:bg-accent hover:text-white">
+              <div className="flex items-center mx-8">
+                <BsClipboard2DataFill size={23} className="mr-2" />
+                <li className="text-sm my-3 font-bold ">UX Research</li>
+              </div>
+            </Link>
 
-            <div className="flex items-center mx-5">
-              <FaServer size={18} className="mr-2 text-green" />
-              <li className="text-sm my-3 font-bold text-black/80">Hosting</li>
-            </div>
+            <Link
+              to="../hosting"
+              className="text-green rounded-md hover:bg-accent hover:text-white">
+              <div className="flex items-center mx-8">
+                <FaServer size={23} className="mr-2" />
+                <li className="text-sm my-3 font-bold ">Hosting</li>
+              </div>{" "}
+            </Link>
 
-            <div className="flex items-center mx-5">
-              <HiDesktopComputer size={22} className="mr-2 text-green" />
-              <li className="text-sm my-3 font-bold text-black/80">
-                Development
-              </li>
-            </div>
+            <Link
+              to="../development"
+              className="text-green rounded-md hover:bg-accent hover:text-white">
+              <div className="flex items-center mx-8">
+                <HiDesktopComputer size={28} className="mr-2 " />
+                <li className="text-sm my-3 font-bold ">Development</li>
+              </div>{" "}
+            </Link>
 
-            <div className="flex items-center mx-5">
-              <HiMiniPresentationChartBar
-                size={20}
-                className="mr-2 text-green"
-              />
-              <li className="text-sm my-3 font-bold text-black/80">
-                SEO Services
-              </li>
-            </div>
+            <Link
+              to="../seo-services"
+              className="text-green rounded-md hover:bg-accent hover:text-white">
+              <div className="flex items-center mx-8">
+                <HiMiniPresentationChartBar size={25} className="mr-2 " />
+                <li className="text-sm my-3 font-bold">SEO Services</li>
+              </div>
+            </Link>
           </div>
 
           {/* REVIEWS */}
