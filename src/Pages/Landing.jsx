@@ -173,7 +173,7 @@ const Landing = () => {
         <div id="landing-grid" className="hidden lg:grid lg:grid-cols-2  ">
           {/* COL 01 */}
           <h1 className="text-green text-5xl lg:text-3xl leading-snug font-bold my-8 text-center md:text-left lg:col-start-1 lg:row-start-1 ">
-            Building high performance, custom websites
+            High performance, business websites
           </h1>
 
           <h2 className="text-blue font-bold text-lg mb-8 text-center md:text-left lg:col-start-1 lg:row-start-2 ">
