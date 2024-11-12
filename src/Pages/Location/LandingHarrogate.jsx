@@ -179,7 +179,7 @@ const LandingHarrogate = () => {
         </div>
 
         {/* ------------- DESKTOP ------------- */}
-        <div id="landing-grid" className="hidden lg:grid lg:grid-cols-2  ">
+        <div id="harrogate-desktop" className="hidden lg:grid lg:grid-cols-2  ">
           {/* COL 01 */}
           <h1 className="text-green text-5xl lg:text-3xl leading-snug font-bold my-8 text-center md:text-left lg:col-start-1 lg:row-start-1 ">
             High Performance Websites in Harrogate
