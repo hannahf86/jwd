@@ -4,6 +4,7 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
   RouterProvider,
+  Navigate,
 } from "react-router-dom";
 
 // LAYOUT
@@ -26,9 +27,12 @@ import FastTrack from "./Pages/Services/FastTrack";
 import StartUp from "./Pages/Services/StartUp";
 import Reviews from "./Pages/Reviews";
 
-// ERROR AND HELPERS
+// COMPONENTS
+import BlogOverview from "./Components/Blog/BlogOverview";
+import CreatePost from "./Components/Blog/CreatePost";
+import BlogPost from "./Components/Blog/BlogPost";
 
-// TECHNICAL
+// ERROR AND HELPERS
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -50,6 +54,14 @@ const router = createBrowserRouter(
       <Route path="seo-services" element={<Seo />} />
       <Route path="fast-track" element={<FastTrack />} />
       <Route path="start-up" element={<StartUp />} />
+
+      {/* BLOG */}
+      <Route path="/blog" element={<BlogOverview />} />
+      <Route path="/blog/new" element={<CreatePost />} />
+      {/* BLOG POSTS */}
+      <Route path="/blog/:id" element={<BlogPost />} />
+      {/* BLOG SEARCH */}
+      <Route path="/" element={<Navigate to="/blog" replace />} />
 
       {/* ERROR HANDLING */}
     </Route>,
