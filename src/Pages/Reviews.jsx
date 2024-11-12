@@ -1,7 +1,3 @@
-// IMAGES
-import matthew from "../Assets/mattAvatar.png";
-import mick from "../Assets/mickAvatar.png";
-
 // ICONS
 import { TiStarFullOutline } from "react-icons/ti";
 import { FaQuoteLeft } from "react-icons/fa";
@@ -10,7 +6,7 @@ import { FaQuoteRight } from "react-icons/fa";
 const Reviews = () => {
   return (
     <div id="reviews" className="bg-green mx-8 p-8 md:p-12 lg:pt-20">
-      <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 md:gap-x-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-12">
         {/* COL 01 */}
         <div className="col-start-1 md:row-span-2 justify-start content-start md:mt-60">
           <h1 className="text-center text-white font-bold text-3xl my-8">
@@ -43,11 +39,6 @@ const Reviews = () => {
             </p>
             <div className="m-auto flex items-center justify-between">
               <div className="flex items-center">
-                <img
-                  src={matthew}
-                  alt="avatar of matthew palmer"
-                  className="h-16"
-                />
                 <div className="flex text-yellow-500 ml-4">
                   <TiStarFullOutline size={30} />
                   <TiStarFullOutline size={30} />
@@ -76,11 +67,6 @@ const Reviews = () => {
           </p>
           <div className="m-auto flex items-center justify-between">
             <div className="flex items-center">
-              <img
-                src={matthew}
-                alt="avatar of matthew palmer"
-                className="h-16"
-              />
               <div className="flex text-yellow-500 ml-4">
                 <TiStarFullOutline size={30} />
                 <TiStarFullOutline size={30} />
