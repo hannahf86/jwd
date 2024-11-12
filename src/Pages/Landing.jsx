@@ -125,7 +125,7 @@ const Landing = () => {
             />
             <div className="flex flex-col justify-center text-yellow-500 ml-6">
               <div>
-                <Link to="reviews-full" className="">
+                <Link to="reviews" className="">
                   <h3 className="text-sm md:text-md font-bold text-black mb-4 underline">
                     Happy customer stories this way...
                   </h3>
