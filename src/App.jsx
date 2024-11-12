@@ -22,6 +22,7 @@ import Hosting from "./Pages/Services/Hosting";
 import Development from "./Pages/Services/Development";
 import Seo from "./Pages/Services/SEO";
 import Projects from "./Pages/Projects";
+import FastTrack from "./Pages/Services/FastTrack";
 
 // ERROR AND HELPERS
 
@@ -44,6 +45,7 @@ const router = createBrowserRouter(
       <Route path="hosting" element={<Hosting />} />
       <Route path="development" element={<Development />} />
       <Route path="seo-services" element={<Seo />} />
+      <Route path="fast-track" element={<FastTrack />} />
 
       {/* ERROR HANDLING */}
     </Route>,

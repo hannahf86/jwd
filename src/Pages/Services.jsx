@@ -100,7 +100,7 @@ const Services = () => {
             id="c2a"
             className="flex flex-col items-center justify-center my-4">
             <Link
-              to="../book"
+              to="../fast-track"
               className="bg-green text-white text-center text-sm sm:text-md lg:text-sm px-16 sm:px-28 lg:px-12 py-4 rounded-md hover:bg-accent my-4">
               <p>MORE INFO</p>
             </Link>

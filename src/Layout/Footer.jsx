@@ -37,25 +37,27 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="bg-green h-32 w-screen px-40 py-8 flex">
+      <div className="bg-green w-screen px-4 lg:px-40 py-4 lg:py-8 flex flex-col">
         <a href="/sitemap.xml" target="_blank">
-          <small className="text-white text-sm tracking-widest">SITEMAP</small>
+          <small className="text-white text-sm tracking-widest mx-4 my-2 lg:ml-8 hover:text-accent">
+            SITEMAP
+          </small>
         </a>
 
         <a href="/CookiePolicy.html" target="_blank">
-          <small className="text-white text-sm tracking-widest ml-8">
+          <small className="text-white text-sm tracking-widest mx-4 my-2 lg:ml-8 hover:text-accent">
             COOKIE POLICY
           </small>
         </a>
 
         <a href="/TermsOfUse.html" target="_blank">
-          <small className="text-white text-sm tracking-widest ml-8">
+          <small className="text-white text-sm tracking-widest mx-4 my-2 lg:ml-8 hover:text-accent">
             TERMS OF USE
           </small>
         </a>
 
         <a href="/PrivacyPolicy.html" target="_blank">
-          <small className="text-white text-sm tracking-widest ml-8">
+          <small className="text-white text-sm tracking-widest mx-4 my-2 lg:ml-8 hover:text-accent">
             PRIVACY POLICY
           </small>
         </a>
