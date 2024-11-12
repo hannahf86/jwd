@@ -27,6 +27,9 @@ import FastTrack from "./Pages/Services/FastTrack";
 import StartUp from "./Pages/Services/StartUp";
 import Reviews from "./Pages/Reviews";
 
+// LOCATIONS
+import LandingHarrogate from "./Pages/Location/LandingHarrogate";
+
 // COMPONENTS
 // import BlogOverview from "./Components/Blog/BlogOverview";
 // import CreatePost from "./Components/Blog/CreatePost";
@@ -39,6 +42,10 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootNav />}>
       <Route index element={<Landing />} />
+      {/* LOCATION */}
+      <Route path="harrogate" element={<LandingHarrogate />} />
+
+      {/* PAGES */}
       <Route path="freebies" element={<Freebies />} />
       <Route path="book" element={<Book />} />
       <Route path="contact" element={<Contact />} />

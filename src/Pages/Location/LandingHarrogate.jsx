@@ -24,7 +24,7 @@ import Benefits from "./Benefits";
 import Works from "./Works";
 import Reviews from "./Reviews";
 
-const Landing = () => {
+const LandingHarrogate = () => {
   return (
     <div id="/">
       {/* --------------------------- LANDING  --------------------------- */}
@@ -39,7 +39,7 @@ const Landing = () => {
 
           {/* TITLES */}
           <h1 className="text-green text-5xl leading-snug font-bold my-8 text-center md:text-left ">
-            High Performance Websites in York
+            High Performance Websites in Harrogate
           </h1>
 
           <h2 className="text-blue font-bold text-xl mb-8 text-center md:text-left ">
@@ -182,7 +182,7 @@ const Landing = () => {
         <div id="landing-grid" className="hidden lg:grid lg:grid-cols-2  ">
           {/* COL 01 */}
           <h1 className="text-green text-5xl lg:text-3xl leading-snug font-bold my-8 text-center md:text-left lg:col-start-1 lg:row-start-1 ">
-            High Performance Websites in York
+            High Performance Websites in Harrogate
           </h1>
 
           <h2 className="text-blue font-bold text-lg mb-8 text-center md:text-left lg:col-start-1 lg:row-start-2 ">
@@ -407,4 +407,4 @@ const Landing = () => {
   );
 };
 
-export default Landing;
+export default LandingHarrogate;
