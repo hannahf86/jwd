@@ -12,17 +12,17 @@ import { FaServer } from "react-icons/fa6";
 import { FaArrowAltCircleRight } from "react-icons/fa";
 
 // IMAGES
-import webDesign from "../Assets/web-design.webp";
-import faces from "../Assets/reviews.png";
-import navLogo from "../Assets/navLogo.webp";
+import webDesign from "../../Assets/web-design.webp";
+import faces from "../../Assets/reviews.png";
+import navLogo from "../../Assets/navLogo.webp";
 
 // COMPONENTS
-import Bookings from "../Components/Bookings";
-import Faqs from "../Components/FAQs";
-import About from "./About";
-import Benefits from "./Benefits";
-import Works from "./Works";
-import Reviews from "./Reviews";
+import Bookings from "../../Components/Bookings";
+import Faqs from "../../Components/FAQs";
+import About from "../About";
+import Benefits from "../Benefits";
+import Works from "../Works";
+import Reviews from "../Reviews";
 
 const LandingHarrogate = () => {
   return (
