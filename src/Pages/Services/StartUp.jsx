@@ -1,9 +1,12 @@
+// REACT ROUTER DOM
+import { Link } from "react-router-dom";
+
 // IMAGES
 import { FaArrowAltCircleRight } from "react-icons/fa";
 
 const StartUp = () => {
   return (
-    <div id="start-up">
+    <div id="start-up" className="pt-28 mx-12 lg:mx-28">
       {/* IN THIS PACKAGE */}
       <div id="package-start">
         <img
@@ -30,106 +33,117 @@ const StartUp = () => {
         </p>
 
         {/* IN THIS PACKAGE */}
-        <ul>
-          <div className="flex flex-row items-start mb-5">
-            <div>
-              <FaArrowAltCircleRight className="text-green mt-2" />
+        <div className="my-8 lg:flex lg:ml-32 lg:mb-12">
+          <ul>
+            <div className="flex flex-row items-start mb-5">
+              <div>
+                <FaArrowAltCircleRight className="text-green mt-2" />
+              </div>
+              <li className="ml-2 font-bold text-green sm:text-md">
+                Unlimited amount of pages or sections
+              </li>{" "}
             </div>
-            <li className="ml-2 font-bold text-green sm:text-md">
-              Unlimited amount of pages or sections
-            </li>{" "}
-          </div>
 
-          <div className="flex flex-row items-center mb-5">
-            <div>
-              <FaArrowAltCircleRight className="text-green" />
+            <div className="flex flex-row items-center mb-5">
+              <div>
+                <FaArrowAltCircleRight className="text-green" />
+              </div>
+              <li className="ml-2 font-bold text-green sm:text-md">
+                Modern, responsive design
+              </li>{" "}
             </div>
-            <li className="ml-2 font-bold text-green sm:text-md">
-              Modern, responsive design
-            </li>{" "}
-          </div>
 
-          <div className="flex flex-row items-center mb-5">
-            <div>
-              <FaArrowAltCircleRight className="text-green " />
+            <div className="flex flex-row items-center mb-5">
+              <div>
+                <FaArrowAltCircleRight className="text-green " />
+              </div>
+              <li className="ml-2 font-bold text-green sm:text-md">
+                Unlimited stock photo useage
+              </li>{" "}
             </div>
-            <li className="ml-2 font-bold text-green sm:text-md">
-              Unlimited stock photo useage
-            </li>{" "}
-          </div>
 
-          <div className="flex flex-row items-center mb-5">
-            <div>
-              <FaArrowAltCircleRight className="text-green" />
+            <div className="flex flex-row items-center mb-5">
+              <div>
+                <FaArrowAltCircleRight className="text-green" />
+              </div>
+              <li className="ml-2 font-bold text-green sm:text-md">
+                Desktop and mobile navigation
+              </li>{" "}
             </div>
-            <li className="ml-2 font-bold text-green sm:text-md">
-              Desktop and mobile navigation
-            </li>{" "}
-          </div>
 
-          <div className="flex flex-row items-center mb-5">
-            <div>
-              <FaArrowAltCircleRight className="text-green " />
+            <div className="flex flex-row items-center mb-5">
+              <div>
+                <FaArrowAltCircleRight className="text-green " />
+              </div>
+              <li className="ml-2 font-bold text-green sm:text-md">
+                Contact form
+              </li>{" "}
             </div>
-            <li className="ml-2 font-bold text-green sm:text-md">
-              Contact form
-            </li>{" "}
-          </div>
 
-          <div className="flex flex-row items-center mb-2">
-            <div>
-              <FaArrowAltCircleRight className="text-green" />
+            <div className="flex flex-row items-center mb-2">
+              <div>
+                <FaArrowAltCircleRight className="text-green" />
+              </div>
+              <li className="ml-2 font-bold text-green sm:text-md">
+                Professional email address
+              </li>{" "}
             </div>
-            <li className="ml-2 font-bold text-green sm:text-md">
-              Professional email address
-            </li>{" "}
-          </div>
 
-          <div className="flex flex-row items-start mb-5">
-            <div>
-              <FaArrowAltCircleRight className="text-green mt-2" />
+            <div className="flex flex-row items-start mb-5">
+              <div>
+                <FaArrowAltCircleRight className="text-green mt-2" />
+              </div>
+              <li className="ml-2 font-bold text-green sm:text-md">
+                On-page SEO and use of keywords and phrases
+              </li>{" "}
             </div>
-            <li className="ml-2 font-bold text-green sm:text-md">
-              On-page SEO and use of keywords and phrases
-            </li>{" "}
-          </div>
 
-          <div className="flex flex-row items-start mb-5">
-            <div>
-              <FaArrowAltCircleRight className="text-green mt-2" />
+            <div className="flex flex-row items-start mb-5">
+              <div>
+                <FaArrowAltCircleRight className="text-green mt-2" />
+              </div>
+              <li className="ml-2 font-bold text-green sm:text-md">
+                Technical SEO included behind the scenes
+              </li>{" "}
             </div>
-            <li className="ml-2 font-bold text-green sm:text-md">
-              Technical SEO included behind the scenes
-            </li>{" "}
-          </div>
 
-          <div className="flex flex-row items-center lg:items-start mb-5">
-            <div>
-              <FaArrowAltCircleRight className="text-green lg:mt-2" />
+            <div className="flex flex-row items-center lg:items-start mb-5">
+              <div>
+                <FaArrowAltCircleRight className="text-green lg:mt-2" />
+              </div>
+              <li className="ml-2 font-bold text-green sm:text-md">
+                SEO &quot;crawl&quot; reports for 2 months
+              </li>{" "}
             </div>
-            <li className="ml-2 font-bold text-green sm:text-md">
-              SEO &quot;crawl&quot; reports for 2 months
-            </li>{" "}
-          </div>
 
-          <div className="flex flex-row items-center mb-5">
-            <div>
-              <FaArrowAltCircleRight className="text-green" />
+            <div className="flex flex-row items-center mb-5">
+              <div>
+                <FaArrowAltCircleRight className="text-green" />
+              </div>
+              <li className="ml-2 font-bold text-green sm:text-md">
+                Domain set-up
+              </li>{" "}
             </div>
-            <li className="ml-2 font-bold text-green sm:text-md">
-              Domain set-up
-            </li>{" "}
-          </div>
 
-          <div className="flex flex-row items-start lg:items-center mb-2">
-            <div>
-              <FaArrowAltCircleRight className="text-green" />
+            <div className="flex flex-row items-start lg:items-center mb-2">
+              <div>
+                <FaArrowAltCircleRight className="text-green" />
+              </div>
+              <li className="ml-2 font-bold text-green sm:text-md">
+                One year FREE hosting service
+              </li>{" "}
             </div>
-            <li className="ml-2 font-bold text-green sm:text-md">
-              One year FREE hosting service
-            </li>{" "}
-          </div>
-        </ul>
+          </ul>
+        </div>
+
+        {/* C2A*/}
+        <div className="w-full flex justify-center mb-40">
+          <Link to="../book">
+            <p className="bg-green text-white text-center sm:text-md lg:text-sm px-6 sm:px-28 lg:px-12 py-4 rounded-md hover:bg-accent my-4">
+              BOOK
+            </p>
+          </Link>
+        </div>
       </div>
     </div>
   );
