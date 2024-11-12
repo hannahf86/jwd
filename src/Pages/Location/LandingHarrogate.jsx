@@ -26,7 +26,7 @@ import Reviews from "./Reviews";
 
 const LandingHarrogate = () => {
   return (
-    <div id="/">
+    <div id="harrogate">
       {/* --------------------------- LANDING  --------------------------- */}
       <div id="landing" className="mx-6 md:mx-12 lg:mx-16 pt-28">
         {/* MOBILE & TABLET */}
