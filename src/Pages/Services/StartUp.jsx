@@ -3,12 +3,33 @@ import { FaArrowAltCircleRight } from "react-icons/fa";
 
 const StartUp = () => {
   return (
-    <div>
-      StartUp {/* IN THIS PACKAGE */}
+    <div id="start-up">
+      {/* IN THIS PACKAGE */}
       <div id="package-start">
-        <h3 className="text-black font-bold text-md mt-8 mb-2 sm:-ml-5 sm:text-base">
-          Included in this package...
-        </h3>
+        <img
+          src="StartUp.webp"
+          alt="computer with clocks to show fast track build"
+          className="w-48 m-auto"
+        />
+        <h1 className="text-black font-bold text-3xl lg:text-2xl mt-6 text-center ">
+          StartUp
+        </h1>
+
+        <small className="text-black flex justify-end lg:my-4 lg:text-md text-sm my-2 italic lg:justify-center lg:mb-12">
+          from £1500
+        </small>
+        <p className="mt-6 text-base text-center text-black">
+          Below is a detailed list of what sort of things you can expect in our
+          StartUp website
+        </p>
+
+        <p className="mt-6 text-base text-center text-black lg:mb-12">
+          Display your services and allow clients to book through the website
+          directly, rank higher than your competitors, combine all your online
+          services and socials in one place, increase your sales
+        </p>
+
+        {/* IN THIS PACKAGE */}
         <ul>
           <div className="flex flex-row items-start mb-5">
             <div>

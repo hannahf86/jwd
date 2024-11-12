@@ -191,7 +191,7 @@ const Services = () => {
             id="c2a-start"
             className="flex flex-col items-center justify-center my-4">
             <Link
-              to="../book"
+              to="../start-up"
               className="bg-green text-white text-center text-sm sm:text-md lg:text-sm px-16 sm:px-28 lg:px-12 py-4 rounded-md hover:bg-accent my-4">
               <p>MORE INFO</p>
             </Link>
@@ -221,7 +221,7 @@ const Services = () => {
             <Link
               to="../ui-design"
               className="text-green rounded-md hover:bg-green hover:text-white">
-              <div className="flex items-center mx-8 ">
+              <div className="flex items-center mx-8 lg:mx-16">
                 <MdDraw size={28} className="mr-2" />
                 <li className="text-md my-3 font-bold ">UI Design</li>
               </div>
@@ -230,7 +230,7 @@ const Services = () => {
             <Link
               to="../ux-research"
               className="text-green rounded-md hover:bg-green hover:text-white">
-              <div className="flex items-center mx-8">
+              <div className="flex items-center mx-8 lg:mx-16">
                 <BsClipboard2DataFill size={23} className="mr-2" />
                 <li className="text-md my-3 font-bold ">UX Research</li>
               </div>
@@ -239,7 +239,7 @@ const Services = () => {
             <Link
               to="../hosting"
               className="text-green rounded-md hover:bg-green hover:text-white">
-              <div className="flex items-center mx-8">
+              <div className="flex items-center mx-8 lg:mx-16">
                 <FaServer size={23} className="mr-2" />
                 <li className="text-md my-3 font-bold ">Hosting</li>
               </div>{" "}
@@ -248,7 +248,7 @@ const Services = () => {
             <Link
               to="../development"
               className="text-green rounded-md hover:bg-green hover:text-white">
-              <div className="flex items-center mx-8">
+              <div className="flex items-center mx-8 lg:mx-16">
                 <HiDesktopComputer size={28} className="mr-2 " />
                 <li className="text-md my-3 font-bold ">Development</li>
               </div>{" "}
@@ -257,7 +257,7 @@ const Services = () => {
             <Link
               to="../seo-services"
               className="text-green rounded-md hover:bg-green hover:text-white">
-              <div className="flex items-center mx-8">
+              <div className="flex items-center mx-8 lg:mx-16">
                 <HiMiniPresentationChartBar size={25} className="mr-2 " />
                 <li className="text-md my-3 font-bold">SEO Services</li>
               </div>

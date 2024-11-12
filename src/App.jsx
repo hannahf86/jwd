@@ -23,6 +23,7 @@ import Development from "./Pages/Services/Development";
 import Seo from "./Pages/Services/SEO";
 import Projects from "./Pages/Projects";
 import FastTrack from "./Pages/Services/FastTrack";
+import StartUp from "./Pages/Services/StartUp";
 
 // ERROR AND HELPERS
 
@@ -46,6 +47,7 @@ const router = createBrowserRouter(
       <Route path="development" element={<Development />} />
       <Route path="seo-services" element={<Seo />} />
       <Route path="fast-track" element={<FastTrack />} />
+      <Route path="start-up" element={<StartUp />} />
 
       {/* ERROR HANDLING */}
     </Route>,
