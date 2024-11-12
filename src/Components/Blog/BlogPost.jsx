@@ -1,6 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import { format } from "date-fns";
-import { getPostById } from "../../Helpers/BlogService";
+import { getPostById } from "../../Helpers/blogService";
 
 export default function BlogPost() {
   const { id } = useParams();
@@ -8,7 +8,7 @@ export default function BlogPost() {
 
   if (!post) {
     return (
-      <div className="max-w-4xl mx-auto px-4 py-8">
+      <div className="max-w-4xl mx-auto px-4 py-8 pt-40">
         <p>Post not found</p>
         <Link to="/blog" className="text-blue-600 hover:text-blue-800">
           ← Back to blog

@@ -28,9 +28,10 @@ import StartUp from "./Pages/Services/StartUp";
 import Reviews from "./Pages/Reviews";
 
 // COMPONENTS
-import BlogOverview from "./Components/Blog/BlogOverview";
-import CreatePost from "./Components/Blog/CreatePost";
-import BlogPost from "./Components/Blog/BlogPost";
+// import BlogOverview from "./Components/Blog/BlogOverview";
+// import CreatePost from "./Components/Blog/CreatePost";
+// import BlogPost from "./Components/Blog/BlogPost";
+// import Login from "./Components/Login";
 
 // ERROR AND HELPERS
 
@@ -56,12 +57,13 @@ const router = createBrowserRouter(
       <Route path="start-up" element={<StartUp />} />
 
       {/* BLOG */}
+      {/* <Route path="login" element={<Login />} />
       <Route path="/blog" element={<BlogOverview />} />
-      <Route path="/blog/new" element={<CreatePost />} />
+      <Route path="/blog/new" element={<CreatePost />} /> */}
       {/* BLOG POSTS */}
-      <Route path="/blog/:id" element={<BlogPost />} />
+      {/* <Route path="/blog/:id" element={<BlogPost />} /> */}
       {/* BLOG SEARCH */}
-      <Route path="/" element={<Navigate to="/blog" replace />} />
+      {/* <Route path="/" element={<Navigate to="/blog" replace />} /> */}
 
       {/* ERROR HANDLING */}
     </Route>,

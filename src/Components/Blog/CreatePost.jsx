@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { createPost, getCategories } from "../../Helpers/BlogService";
+import { createPost, getCategories } from "../../Helpers/blogService";
 
 export default function CreatePost() {
   const navigate = useNavigate();
@@ -29,8 +29,8 @@ export default function CreatePost() {
   };
 
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-8">Create New Post</h1>
+    <div className="max-w-4xl mx-auto px-4 py-8 pt-40">
+      <h1 className="text-2xl text-black font-bold mb-8">Create New Post</h1>
       <form onSubmit={handleSubmit} className="space-y-6">
         <div>
           <label
@@ -125,7 +125,7 @@ export default function CreatePost() {
           </button>
           <button
             type="submit"
-            className="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700">
+            className="px-4 py-2 text-sm font-medium text-green border-4 border-green rounded-md hover:text-accent hover:border-accent">
             Create Post
           </button>
         </div>

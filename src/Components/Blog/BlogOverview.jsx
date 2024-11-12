@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { format } from "date-fns";
-import { searchPosts, getCategories } from "../../Helpers/BlogService";
+import { searchPosts, getCategories } from "../../Helpers/blogService";
+import { isAuthenticated } from "../../Helpers/authService";
 import SearchBar from "./SearchBar";
 
 export default function BlogOverview() {
@@ -12,14 +13,16 @@ export default function BlogOverview() {
   const categories = getCategories();
 
   return (
-    <div id="blog" className="max-w-4xl mx-auto px-4 py-8">
+    <div className="max-w-4xl mx-auto px-4 py-8 pt-40">
       <div className="flex justify-between items-center mb-8">
-        <h1 className="text-3xl font-bold">Blog Posts</h1>
-        <Link
-          to="/blog/new"
-          className="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700">
-          Create New Post
-        </Link>
+        <h1 className="text-3xl font-bold text-black">Blog</h1>
+        {isAuthenticated() && (
+          <Link
+            to="/blog/new"
+            className="px-4 py-2 text-sm font-bold text-green border-4 border-green rounded-md hover:text-accent hover:border-accent cursor-pointer">
+            Create New Post
+          </Link>
+        )}
       </div>
 
       <SearchBar
@@ -31,7 +34,7 @@ export default function BlogOverview() {
       />
 
       {posts.length === 0 ? (
-        <p className="text-gray-600 text-center py-8">
+        <p className="text-black/80 text-center py-8">
           No posts found matching your criteria.
         </p>
       ) : (
@@ -39,7 +42,7 @@ export default function BlogOverview() {
           {posts.map((post) => (
             <article key={post.id} className="border-b pb-8">
               <Link to={`/blog/${post.id}`} className="group">
-                <h2 className="text-2xl font-semibold mb-2 group-hover:text-blue-600">
+                <h2 className="text-xl text-green font-bold mb-2 group-hover:text-accent">
                   {post.title}
                 </h2>
               </Link>
@@ -52,7 +55,7 @@ export default function BlogOverview() {
               <p className="text-gray-700">{post.excerpt}</p>
               <Link
                 to={`/blog/${post.id}`}
-                className="inline-block mt-4 text-blue-600 hover:text-blue-800">
+                className="inline-block text-green mt-4 text-blue-600 hover:text-accent">
                 Read more →
               </Link>
             </article>
