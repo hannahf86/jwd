@@ -23,6 +23,7 @@ import Reviews from "./Pages/Reviews";
 import UiDev from "./Pages/Packages/UiDev";
 import UxSeo from "./Pages/Packages/UxSeo";
 import Hosting from "./Pages/Packages/Hosting";
+import AfterCare from "./Pages/Packages/AfterCare";
 
 // LOCATIONS
 import LandingHarrogate from "./Pages/Location/LandingHarrogate";
@@ -55,7 +56,7 @@ const router = createBrowserRouter(
       <Route path="ui-dev" element={<UiDev />} />
       <Route path="ux-seo" element={<UxSeo />} />
       <Route path="hosting" element={<Hosting />} />
-
+      <Route path="aftercare" element={<AfterCare />} />
       <Route path="fast-track" element={<FastTrack />} />
       <Route path="start-up" element={<StartUp />} />
 

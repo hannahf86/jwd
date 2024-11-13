@@ -100,7 +100,7 @@ const Landing = () => {
             </Link>
 
             <Link
-              to="../aftercare"
+              to="aftercare"
               className="text-green rounded-md hover:bg-accent hover:text-white">
               <div className="flex items-center mx-8">
                 <FaHeartPulse size={23} className="mr-2" />
@@ -266,7 +266,7 @@ const Landing = () => {
             </Link>
 
             <Link
-              to="../aftercare"
+              to="aftercare"
               className="text-green rounded-md hover:bg-accent hover:text-white">
               <div className="flex items-center mx-8">
                 <FaHeartPulse size={28} className="mr-2 " />

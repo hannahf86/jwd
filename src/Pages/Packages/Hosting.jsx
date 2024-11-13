@@ -9,15 +9,12 @@ const Hosting = () => {
   const goBack = navigate(-1);
   return (
     <div id="hosting" className="pt-40 mx-12 lg:mx-40">
-      <div className="flex items-center text-black/50 hover:text-accent">
-        <FaArrowLeft className="mr-2 " />
-        <Link to={goBack} className=" text-sm tracking-widest capitalise">
-          Go Back
-        </Link>
-      </div>
       <h1 className="text-green text-5xl lg:text-3xl leading-snug font-bold mb-8 text-center ">
         Hosting
       </h1>
+      <h3 className="text-center text-md text-black/50 mb-8 italic">
+        from £5 per month, billed monthly or annually
+      </h3>
       <h2 className="text-base text-black text-center mb-12 mx-32">
         We offer clients a one-stop solution for maintaining their websites,
         combining <strong>reliable uptime</strong>, <strong>security</strong>,
@@ -70,7 +67,7 @@ const Hosting = () => {
       <Link
         to="https://medium.com/@sushrit.pk21/how-when-and-why-you-should-switch-from-vercel-to-a-different-hosting-provider-especially-for-8ba25e439788"
         target="_blank"
-        className="underline text-blue font-bold hover:text-accent">
+        className="underline text-blue font-bold hover:text-accent text-md">
         How, When, and Why you should switch from Vercel to a different Hosting
         Provider (Especially for Next.js)
       </Link>
