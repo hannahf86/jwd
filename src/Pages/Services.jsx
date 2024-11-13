@@ -3,9 +3,6 @@ import { Link } from "react-router-dom";
 
 // ICONS
 import { FaArrowAltCircleRight } from "react-icons/fa";
-import { MdDraw } from "react-icons/md";
-import { BsClipboard2DataFill } from "react-icons/bs";
-import { FaServer } from "react-icons/fa6";
 
 const Services = () => {
   return (
@@ -13,7 +10,7 @@ const Services = () => {
       <h1 className="text-green text-5xl lg:text-3xl leading-snug font-bold mb-8 text-center ">
         Services
       </h1>
-      <h2 className="text-base text-center mx-2 lg:mx-20 mb-12">
+      <h2 className="text-base text-center mx-2 xl:mx-20 mb-12">
         Here you can find a detailed look at our most common packages. <br />
         <br />
         However, if you cannot find what you&apos;re looking for or you&apos;re
@@ -206,7 +203,7 @@ const Services = () => {
             All Packages
           </h2>
 
-          <div className="flex flex-wrap gap-4 md:gap-12 justify-center">
+          <div className="flex flex-wrap gap-4 lg:gap-x-28 xl:gap-x-40 justify-center">
             {/* UI & DEV */}
             <div
               id="small"
