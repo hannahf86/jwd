@@ -148,7 +148,7 @@ const RootNav = () => {
               FAQs
             </Link>
 
-            <Link to="contact" className={desktopStyles.button}>
+            <Link to="book" className={desktopStyles.button}>
               BOOK
             </Link>
           </div>

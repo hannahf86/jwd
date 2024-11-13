@@ -6,7 +6,6 @@ import { FaCheck } from "react-icons/fa";
 import { TiStarFullOutline } from "react-icons/ti";
 import { MdDraw } from "react-icons/md";
 import { BsClipboard2DataFill } from "react-icons/bs";
-import { HiDesktopComputer } from "react-icons/hi";
 import { FaHeartPulse } from "react-icons/fa6";
 import { FaServer } from "react-icons/fa6";
 import { FaArrowAltCircleRight } from "react-icons/fa";
