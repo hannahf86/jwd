@@ -45,7 +45,7 @@ const Footer = () => {
             LOGIN
           </Link>
         </div>
-        <div className="lg:col-start-2">
+        <div className="lg:col-start-2 flex-wrap">
           <a href="/sitemap.xml" target="_blank">
             <small className="text-white text-sm tracking-widest mx-4 my-2 lg:ml-8 hover:text-accent">
               SITEMAP
