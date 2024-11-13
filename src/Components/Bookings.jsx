@@ -10,11 +10,11 @@ const Bookings = () => {
       <div className="">
         {/* INFO */}
         <div className="bg-green col-start-1 px-8 py-12 mb-20 lg:pt-20 xl:pb-0 md:px-20 self-center">
-          <h1 className="text-3xl text-white font-bold mb-6">Sound good?</h1>
-          <h2 className="text-lg md:text-base text-white mb-6">
+          <h2 className="text-3xl text-white font-bold mb-6">Sound good?</h2>
+          <h3 className="text-lg md:text-base text-white mb-6">
             Schedule a free, no obligation, no pressure, all chill phone call or
             DM to find out how we can help you.
-          </h2>
+          </h3>
           <div className="flex flex-col items-start justify-start lg:ml-12 xl:ml-32 ">
             <div className="flex flex-col justify-center lg:mt-8">
               <Link

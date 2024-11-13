@@ -14,9 +14,9 @@ import { FaInfinity } from "react-icons/fa";
 const Works = () => {
   return (
     <div id="how-it-works" className="mx-8 my-40 md:ml-20 lg:ml-40 md:mr-20">
-      <h1 className="text-3xl text-black/80 font-bold mb-12 text-left">
+      <h2 className="text-3xl text-black/80 font-bold mb-12 text-left">
         OK, so how does this work?
-      </h1>
+      </h2>
       {/* GRID */}
       <div className="grid grid-cols-1 gap-0 md:grid-cols-3 md:gap-4">
         <div className="col-start-1 md:col-span-2 row-start-1 mb-12">

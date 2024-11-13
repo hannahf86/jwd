@@ -9,9 +9,9 @@ const Reviews = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-12">
         {/* COL 01 */}
         <div className="col-start-1 md:row-span-2 justify-start content-start md:mt-60">
-          <h1 className="text-center text-white font-bold text-3xl my-8">
+          <h2 className="text-center text-white font-bold text-3xl my-8">
             Happy Client Reviews
-          </h1>
+          </h2>
           <p className="text-white text-center text-base mb-12 lg:mx-28">
             Here are some of our most recent reviews. <br />
             <br /> We&apos;re very proud to say we have 100% client satisfaction

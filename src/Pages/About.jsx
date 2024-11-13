@@ -13,10 +13,10 @@ const About = () => {
       </div>
 
       <div className="col-start-2 pt-4 md:pt-16 px-4 md:px-12">
-        <h1 className="text-green font-bold text-2xl mb-4 text-center md:text-left">
+        <h2 className="text-green font-bold text-2xl mb-4 text-center md:text-left">
           Hi! We&apos;re Jorvik Web Dev, a small but mighty web design agency
           based in York.
-        </h1>
+        </h2>
         <p className="text-lg mb-8 text-center md:text-left font-bold">
           At our core, we are problem solvers.
         </p>

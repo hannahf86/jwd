@@ -6,9 +6,9 @@ import peace from "../Assets/peace.png";
 const Benefits = () => {
   return (
     <div id="benefits" className="bg-green p-8 lg:p-12">
-      <h1 className="text-center text-white font-bold text-4xl lg:text-3xl my-8">
+      <h2 className="text-center text-white font-bold text-4xl lg:text-3xl my-8">
         The benefits of working with us
-      </h1>
+      </h2>
 
       <div className="lg:grid grid-cols-1 lg:grid-cols-3 gap-0 lg:gap-12 mb-12">
         <div className="col-start-1 flex flex-col justify-start items-center">
