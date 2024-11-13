@@ -7,7 +7,7 @@ import { TiStarFullOutline } from "react-icons/ti";
 import { MdDraw } from "react-icons/md";
 import { BsClipboard2DataFill } from "react-icons/bs";
 import { HiDesktopComputer } from "react-icons/hi";
-import { HiMiniPresentationChartBar } from "react-icons/hi2";
+import { FaHeartPulse } from "react-icons/fa6";
 import { FaServer } from "react-icons/fa6";
 import { FaArrowAltCircleRight } from "react-icons/fa";
 
@@ -103,7 +103,7 @@ const Landing = () => {
               to="../aftercare"
               className="text-green rounded-md hover:bg-accent hover:text-white">
               <div className="flex items-center mx-8">
-                <FaServer size={23} className="mr-2" />
+                <FaHeartPulse size={23} className="mr-2" />
                 <li className="text-sm my-3 font-bold ">Aftercare</li>
               </div>{" "}
             </Link>
@@ -198,7 +198,7 @@ const Landing = () => {
               </h3>
             </div>
 
-            <div className="flex justify-self-start items-center mb-3">
+            <div className="flex justify-self-start items-center mb-16">
               <FaCheck className="mr-2 text-green" />
               <h3 className="text-lg lg:text-base uppercase">
                 Drive more sales{" "}
@@ -269,7 +269,7 @@ const Landing = () => {
               to="../aftercare"
               className="text-green rounded-md hover:bg-accent hover:text-white">
               <div className="flex items-center mx-8">
-                <HiDesktopComputer size={28} className="mr-2 " />
+                <FaHeartPulse size={28} className="mr-2 " />
                 <li className="text-sm my-3 font-bold ">Aftercare</li>
               </div>{" "}
             </Link>
@@ -286,7 +286,7 @@ const Landing = () => {
             />
           </div>
           {/* DESKTOP C2A BUTTONS */}
-          <div className="hidden lg:flex lg:flex-row col-start-2 row-start-2 pt-60 my-8 lg:justify-end ">
+          <div className="hidden lg:flex lg:flex-row col-start-2 row-start-2 pt-72 my-8 lg:justify-end ">
             <div className="bg-green text-white flex self-center text-center text-sm px-20 lg:px-8 py-2 rounded-md hover:bg-accent cursor-pointer">
               <Link to="book">
                 <p>
