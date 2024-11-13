@@ -5,8 +5,6 @@ import { Link } from "react-router-dom";
 import { FaArrowAltCircleRight } from "react-icons/fa";
 import { MdDraw } from "react-icons/md";
 import { BsClipboard2DataFill } from "react-icons/bs";
-import { HiDesktopComputer } from "react-icons/hi";
-import { HiMiniPresentationChartBar } from "react-icons/hi2";
 import { FaServer } from "react-icons/fa6";
 
 const Services = () => {
@@ -216,51 +214,43 @@ const Services = () => {
             <br />
             Select any to find out more details.
           </p>
-
-          <div className="list-none flex flex-wrap justify-center border-4 border-green rounded-md py-2 mb-12 xs:mx-4 lg:mx-0">
+          <div className="list-none flex flex-wrap justify-center border-4 border-green rounded-md py-1 mb-12 xs:mx-4">
             <Link
-              to="../ui-design"
-              className="text-green rounded-md hover:bg-green hover:text-white">
-              <div className="flex items-center mx-8 lg:mx-16">
+              to="ui-dev"
+              className="text-green rounded-md hover:bg-accent hover:text-white">
+              <div className="flex items-center mx-8 ">
                 <MdDraw size={28} className="mr-2" />
-                <li className="text-md my-3 font-bold ">UI Design</li>
+                <li className="text-sm my-3 font-bold ">
+                  UI Design & Development
+                </li>
               </div>
             </Link>
 
             <Link
-              to="../ux-research"
-              className="text-green rounded-md hover:bg-green hover:text-white">
-              <div className="flex items-center mx-8 lg:mx-16">
+              to="ux-seo"
+              className="text-green rounded-md hover:bg-accent hover:text-white">
+              <div className="flex items-center mx-8">
                 <BsClipboard2DataFill size={23} className="mr-2" />
-                <li className="text-md my-3 font-bold ">UX Research</li>
+                <li className="text-sm my-3 font-bold ">UX Research & SEO</li>
               </div>
             </Link>
 
             <Link
-              to="../hosting"
-              className="text-green rounded-md hover:bg-green hover:text-white">
-              <div className="flex items-center mx-8 lg:mx-16">
+              to="hosting"
+              className="text-green rounded-md hover:bg-accent hover:text-white">
+              <div className="flex items-center mx-8">
                 <FaServer size={23} className="mr-2" />
-                <li className="text-md my-3 font-bold ">Hosting</li>
+                <li className="text-sm my-3 font-bold ">Hosting</li>
               </div>{" "}
             </Link>
 
             <Link
-              to="../development"
-              className="text-green rounded-md hover:bg-green hover:text-white">
-              <div className="flex items-center mx-8 lg:mx-16">
-                <HiDesktopComputer size={28} className="mr-2 " />
-                <li className="text-md my-3 font-bold ">Development</li>
+              to="../aftercare"
+              className="text-green rounded-md hover:bg-accent hover:text-white">
+              <div className="flex items-center mx-8">
+                <FaServer size={23} className="mr-2" />
+                <li className="text-sm my-3 font-bold ">Aftercare</li>
               </div>{" "}
-            </Link>
-
-            <Link
-              to="../seo-services"
-              className="text-green rounded-md hover:bg-green hover:text-white">
-              <div className="flex items-center mx-8 lg:mx-16">
-                <HiMiniPresentationChartBar size={25} className="mr-2 " />
-                <li className="text-md my-3 font-bold">SEO Services</li>
-              </div>
             </Link>
           </div>
         </div>

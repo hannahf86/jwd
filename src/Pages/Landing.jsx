@@ -71,25 +71,27 @@ const Landing = () => {
           {/* SERVICES */}
           <div className="list-none flex flex-wrap justify-center border-4 border-green rounded-md py-1 mb-12 xs:mx-4">
             <Link
-              to="../ui-design"
+              to="ui-dev"
               className="text-green rounded-md hover:bg-accent hover:text-white">
               <div className="flex items-center mx-8 ">
                 <MdDraw size={28} className="mr-2" />
-                <li className="text-sm my-3 font-bold ">UI Design</li>
+                <li className="text-sm my-3 font-bold ">
+                  UI Design & Development
+                </li>
               </div>
             </Link>
 
             <Link
-              to="../ux-research"
+              to="ux-seo"
               className="text-green rounded-md hover:bg-accent hover:text-white">
               <div className="flex items-center mx-8">
                 <BsClipboard2DataFill size={23} className="mr-2" />
-                <li className="text-sm my-3 font-bold ">UX Research</li>
+                <li className="text-sm my-3 font-bold ">UX Research & SEO</li>
               </div>
             </Link>
 
             <Link
-              to="../hosting"
+              to="hosting"
               className="text-green rounded-md hover:bg-accent hover:text-white">
               <div className="flex items-center mx-8">
                 <FaServer size={23} className="mr-2" />
@@ -98,21 +100,12 @@ const Landing = () => {
             </Link>
 
             <Link
-              to="../development"
+              to="../aftercare"
               className="text-green rounded-md hover:bg-accent hover:text-white">
               <div className="flex items-center mx-8">
-                <HiDesktopComputer size={28} className="mr-2 " />
-                <li className="text-sm my-3 font-bold ">Development</li>
+                <FaServer size={23} className="mr-2" />
+                <li className="text-sm my-3 font-bold ">Aftercare</li>
               </div>{" "}
-            </Link>
-
-            <Link
-              to="../seo-services"
-              className="text-green rounded-md hover:bg-accent hover:text-white">
-              <div className="flex items-center mx-8">
-                <HiMiniPresentationChartBar size={25} className="mr-2 " />
-                <li className="text-sm my-3 font-bold">SEO Services</li>
-              </div>
             </Link>
           </div>
 
@@ -244,25 +237,27 @@ const Landing = () => {
           <div className="list-none col-start-1 col-span-2 row-start-3 flex justify-between border-4 border-green rounded-md p-4">
             {/* 01 */}
             <Link
-              to="../ui-design"
+              to="ui-dev"
               className="text-green rounded-md hover:bg-accent hover:text-white">
               <div className="flex items-center mx-8 ">
                 <MdDraw size={28} className="mr-2" />
-                <li className="text-sm my-3 font-bold ">UI Design</li>
+                <li className="text-sm my-3 font-bold ">
+                  UI Design & Development
+                </li>
               </div>
             </Link>
 
             <Link
-              to="../ux-research"
+              to="ux-seo"
               className="text-green rounded-md hover:bg-accent hover:text-white">
               <div className="flex items-center mx-8">
                 <BsClipboard2DataFill size={23} className="mr-2" />
-                <li className="text-sm my-3 font-bold ">UX Research</li>
+                <li className="text-sm my-3 font-bold ">UX Research & SEO</li>
               </div>
             </Link>
 
             <Link
-              to="../hosting"
+              to="hosting"
               className="text-green rounded-md hover:bg-accent hover:text-white">
               <div className="flex items-center mx-8">
                 <FaServer size={23} className="mr-2" />
@@ -271,21 +266,12 @@ const Landing = () => {
             </Link>
 
             <Link
-              to="../development"
+              to="../aftercare"
               className="text-green rounded-md hover:bg-accent hover:text-white">
               <div className="flex items-center mx-8">
                 <HiDesktopComputer size={28} className="mr-2 " />
-                <li className="text-sm my-3 font-bold ">Development</li>
+                <li className="text-sm my-3 font-bold ">Aftercare</li>
               </div>{" "}
-            </Link>
-
-            <Link
-              to="../seo-services"
-              className="text-green rounded-md hover:bg-accent hover:text-white">
-              <div className="flex items-center mx-8">
-                <HiMiniPresentationChartBar size={25} className="mr-2 " />
-                <li className="text-sm my-3 font-bold">SEO Services</li>
-              </div>
             </Link>
           </div>
 

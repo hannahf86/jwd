@@ -1,16 +1,23 @@
 // REACT ROUTER DOM
 import { Link, useNavigate } from "react-router-dom";
 
-// IMAGES
-import comingSoon from "../../Assets/comingSoon.webp";
+// ICONS
+import { FaArrowLeft } from "react-icons/fa";
 
 const Hosting = () => {
+  const navigate = useNavigate();
+  const goBack = navigate(-1);
   return (
     <div id="hosting" className="pt-40 mx-12 lg:mx-40">
+      <div className="flex items-center text-black/50 hover:text-accent">
+        <FaArrowLeft className="mr-2 " />
+        <Link to={goBack} className=" text-sm tracking-widest capitalise">
+          Go Back
+        </Link>
+      </div>
       <h1 className="text-green text-5xl lg:text-3xl leading-snug font-bold mb-8 text-center ">
         Hosting
       </h1>
-
       <h2 className="text-base text-black text-center mb-12 mx-32">
         We offer clients a one-stop solution for maintaining their websites,
         combining <strong>reliable uptime</strong>, <strong>security</strong>,
@@ -30,7 +37,6 @@ const Hosting = () => {
         This service adds value for you, our clients, as you can rely on us for
         both the creative and technical aspects of your online presence.
       </h2>
-
       <h3 className="text-xl font-bold text-black mb-6 text-center">
         Why do we use Vercel?
       </h3>
@@ -58,8 +64,8 @@ const Hosting = () => {
         quick load times and improved performance for you and your project.
         <br />
         <br />
-        Need more proof? Check out this article written by our friend, Sushrit,
-        on why Vercel are the developers choice of hosting service...
+        Want to know more? Check out this article written by our friend,
+        Sushrit, on why Vercel are the developers choice of hosting service...
       </p>
       <Link
         to="https://medium.com/@sushrit.pk21/how-when-and-why-you-should-switch-from-vercel-to-a-different-hosting-provider-especially-for-8ba25e439788"
@@ -68,6 +74,33 @@ const Hosting = () => {
         How, When, and Why you should switch from Vercel to a different Hosting
         Provider (Especially for Next.js)
       </Link>
+      {/* C2A */}
+      <div
+        id="c2a-start"
+        className="flex flex-col items-center justify-center my-32 bg-green py-12 rounded-md">
+        <h3 className="text-white text-base text-center mb-4">
+          We&apos;re here to help with any project you have in mind.
+        </h3>
+        <div className="flex items-center">
+          <Link
+            to="../book"
+            className="bg-white text-green text-center text-sm font-bold sm:text-md lg:text-sm px-16 sm:px-28 lg:px-32 py-4 md:mr-32 rounded-md hover:bg-accent hover:text-white my-4">
+            <p>BOOK</p>
+          </Link>
+
+          <Link
+            to="../contact"
+            className=" bg-green flex text-white border-white text-center text-sm px-4 py-2 sm:px-6 lg:px-24 sm:py-3 rounded-md border-4  hover:bg-accent hover:border-accent hover:text-white cursor-pointer">
+            <p> Get in touch</p>
+          </Link>
+        </div>
+      </div>{" "}
+      <div className="flex items-center text-black/50 hover:text-accent">
+        <FaArrowLeft className="mr-2 " />
+        <Link to={goBack} className=" text-sm tracking-widest capitalise">
+          Back to Services
+        </Link>
+      </div>
     </div>
   );
 };

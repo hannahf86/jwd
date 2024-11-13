@@ -16,15 +16,13 @@ import Contact from "./Pages/Contact";
 import Book from "./Pages/Book";
 import Services from "./Pages/Services";
 import FaqsFull from "./Pages/FaqsFull";
-import UIDesign from "./Pages/Services/UIDesign";
-import UXResearch from "./Pages/Services/UXResearch";
-import Hosting from "./Pages/Services/Hosting";
-import Development from "./Pages/Services/Development";
-import Seo from "./Pages/Services/SEO";
 import Projects from "./Pages/Projects";
-import FastTrack from "./Pages/Services/FastTrack";
-import StartUp from "./Pages/Services/StartUp";
+import FastTrack from "./Pages/Packages/FastTrack";
+import StartUp from "./Pages/Packages/StartUp";
 import Reviews from "./Pages/Reviews";
+import UiDev from "./Pages/Packages/UiDev";
+import UxSeo from "./Pages/Packages/UxSeo";
+import Hosting from "./Pages/Packages/Hosting";
 
 // LOCATIONS
 import LandingHarrogate from "./Pages/Location/LandingHarrogate";
@@ -54,11 +52,10 @@ const router = createBrowserRouter(
       <Route path="reviews" element={<Reviews />} />
 
       {/* SERVICES */}
-      <Route path="ui-design" element={<UIDesign />} />
-      <Route path="ux-research" element={<UXResearch />} />
+      <Route path="ui-dev" element={<UiDev />} />
+      <Route path="ux-seo" element={<UxSeo />} />
       <Route path="hosting" element={<Hosting />} />
-      <Route path="development" element={<Development />} />
-      <Route path="seo-services" element={<Seo />} />
+
       <Route path="fast-track" element={<FastTrack />} />
       <Route path="start-up" element={<StartUp />} />
 
