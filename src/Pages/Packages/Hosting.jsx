@@ -1,12 +1,10 @@
 // REACT ROUTER DOM
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 // ICONS
 import { FaArrowLeft } from "react-icons/fa";
 
 const Hosting = () => {
-  const navigate = useNavigate();
-  const goBack = navigate(-1);
   return (
     <div id="hosting" className="pt-40 mx-12 lg:mx-40">
       <h1 className="text-green text-5xl lg:text-3xl leading-snug font-bold mb-8 text-center ">
@@ -94,7 +92,7 @@ const Hosting = () => {
       </div>{" "}
       <div className="flex items-center text-black/50 hover:text-accent">
         <FaArrowLeft className="mr-2 " />
-        <Link to={goBack} className=" text-sm tracking-widest capitalise">
+        <Link to="../services" className=" text-sm tracking-widest capitalise">
           Back to Services
         </Link>
       </div>

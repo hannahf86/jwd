@@ -6,7 +6,7 @@ import { FaArrowAltCircleRight } from "react-icons/fa";
 
 const StartUp = () => {
   return (
-    <div id="start-up" className="pt-28 mx-12 lg:mx-28">
+    <div id="start-up" className="pt-40 mx-12 lg:mx-28">
       {/* IN THIS PACKAGE */}
       <div id="package-start">
         <img

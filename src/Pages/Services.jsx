@@ -34,7 +34,7 @@ const Services = () => {
           Popular Packages
         </h2>
 
-        <div className="flex flex-wrap gap-4 lg:gap-40 justify-center">
+        <div className="flex flex-wrap gap-4 lg:gap-28 xl:gap-40 justify-center">
           {/* #01 - FAST TRACK */}
           <div
             id="fasttrack"
@@ -263,7 +263,7 @@ const Services = () => {
                 id="c2a"
                 className="flex flex-col items-center justify-center mt-12">
                 <Link
-                  to="../ui-dev"
+                  to="../ux-seo"
                   className=" bg-white flex text-black text-center text-sm px-4 py-1 rounded-md border-4 border-green hover:bg-accent hover:border-accent hover:text-white cursor-pointer">
                   <p>More Info</p>
                 </Link>
@@ -295,7 +295,7 @@ const Services = () => {
                 id="c2a"
                 className="flex flex-col items-center justify-center mt-12">
                 <Link
-                  to="../ui-dev"
+                  to="../hosting"
                   className=" bg-white flex text-black text-center text-sm px-4 py-1 rounded-md border-4 border-green hover:bg-accent hover:border-accent hover:text-white cursor-pointer">
                   <p>More Info</p>
                 </Link>
@@ -326,7 +326,7 @@ const Services = () => {
                 id="c2a"
                 className="flex flex-col items-center justify-center mt-12">
                 <Link
-                  to="../ui-dev"
+                  to="../aftercare"
                   className=" bg-white flex text-black text-center text-sm px-4 py-1 rounded-md border-4 border-green hover:bg-accent hover:border-accent hover:text-white cursor-pointer">
                   <p>More Info</p>
                 </Link>

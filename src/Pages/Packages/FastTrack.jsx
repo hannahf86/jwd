@@ -6,7 +6,7 @@ import { FaArrowAltCircleRight } from "react-icons/fa";
 
 const FastTrack = () => {
   return (
-    <div id="fast-track" className="pt-28 mx-12 lg:mx-28">
+    <div id="fast-track" className="pt-40 mx-12 lg:mx-28">
       <img
         src="./FastTrack.webp"
         alt="computer with clocks to show fast track build"

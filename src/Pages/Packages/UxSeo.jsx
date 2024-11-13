@@ -1,5 +1,5 @@
 // REACT ROUTER DOM
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 // IMAGES
 import cs01 from "../../Assets/UXDesign/cs01.png";
@@ -10,8 +10,6 @@ import cheque from "../../Assets/UXDesign/cheque.png";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 
 const UxSeo = () => {
-  const navigate = useNavigate();
-  const goBack = navigate(-1);
   return (
     <div id="ux-seo" className="pt-40 mx-12 lg:mx-40">
       {" "}
@@ -138,7 +136,9 @@ const UxSeo = () => {
         {" "}
         <div className="flex items-center text-black/50 hover:text-accent">
           <FaArrowLeft className="mr-2 " />
-          <Link to={goBack} className=" text-sm tracking-widest capitalise">
+          <Link
+            to="../services"
+            className=" text-sm tracking-widest capitalise">
             Back to Services
           </Link>
         </div>

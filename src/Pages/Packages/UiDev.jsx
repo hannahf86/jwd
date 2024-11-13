@@ -1,5 +1,5 @@
 // REACT ROUTER DOM
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 // IMAGES
 import yum from "../../Assets/UIDesign/yumGoods.png";
@@ -11,8 +11,6 @@ import cig from "../../Assets/UIDesign/cig.png";
 import { FaArrowLeft } from "react-icons/fa";
 
 const UiDev = () => {
-  const navigate = useNavigate();
-  const goBack = navigate(-1);
   return (
     <div id="ui-dev" className="pt-40 mx-12 lg:mx-40">
       {" "}
@@ -96,7 +94,9 @@ const UiDev = () => {
         {" "}
         <div className="flex items-center text-black/50 hover:text-accent">
           <FaArrowLeft className="mr-2 " />
-          <Link to={goBack} className=" text-sm tracking-widest capitalise">
+          <Link
+            to="../services"
+            className=" text-sm tracking-widest capitalise">
             Back to Services
           </Link>
         </div>
