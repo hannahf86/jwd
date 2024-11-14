@@ -233,7 +233,7 @@ const Landing = () => {
           </div>
 
           {/* SERVICES */}
-          <div className="list-none col-start-1 col-span-2 row-start-3 flex justify-between border-4 border-green rounded-md p-4">
+          <div className="xl:mx-48 lg:mx-28 list-none col-start-1 col-span-2 row-start-3 flex justify-between border-4 border-green rounded-md p-4">
             {/* 01 */}
             <Link
               to="ui-dev"

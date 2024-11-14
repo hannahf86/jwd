@@ -31,10 +31,12 @@ const Blog = () => {
         <section className="bg-gray-100 p-6 rounded-lg shadow-lg">
           <div>
             <h2 className="text-lg font-semibold text-green mb-2">
-              Maximizing Local SEO for Small Businesses: A Friendly Guide
+              Essential Features for Small Business Websites
             </h2>
             <p className="text-gray-700 text-md line-clamp-1"></p>
-            <Link to="/local-seo" className="flex items-center text-green mt-4">
+            <Link
+              to="/small-bus-website"
+              className="flex items-center text-green mt-4">
               <span className="text-sm font-bold">Read more</span>
             </Link>
           </div>

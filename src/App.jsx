@@ -26,6 +26,7 @@ import Hosting from "./Pages/Packages/Hosting";
 import AfterCare from "./Pages/Packages/AfterCare";
 import Blog from "./Pages/Blog/Blog";
 import LocalSEOArticle from "./Pages/Blog/Posts/LocalSEOArticle";
+import SmallBusinessWebsite from "./Pages/Blog/Posts/SmallBusinessWebsite";
 
 // LOCATIONS
 import LandingHarrogate from "./Pages/Location/LandingHarrogate";
@@ -65,6 +66,7 @@ const router = createBrowserRouter(
       {/* BLOG */}
       <Route path="blog" element={<Blog />} />
       <Route path="local-seo" element={<LocalSEOArticle />} />
+      <Route path="small-bus-website" element={<SmallBusinessWebsite />} />
 
       {/* ERROR HANDLING */}
     </Route>,
