@@ -24,6 +24,8 @@ import UiDev from "./Pages/Packages/UiDev";
 import UxSeo from "./Pages/Packages/UxSeo";
 import Hosting from "./Pages/Packages/Hosting";
 import AfterCare from "./Pages/Packages/AfterCare";
+import Blog from "./Pages/Blog/Blog";
+import LocalSEOArticle from "./Pages/Blog/Posts/LocalSEOArticle";
 
 // LOCATIONS
 import LandingHarrogate from "./Pages/Location/LandingHarrogate";
@@ -61,13 +63,8 @@ const router = createBrowserRouter(
       <Route path="start-up" element={<StartUp />} />
 
       {/* BLOG */}
-      {/* <Route path="login" element={<Login />} />
-      <Route path="/blog" element={<BlogOverview />} />
-      <Route path="/blog/new" element={<CreatePost />} /> */}
-      {/* BLOG POSTS */}
-      {/* <Route path="/blog/:id" element={<BlogPost />} /> */}
-      {/* BLOG SEARCH */}
-      {/* <Route path="/" element={<Navigate to="/blog" replace />} /> */}
+      <Route path="blog" element={<Blog />} />
+      <Route path="local-seo" element={<LocalSEOArticle />} />
 
       {/* ERROR HANDLING */}
     </Route>,
