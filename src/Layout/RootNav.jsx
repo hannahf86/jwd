@@ -23,7 +23,7 @@ import {
 } from "react-icons/hi";
 
 // IMAGES
-import navLogo from "../Assets/navLogo.webp";
+import navLogo from "../Assets/JWDLogo-lg.png";
 
 const variants = {
   open: {
@@ -130,7 +130,6 @@ const RootNav = () => {
             <Link to="/">
               <img src={navLogo} width={60} alt="jorvik web dev logo" />
             </Link>
-            <small className="pl-4 text-sm text-black">JORVIK WEB DEV</small>
           </div>
 
           {/* LINKS */}

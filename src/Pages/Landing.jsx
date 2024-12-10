@@ -13,7 +13,7 @@ import { FaArrowAltCircleRight } from "react-icons/fa";
 // IMAGES
 import webDesign from "../Assets/web-design.webp";
 import faces from "../Assets/reviews.png";
-import navLogo from "../Assets/navLogo.webp";
+import navLogo from "../Assets/JWDLogo-lg.png";
 
 // COMPONENTS
 import Bookings from "../Components/Bookings";
