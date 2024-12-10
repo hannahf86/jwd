@@ -37,37 +37,31 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="bg-green  w-screen px-4 lg:px-40 lg:py-8 flex flex-col lg:grid grid-cols-2">
-        <div>
-          <Link
-            to="../login"
-            className="text-center text-white border-4 border-white rounded-md py-2 px-6  w-28">
-            LOGIN
-          </Link>
-        </div>
-        <div className="lg:col-start-2 flex-wrap">
-          <a href="/sitemap.xml" target="_blank">
-            <small className="text-white text-sm tracking-widest mx-4 my-2 lg:ml-8 hover:text-accent">
-              SITEMAP
-            </small>
+      <div className="bg-green w-full px-4 py-4 lg:px-40 lg:py-8 flex flex-col lg:flex-row lg:justify-between">
+        <div className="flex flex-wrap justify-center lg:justify-end space-x-4 lg:space-x-8">
+          <a
+            href="/sitemap.xml"
+            target="_blank"
+            className="text-white text-sm tracking-widest hover:text-accent my-2">
+            SITEMAP
           </a>
-
-          <a href="/CookiePolicy.html" target="_blank">
-            <small className="text-white text-sm tracking-widest mx-4 my-2 lg:ml-8 hover:text-accent">
-              COOKIE POLICY
-            </small>
+          <a
+            href="/CookiePolicy.html"
+            target="_blank"
+            className="text-white text-sm tracking-widest hover:text-accent my-2">
+            COOKIE POLICY
           </a>
-
-          <a href="/TermsOfUse.html" target="_blank">
-            <small className="text-white text-sm tracking-widest mx-4 my-2 lg:ml-8 hover:text-accent">
-              TERMS OF USE
-            </small>
+          <a
+            href="/TermsOfUse.html"
+            target="_blank"
+            className="text-white text-sm tracking-widest hover:text-accent my-2">
+            TERMS OF USE
           </a>
-
-          <a href="/PrivacyPolicy.html" target="_blank">
-            <small className="text-white text-sm tracking-widest mx-4 my-2 lg:ml-8 hover:text-accent">
-              PRIVACY POLICY
-            </small>
+          <a
+            href="/PrivacyPolicy.html"
+            target="_blank"
+            className="text-white text-sm tracking-widest hover:text-accent my-2">
+            PRIVACY POLICY
           </a>
         </div>
       </div>
