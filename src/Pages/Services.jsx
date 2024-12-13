@@ -138,7 +138,7 @@ const Services = () => {
                 <Link
                   to="../aftercare"
                   className=" bg-white flex text-black text-center text-sm px-4 py-1 rounded-md border-4 border-green hover:bg-accent hover:border-accent hover:text-white cursor-pointer">
-                  <p>Let us help you</p>
+                  <p>We&apos;re here to help</p>
                 </Link>
               </div>
             </div>
