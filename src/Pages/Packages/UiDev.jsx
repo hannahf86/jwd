@@ -18,9 +18,6 @@ const UiDev = () => {
         <h1 className="text-green text-5xl lg:text-3xl leading-snug font-bold text-center mb-4">
           UI Design & Development
         </h1>
-        <h3 className="text-center text-md text-black/50 mb-8 italic">
-          from £195
-        </h3>
       </div>
       <div>
         <h2 className="text-lg text-center mb-12 mx-40">

@@ -18,9 +18,6 @@ const StartUp = () => {
           StartUp
         </h1>
 
-        <small className="text-black flex justify-end lg:my-4 lg:text-md text-sm my-2 italic lg:justify-center lg:mb-12">
-          from £1500
-        </small>
         <p className="mt-6 text-base text-center text-black">
           Below is a detailed list of what sort of things you can expect in our
           StartUp website

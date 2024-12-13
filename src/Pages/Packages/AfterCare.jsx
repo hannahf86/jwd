@@ -1,5 +1,5 @@
 // REACT ROUTER DOM
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 // ICONS
 import { FaArrowLeft, FaArrowAltCircleRight } from "react-icons/fa";
@@ -10,9 +10,6 @@ const AfterCare = () => {
       <h1 className="text-green text-5xl lg:text-3xl leading-snug font-bold mb-8 text-center ">
         Aftercare
       </h1>
-      <h3 className="text-center text-md text-black/50 mb-8 italic">
-        from £8 per month, billed monthly or annually
-      </h3>
       <h2 className="text-base text-black text-center mb-12 mx-32">
         After finishing a website project, we don&apos;t just walk away —
         we&apos;re here to support you at every step

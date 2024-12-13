@@ -15,9 +15,7 @@ const FastTrack = () => {
       <h1 className="text-black font-bold text-3xl lg:text-2xl mt-6 text-center ">
         FastTrack Build
       </h1>
-      <small className="text-black flex justify-end lg:my-4 lg:text-md text-sm my-2 italic lg:justify-center lg:mb-12">
-        from £195
-      </small>
+
       <p className="mt-6 text-base text-center text-black">
         Below is a detailed list of what sort of things you can expect in our
         FastTrack website

@@ -10,9 +10,6 @@ const Hosting = () => {
       <h1 className="text-green text-5xl lg:text-3xl leading-snug font-bold mb-8 text-center ">
         Hosting
       </h1>
-      <h3 className="text-center text-md text-black/50 mb-8 italic">
-        from £5 per month, billed monthly or annually
-      </h3>
       <h2 className="text-base text-black text-center mb-12 mx-32">
         We offer clients a one-stop solution for maintaining their websites,
         combining <strong>reliable uptime</strong>, <strong>security</strong>,
