@@ -66,6 +66,12 @@ const Hosting = () => {
         How, When, and Why you should switch from Vercel to a different Hosting
         Provider (Especially for Next.js)
       </Link>
+      <div className="flex items-center text-black/50 hover:text-accent my-12">
+        <FaArrowLeft className="mr-2 " />
+        <Link to="../services" className=" text-sm tracking-widest capitalise">
+          Back to Services
+        </Link>
+      </div>
       {/* C2A */}
       <div
         id="c2a-start"
@@ -73,6 +79,7 @@ const Hosting = () => {
         <h3 className="text-white text-base text-center mb-4">
           We&apos;re here to help with any project you have in mind.
         </h3>
+
         <div className="flex items-center">
           <Link
             to="../book"
@@ -87,12 +94,6 @@ const Hosting = () => {
           </Link>
         </div>
       </div>{" "}
-      <div className="flex items-center text-black/50 hover:text-accent">
-        <FaArrowLeft className="mr-2 " />
-        <Link to="../services" className=" text-sm tracking-widest capitalise">
-          Back to Services
-        </Link>
-      </div>
     </div>
   );
 };

@@ -10,49 +10,184 @@ const AfterCare = () => {
       <h1 className="text-green text-5xl lg:text-3xl leading-snug font-bold mb-8 text-center ">
         Aftercare
       </h1>
-      <h2 className="text-base text-black text-center mb-12 mx-32">
+      <h2 className="text-base text-black text-center mb-12 mx-32 font-bold">
         After finishing a website project, we don&apos;t just walk away —
         we&apos;re here to support you at every step
       </h2>
-      <p className="text-black text-md leading-loose mb-6">
-        We offer a monthly subscription service in exhcange for...
-      </p>
-      <ul className="text-black text-md ml-12">
-        <div className="flex flex-row items-center mb-5">
-          <FaArrowAltCircleRight className="text-green" />
-          <li className="ml-2 text-black sm:text-md">Security updates</li>{" "}
-        </div>
-
-        <div className="flex flex-row items-center mb-5">
-          <FaArrowAltCircleRight className="text-green" />
-          <li className="ml-2 text-black sm:text-md">
-            Accessibility updates
-          </li>{" "}
-        </div>
-
-        <div className="flex flex-row items-center mb-5">
-          <FaArrowAltCircleRight className="text-green" />
-          <li className="ml-2 text-black sm:text-md">Content updates</li>{" "}
-        </div>
-
-        <div className="flex flex-row items-center mb-5">
-          <FaArrowAltCircleRight className="text-green" />
-          <li className="ml-2 text-black sm:text-md">
-            Maintaining existing site optimisation
-          </li>{" "}
-        </div>
-
-        <div className="flex flex-row items-center mb-5">
-          <FaArrowAltCircleRight className="text-green" />
-          <li className="ml-2 text-black sm:text-md">
-            Server maintenance
-          </li>{" "}
-        </div>
-      </ul>
-      <p className="text-black text-md leading-loose my-6">
+      <p className="text-black text-md leading-loose lg:mb-20 text-center">
         It’s all about making sure your website continues to look great, work
-        perfectly, and meet your evolving needs.
+        perfectly, and meet your evolving needs. <br />
+        We offer a monthly subscription services to suit your project needs.
       </p>
+      <div className="lg:grid grid-cols-3 gap-12">
+        {/* SILVER */}
+        <div>
+          <h2 className="text-2xl lg:text-xl font-bold text-center text-blue mb-2 ">
+            Silver
+          </h2>
+
+          <p className="text-md italic text-black text-center my-4">£15</p>
+          <h3 className="text-grey text-md italic text-center lg:mx-20">
+            Perfect for small businesses or individuals needing essential web
+            design aftercare
+          </h3>
+          <ul className="text-black text-md mx-20 mt-8">
+            <div className="flex flex-row items-center mb-5">
+              <FaArrowAltCircleRight className="text-green w-10 mr-4" />
+              <li className=" text-black sm:text-md">
+                <b>Basic Support:</b> Email support with a 24-48 hour response
+                time
+              </li>{" "}
+            </div>
+
+            <div className="flex flex-row items-center mb-5">
+              <FaArrowAltCircleRight className="text-green w-10 mr-4" />
+              <li className=" text-black sm:text-md">
+                <b>Security updates:</b> Monthly checks and updates to themes
+                and software
+              </li>{" "}
+            </div>
+
+            <div className="flex flex-row items-center mb-5">
+              <FaArrowAltCircleRight className="text-green w-10 mr-4" />
+              <li className=" text-black sm:text-md">
+                <b>Performance monitoring:</b> Basic uptime and site speed
+                tracking
+              </li>{" "}
+            </div>
+
+            <div className="flex flex-row items-center mb-5">
+              <FaArrowAltCircleRight className="text-green w-10 mr-4" />
+              <li className=" text-black sm:text-md">
+                <b>Content edits</b> Up to 2 small changes or updates every
+                month
+              </li>{" "}
+            </div>
+          </ul>
+        </div>
+
+        {/* GOLD */}
+        <div>
+          <h2 className="text-2xl lg:text-xl font-bold text-center text-blue mb-2 ">
+            Gold
+          </h2>
+          <p className="text-md italic text-black text-center my-4">£20</p>
+          <h3 className="text-grey text-md italic text-center lg:mx-20">
+            Designed for growing businesses looking for more robust support.
+          </h3>
+          <ul className="text-black text-md mx-20 mt-8">
+            <div className="flex flex-row items-center mb-5">
+              <li className=" text-black sm:text-md ">
+                <b>All Silver Plan features, plus...</b>
+              </li>{" "}
+            </div>
+
+            <div className="flex flex-row items-center mb-5">
+              <FaArrowAltCircleRight className="text-green w-10 mr-4" />
+              <li className=" text-black sm:text-md">
+                <b>Priority support:</b> Email and chat support with a 12-hour
+                response time
+              </li>{" "}
+            </div>
+
+            <div className="flex flex-row items-center mb-5">
+              <FaArrowAltCircleRight className="text-green w-10 mr-4" />
+              <li className=" text-black sm:text-md">
+                <b>Advanced security:</b> Weekly malware scans and enhanced
+                protection
+              </li>{" "}
+            </div>
+
+            <div className="flex flex-row items-center mb-5">
+              <FaArrowAltCircleRight className="text-green w-10 mr-4" />
+              <li className=" text-black sm:text-md mb-4">
+                <b>Content edits:</b> Up to 5 content updates per month
+              </li>{" "}
+            </div>
+
+            <div className="flex flex-row items-center mb-5">
+              <FaArrowAltCircleRight className="text-green w-10 mr-4" />
+              <li className=" text-black sm:text-md mb-4">
+                <b>Backups:</b> Automatic weekly backups with one-click restore
+              </li>{" "}
+            </div>
+
+            <div className="flex flex-row items-center mb-5">
+              <FaArrowAltCircleRight className="text-green w-10 mr-4" />
+              <li className=" text-black sm:text-md mb-4">
+                <b>SEO tweaks:</b> Quarterly keyword optimization for better
+                search rankings
+              </li>{" "}
+            </div>
+          </ul>
+        </div>
+
+        {/* PLATINUM */}
+        <div>
+          <h2 className="text-2xl lg:text-xl font-bold text-center text-blue mb-2">
+            Platinum
+          </h2>
+          <p className="text-md italic text-black text-center my-4">£35</p>
+          <h3 className="text-grey text-md italic text-center lg:mx-20">
+            Ideal for businesses requiring comprehensive, hands-on support and
+            enhancements.
+          </h3>
+          <ul className="text-black text-md mx-20 mt-8">
+            <div className="flex flex-row items-center mb-5">
+              <li className=" text-black sm:text-md ">
+                <b>All Gold Plan features, plus...</b>
+              </li>{" "}
+            </div>
+
+            <div className="flex flex-row items-center mb-5">
+              <FaArrowAltCircleRight className="text-green w-10 mr-4" />
+              <li className=" text-black sm:text-md">
+                <b>Dedicated account manager:</b> Personalised service for your
+                unique needs
+              </li>{" "}
+            </div>
+
+            <div className="flex flex-row items-center mb-5">
+              <FaArrowAltCircleRight className="text-green w-10 mr-4" />
+              <li className=" text-black sm:text-md mb-4">
+                <b>Unlimited edits:</b> No cap on content changes or updates
+              </li>{" "}
+            </div>
+
+            <div className="flex flex-row items-center mb-5">
+              <FaArrowAltCircleRight className="text-green w-10 mr-4" />
+              <li className=" text-black sm:text-md mb-4">
+                <b>Proactive monitoring:</b> Immediate fixes for downtime or
+                performance issues
+              </li>{" "}
+            </div>
+
+            <div className="flex flex-row items-center mb-5">
+              <FaArrowAltCircleRight className="text-green w-10 mr-4" />
+              <li className=" text-black sm:text-md mb-4">
+                <b>Advanced SEO strategy: </b> Monthly SEO optimisations and
+                reports
+              </li>{" "}
+            </div>
+
+            <div className="flex flex-row items-center mb-5">
+              <FaArrowAltCircleRight className="text-green w-10 mr-4" />
+              <li className=" text-black sm:text-md mb-4">
+                <b>Custom features:</b> First look at new features (e.g., new
+                pages, integrations)
+              </li>{" "}
+            </div>
+
+            <div className="flex flex-row items-center mb-5">
+              <FaArrowAltCircleRight className="text-green w-10 mr-4" />
+              <li className=" text-black sm:text-md mb-4">
+                <b>Quarterly strategy sessions:</b> Regular check-ins to align
+                web goals with your business objectives
+              </li>{" "}
+            </div>
+          </ul>
+        </div>
+      </div>
       {/* C2A */}
       <div
         id="c2a-start"

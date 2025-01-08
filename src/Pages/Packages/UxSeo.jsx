@@ -43,6 +43,12 @@ const UxSeo = () => {
           competitive digital landscape.
         </p>
       </div>
+      <div className="flex items-center text-black/50 hover:text-accent mb-12">
+        <FaArrowLeft className="mr-2 " />
+        <Link to="../services" className=" text-sm tracking-widest capitalise">
+          Back to Services
+        </Link>
+      </div>
       <h4 className="text-green uppercase underline tracking-widest font-thin">
         Example of a UX Case Study
       </h4>

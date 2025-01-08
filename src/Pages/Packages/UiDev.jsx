@@ -39,6 +39,12 @@ const UiDev = () => {
           for own clients.
         </p>
       </div>
+      <div className="flex items-center text-black/50 hover:text-accent mb-12">
+        <FaArrowLeft className="mr-2 " />
+        <Link to="../services" className=" text-sm tracking-widest capitalise">
+          Back to Services
+        </Link>
+      </div>
       <h2 className="text-xl uppercase text-black underline text-center mb-12 mx-40 ">
         Sample work
       </h2>

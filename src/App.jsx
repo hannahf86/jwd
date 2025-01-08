@@ -27,6 +27,7 @@ import AfterCare from "./Pages/Packages/AfterCare";
 import Blog from "./Pages/Blog/Blog";
 import LocalSEOArticle from "./Pages/Blog/Posts/LocalSEOArticle";
 import SmallBusinessWebsite from "./Pages/Blog/Posts/SmallBusinessWebsite";
+import Why from "./Pages/Why";
 
 // LOCATIONS
 import LandingHarrogate from "./Pages/Location/LandingHarrogate";
@@ -54,6 +55,7 @@ const router = createBrowserRouter(
       <Route path="services" element={<Services />} />
       <Route path="projects" element={<Projects />} />
       <Route path="reviews" element={<Reviews />} />
+      <Route path="why" element={<Why />} />
 
       {/* SERVICES */}
       <Route path="ui-dev" element={<UiDev />} />

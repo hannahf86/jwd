@@ -17,7 +17,7 @@ const About = () => {
           Hi! We&apos;re Jorvik Web Dev, a small but mighty web design agency
           based in York.
         </h2>
-        <p className="text-lg mb-8 text-center md:text-left font-bold">
+        <p className="text-lg mb-8 text-center md:text-left font-bold text-black">
           At our core, we are problem solvers.
         </p>
         <p className="text-base mb-4 text-center md:text-left ">
@@ -28,7 +28,7 @@ const About = () => {
           </strong>
         </p>
 
-        <p className="text-md text-center md:text-left">
+        <p className="text-md text-center md:text-left text-black">
           There&apos;s far too much to manage and so many new skills to learn.
           If we&apos;re completely honest, we&apos;re not business folks,
           we&apos;re techno nerds who are passionate about helping others.
@@ -46,8 +46,8 @@ const About = () => {
       <div className="col-start-2 md:grid-col-start-1 md:col-span-2 md:mx-20">
         <p className="text-base text-center md:text-left font-bold text-black ">
           With a collective knowledge base of{" "}
-          <strong className="text-accent">16 years</strong> and a{" "}
-          <strong className="text-accent">5 star rating</strong> on Google
+          <strong className="text-blue">16 years</strong> and a{" "}
+          <strong className="text-blue">5 star rating</strong> on Google
           reviews, let us handle your online journey so you can focus on what
           matters to you the most!
         </p>
