@@ -12,7 +12,7 @@ import { FaServer } from "react-icons/fa6";
 // IMAGES
 import webDesign from "../Assets/web-design.webp";
 import faces from "../Assets/reviews.png";
-import navLogo from "../Assets/JWDLogo-lg.png";
+import logo from "../Assets/Branding/logo-green.png";
 
 // COMPONENTS
 import Bookings from "../Components/Bookings";
@@ -29,7 +29,11 @@ const Landing = () => {
         <div className="lg:hidden mb-44">
           {/* LOGO */}
           <div className=" flex flex-col justify-center items-center">
-            <img src={navLogo} alt="jorvik web dev logo" className="mx-20" />
+            <img
+              src={logo}
+              alt="jorvik web dev logo in green"
+              className="w-1/5 m-auto mb-4 lg:hidden"
+            />
             <p className="text-grey tracking-wider text-base">JORVIK WEB DEV</p>
           </div>
 

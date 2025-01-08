@@ -11,7 +11,7 @@ import emailjs from "@emailjs/browser";
 import toast, { Toaster } from "react-hot-toast";
 
 // IMAGES
-import navLogo from "../Assets/navLogo.webp";
+import logo from "../Assets/Branding/logo-green.png";
 
 const variants = {
   initial: {
@@ -90,7 +90,11 @@ const Contact = () => {
       whileInView="animate"
       id="contact">
       <div className={layoutStyles.logo}>
-        <img src={navLogo} alt="jorvik web dev logo" className="mb-8" />
+        <img
+          src={logo}
+          alt="jorvik web dev logo in green"
+          className="w-1/5 m-auto mb-4 lg:hidden"
+        />{" "}
         <motion.h1
           variants={variants}
           className="text-green text-5xl lg:text-4xl leading-snug font-bold mb-8 text-center ">

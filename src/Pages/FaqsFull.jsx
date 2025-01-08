@@ -1,8 +1,16 @@
+// IMAGES
+import logo from "../Assets/Branding/logo-green.png";
+
 const FaqsFull = () => {
   return (
     <div
       id="faqs-full"
       className="pt-24 lg:pt-52 mx-8 md:mx-12 lg:mx-20 xl:mx-60 mb-40">
+      <img
+        src={logo}
+        alt="jorvik web dev logo in green"
+        className="w-1/5 m-auto mb-4 lg:hidden"
+      />
       <h1 className="text-green text-5xl sm:text-3xl leading-snug font-bold mb-12 lg:mb-20 text-center ">
         Frequently Asked Questions
       </h1>

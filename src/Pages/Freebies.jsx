@@ -1,22 +1,20 @@
 // IMAGES
 import topTips from "../Assets/topTips.png";
-import logo from "../Assets/JWDLogo-lg.png";
+
+import logo from "../Assets/Branding/logo-green.png";
 
 // COMPONENTS
 import FetchPdf from "../Components/FetchPdf";
 
 const Freebies = () => {
   return (
-    <div id="freebies" className="mx-8 md:mx-20">
+    <div id="freebies" className="pt-20 lg:pt-40 mx-6 lg:mx-40">
       {/* LOGO */}
-      <div className=" flex flex-col justify-center items-center pt-32 xl:pt-40">
-        <img
-          src={logo}
-          width={200}
-          alt="jorvik web dev logo"
-          className="mx-20"
-        />
-      </div>
+      <img
+        src={logo}
+        alt="jorvik web dev logo in green"
+        className="w-1/5 m-auto mb-4 lg:hidden"
+      />
 
       <h1 className="text-4xl text-green font-bold mb-6 md:mb-8 text-center">
         Freebies

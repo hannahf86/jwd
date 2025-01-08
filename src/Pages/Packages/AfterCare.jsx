@@ -4,13 +4,21 @@ import { Link } from "react-router-dom";
 // ICONS
 import { FaArrowLeft, FaArrowAltCircleRight } from "react-icons/fa";
 
+// IMAGES
+import logo from "../../Assets/Branding/logo-green.png";
+
 const AfterCare = () => {
   return (
-    <div id="aftercare" className="pt-40 mx-12 lg:mx-40">
+    <div id="aftercare" className="pt-20 lg:pt-40 mx-6 lg:mx-40">
+      <img
+        src={logo}
+        alt="jorvik web dev logo in green"
+        className="w-1/5 m-auto mb-4 lg:hidden"
+      />
       <h1 className="text-green text-5xl lg:text-3xl leading-snug font-bold mb-8 text-center ">
         Aftercare
       </h1>
-      <h2 className="text-base text-black text-center mb-12 mx-32 font-bold">
+      <h2 className="text-base text-black text-center mb-12 lg:mx-32 font-bold">
         After finishing a website project, we don&apos;t just walk away —
         we&apos;re here to support you at every step
       </h2>
@@ -19,9 +27,10 @@ const AfterCare = () => {
         perfectly, and meet your evolving needs. <br />
         We offer a monthly subscription services to suit your project needs.
       </p>
+      {/* PACKAGES */}
       <div className="lg:grid grid-cols-3 gap-12">
         {/* SILVER */}
-        <div>
+        <div className="mt-12">
           <h2 className="text-2xl lg:text-xl font-bold text-center text-blue mb-2 ">
             Silver
           </h2>
@@ -31,7 +40,7 @@ const AfterCare = () => {
             Perfect for small businesses or individuals needing essential web
             design aftercare
           </h3>
-          <ul className="text-black text-md mx-20 mt-8">
+          <ul className="text-black text-md lg:mx-20 mt-8">
             <div className="flex flex-row items-center mb-5">
               <FaArrowAltCircleRight className="text-green w-10 mr-4" />
               <li className=" text-black sm:text-md">
@@ -67,7 +76,7 @@ const AfterCare = () => {
         </div>
 
         {/* GOLD */}
-        <div>
+        <div className="mt-12">
           <h2 className="text-2xl lg:text-xl font-bold text-center text-blue mb-2 ">
             Gold
           </h2>
@@ -75,7 +84,7 @@ const AfterCare = () => {
           <h3 className="text-grey text-md italic text-center lg:mx-20">
             Designed for growing businesses looking for more robust support.
           </h3>
-          <ul className="text-black text-md mx-20 mt-8">
+          <ul className="text-black text-md lg:mx-20 mt-8">
             <div className="flex flex-row items-center mb-5">
               <li className=" text-black sm:text-md ">
                 <b>All Silver Plan features, plus...</b>
@@ -123,7 +132,7 @@ const AfterCare = () => {
         </div>
 
         {/* PLATINUM */}
-        <div>
+        <div className="mt-12">
           <h2 className="text-2xl lg:text-xl font-bold text-center text-blue mb-2">
             Platinum
           </h2>
@@ -132,7 +141,7 @@ const AfterCare = () => {
             Ideal for businesses requiring comprehensive, hands-on support and
             enhancements.
           </h3>
-          <ul className="text-black text-md mx-20 mt-8">
+          <ul className="text-black text-md lg:mx-20 mt-8">
             <div className="flex flex-row items-center mb-5">
               <li className=" text-black sm:text-md ">
                 <b>All Gold Plan features, plus...</b>
@@ -191,21 +200,21 @@ const AfterCare = () => {
       {/* C2A */}
       <div
         id="c2a-start"
-        className="flex flex-col items-center justify-center my-32 bg-green py-12 rounded-md">
+        className="flex flex-col items-center justify-center my-16 bg-green p-12 rounded-md">
         <h3 className="text-white text-base text-center mb-4">
           We&apos;re here to help with any project you have in mind.
         </h3>
-        <div className="flex items-center">
+        <div className="flex flex-col lg:flex-row items-center">
           <Link
             to="../book"
-            className="bg-white text-green text-center text-sm font-bold sm:text-md lg:text-sm px-16 sm:px-28 lg:px-32 py-4 md:mr-32 rounded-md hover:bg-accent hover:text-white my-4">
-            <p>BOOK</p>
+            className="bg-white text-green text-center text-sm font-bold sm:text-md lg:text-sm px-8 sm:px-28 lg:px-32 py-4 md:mr-32 rounded-md hover:bg-accent hover:text-white mt-4 mb-8">
+            <p>START A PROJECT</p>
           </Link>
 
           <Link
             to="../contact"
             className=" bg-green flex text-white border-white text-center text-sm px-4 py-2 sm:px-6 lg:px-24 sm:py-3 rounded-md border-4  hover:bg-accent hover:border-accent hover:text-white cursor-pointer">
-            <p> Get in touch</p>
+            <p>Find out more</p>
           </Link>
         </div>
       </div>{" "}

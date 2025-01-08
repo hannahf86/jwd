@@ -5,21 +5,27 @@ import { Link } from "react-router-dom";
 import cs01 from "../../Assets/UXDesign/cs01.png";
 import cs02 from "../../Assets/UXDesign/cs02.png";
 import cheque from "../../Assets/UXDesign/cheque.png";
+import logo from "../../Assets/Branding/logo-green.png";
 
 // ICONS
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 
 const UxSeo = () => {
   return (
-    <div id="ux-seo" className="pt-40 mx-12 lg:mx-40">
+    <div id="ux-seo" className="pt-20 lg:pt-40 mx-6 lg:mx-40">
       {" "}
       <div>
+        <img
+          src={logo}
+          alt="jorvik web dev logo in green"
+          className="w-1/5 m-auto mb-4 lg:hidden"
+        />
         <h1 className="text-green text-5xl lg:text-3xl leading-snug font-bold text-center mb-4">
           UX Research & SEO
         </h1>
       </div>
       <div>
-        <h2 className="text-lg text-center mb-12 mx-40">
+        <h2 className="text-lg text-center mb-12 ">
           UX research and SEO services work together to build websites that are
           both user-centric and search-optimized, leveraging competitive
           analysis and keyword strategy for greater impact.
@@ -95,43 +101,43 @@ const UxSeo = () => {
           </p>
         </div>
       </div>
-      <div className="md:grid grid-cols-3 gap-8 gap-y-20 mb-20">
+      <div className="md:grid grid-cols-3 gap-8 lg:gap-y-20 mb-20">
         <img
           src={cs01}
           alt="UI and brand design for Yum Goods"
-          className="col-span-2 col-start-1"
+          className="col-span-2 col-start-1 mb-8"
         />
 
         <img
           src={cs02}
           alt="UI and brand design for Child Invoice Generator"
-          className="self-center"
+          className="self-center mb-8"
         />
 
         <img
           src={cheque}
           alt="UI and brand design for Phenomenan Digital"
-          className="row-start-2 col-span-3 px-32"
+          className="row-start-2 col-span-3 lg:px-32 mb-8"
         />
       </div>
       {/* C2A */}
       <div
         id="c2a-start"
-        className="flex flex-col items-center justify-center my-32 bg-green py-12 rounded-md">
+        className="flex flex-col items-center justify-center my-16 bg-green p-12 rounded-md">
         <h3 className="text-white text-base text-center mb-4">
           We&apos;re here to help with any project you have in mind.
         </h3>
-        <div className="flex items-center">
+        <div className="flex flex-col lg:flex-row items-center">
           <Link
             to="../book"
-            className="bg-white text-green text-center text-sm font-bold sm:text-md lg:text-sm px-16 sm:px-28 lg:px-32 py-4 md:mr-32 rounded-md hover:bg-accent hover:text-white my-4">
-            <p>BOOK</p>
+            className="bg-white text-green text-center text-sm font-bold sm:text-md lg:text-sm px-8 sm:px-28 lg:px-32 py-4 md:mr-32 rounded-md hover:bg-accent hover:text-white mt-4 mb-8">
+            <p>START A PROJECT</p>
           </Link>
 
           <Link
             to="../contact"
             className=" bg-green flex text-white border-white text-center text-sm px-4 py-2 sm:px-6 lg:px-24 sm:py-3 rounded-md border-4  hover:bg-accent hover:border-accent hover:text-white cursor-pointer">
-            <p> Get in touch</p>
+            <p>Find out more</p>
           </Link>
         </div>
       </div>

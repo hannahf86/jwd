@@ -6,11 +6,11 @@ import { FaArrowLeft } from "react-icons/fa";
 
 const Hosting = () => {
   return (
-    <div id="hosting" className="pt-40 mx-12 lg:mx-40">
+    <div id="hosting" className="pt-20 lg:pt-40 mx-6 lg:mx-40">
       <h1 className="text-green text-5xl lg:text-3xl leading-snug font-bold mb-8 text-center ">
         Hosting
       </h1>
-      <h2 className="text-base text-black text-center mb-12 mx-32">
+      <h2 className="text-base text-black text-center mb-12 ">
         We offer clients a one-stop solution for maintaining their websites,
         combining <strong>reliable uptime</strong>, <strong>security</strong>,
         and <strong>performance optimisation</strong>. <br />
@@ -75,25 +75,24 @@ const Hosting = () => {
       {/* C2A */}
       <div
         id="c2a-start"
-        className="flex flex-col items-center justify-center my-32 bg-green py-12 rounded-md">
+        className="flex flex-col items-center justify-center my-16 bg-green p-12 rounded-md">
         <h3 className="text-white text-base text-center mb-4">
           We&apos;re here to help with any project you have in mind.
         </h3>
-
-        <div className="flex items-center">
+        <div className="flex flex-col lg:flex-row items-center">
           <Link
             to="../book"
-            className="bg-white text-green text-center text-sm font-bold sm:text-md lg:text-sm px-16 sm:px-28 lg:px-32 py-4 md:mr-32 rounded-md hover:bg-accent hover:text-white my-4">
-            <p>BOOK</p>
+            className="bg-white text-green text-center text-sm font-bold sm:text-md lg:text-sm px-8 sm:px-28 lg:px-32 py-4 md:mr-32 rounded-md hover:bg-accent hover:text-white mt-4 mb-8">
+            <p>START A PROJECT</p>
           </Link>
 
           <Link
             to="../contact"
             className=" bg-green flex text-white border-white text-center text-sm px-4 py-2 sm:px-6 lg:px-24 sm:py-3 rounded-md border-4  hover:bg-accent hover:border-accent hover:text-white cursor-pointer">
-            <p> Get in touch</p>
+            <p>Find out more</p>
           </Link>
         </div>
-      </div>{" "}
+      </div>
     </div>
   );
 };

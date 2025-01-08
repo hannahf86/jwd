@@ -1,9 +1,17 @@
 // REACT ROUTER DOM
 import { Link } from "react-router-dom";
 
+// IMAGES
+import logo from "../Assets/Branding/logo-green.png";
+
 const Services = () => {
   return (
-    <div id="services" className="lg:pt-40 mx-6 sm:mx-16 lg:mx-20">
+    <div id="services" className="pt-20 lg:pt-40 mx-6 lg:mx-40">
+      <img
+        src={logo}
+        alt="jorvik web dev logo in green"
+        className="w-1/5 m-auto mb-4 lg:hidden"
+      />
       <h1 className="text-green text-5xl lg:text-3xl leading-snug font-bold mb-8 text-center ">
         Services
       </h1>
