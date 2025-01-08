@@ -8,7 +8,6 @@ import { MdDraw } from "react-icons/md";
 import { BsClipboard2DataFill } from "react-icons/bs";
 import { FaHeartPulse } from "react-icons/fa6";
 import { FaServer } from "react-icons/fa6";
-import { FaArrowAltCircleRight } from "react-icons/fa";
 
 // IMAGES
 import webDesign from "../Assets/web-design.webp";
@@ -18,16 +17,14 @@ import navLogo from "../Assets/JWDLogo-lg.png";
 // COMPONENTS
 import Bookings from "../Components/Bookings";
 import Faqs from "../Components/FAQs";
-import About from "./About";
-import Benefits from "./Benefits";
-import Works from "./Works";
 import Reviews from "./Reviews";
+import Services from "./Services";
 
 const Landing = () => {
   return (
     <div id="/">
       {/* --------------------------- LANDING  --------------------------- */}
-      <div id="landing" className="mx-6 md:mx-12 lg:mx-16 pt-28">
+      <div id="landing" className="mx-6 md:mx-12 lg:mx-40 pt-28">
         {/* MOBILE & TABLET */}
         <div className="lg:hidden mb-44">
           {/* LOGO */}
@@ -233,7 +230,7 @@ const Landing = () => {
           </div>
 
           {/* SERVICES */}
-          <div className="xl:mx-48 lg:mx-28 list-none col-start-1 col-span-2 row-start-3 flex justify-between border-4 border-green rounded-md p-4">
+          <div className="lg:mt-12 xl:mx-48 lg:mx-28 list-none col-start-1 col-span-2 row-start-3 flex justify-between border-4 border-green rounded-md p-4">
             {/* 01 */}
             <Link
               to="ui-dev"
@@ -304,66 +301,8 @@ const Landing = () => {
         </div>
       </div>
 
-      {/* --------------------------- QUESTION 01  --------------------------- */}
-      <div
-        id="tired"
-        className="text-center mt-32 md:mt-56 md:mb-40 mb-32 mx-8">
-        <h1 className="text-3xl text-green font-bold mb-6 md:mb-12">
-          Tired of tech talk and sneaky fees?
-        </h1>
-        <div className="flex justify-center items-center">
-          <FaArrowAltCircleRight
-            size={30}
-            className="text-green mr-4 hidden md:block"
-          />
-          <h2 className="text-base md:text-lg text-black font-bold my-4 md:my-8">
-            Are you sick of features on website builder sites being stuck behind
-            pay walls??
-          </h2>
-        </div>
-
-        <div className="flex justify-center items-center ">
-          <FaArrowAltCircleRight
-            size={30}
-            className="text-green mr-4 hidden md:block"
-          />
-          <h2 className="text-base md:text-lg text-black font-bold my-4 md:my-8">
-            Do you find yourself spending too much time learning skills
-            you&apos;re not interested in??
-          </h2>
-        </div>
-
-        <div className="flex justify-center items-center">
-          <FaArrowAltCircleRight
-            size={30}
-            className="text-green mr-4 hidden md:block"
-          />
-          <h2 className="text-base md:text-lg text-black font-bold my-4 md:my-8">
-            Do you feel like you&apos;re working all the time but getting
-            nowhere??
-          </h2>
-        </div>
-
-        <div className="flex justify-center items-center">
-          <FaArrowAltCircleRight
-            size={30}
-            className="text-green mr-4 hidden md:block"
-          />
-          <h2 className="text-base md:text-lg text-black font-bold my-4 md:my-8">
-            Confused by UI, UX, PCP, LCP, INP, CLS and just far too many
-            anagrams??
-          </h2>
-        </div>
-      </div>
-
-      {/* --------------------------- ABOUT US - SHORT  --------------------------- */}
-      <About />
-
-      {/*  --------------------------- BENEFITS  --------------------------- */}
-      <Benefits />
-
-      {/*  --------------------------- HOW DOES IT WORK  --------------------------- */}
-      <Works />
+      {/*  --------------------------- SERVICES  --------------------------- */}
+      <Services />
 
       {/*  --------------------------- REVIEWS  --------------------------- */}
       <Reviews />

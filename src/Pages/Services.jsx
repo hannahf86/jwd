@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 
 const Services = () => {
   return (
-    <div id="services" className="pt-24 lg:pt-40 mx-6 sm:mx-16 lg:mx-20">
+    <div id="services" className=" mx-6 sm:mx-16 lg:mx-20">
       <h1 className="text-green text-5xl lg:text-3xl leading-snug font-bold mb-8 text-center ">
         Services
       </h1>
-      <h2 className="text-base text-center mx-2 xl:mx-20 mb-12">
+      <h2 className="text-base text-center mx-2 xl:mx-96 mb-12">
         Here you can find a detailed look at our most common packages. <br />
         <br />
         However, if you cannot find what you&apos;re looking for or you&apos;re
@@ -107,10 +107,7 @@ const Services = () => {
                 <Link
                   to="../hosting"
                   className=" bg-white flex text-black text-center text-sm px-4 py-1 rounded-md border-4 border-green hover:bg-accent hover:border-accent hover:text-white cursor-pointer">
-                  <p>
-                    Make a good decision <br />
-                    for our planet
-                  </p>
+                  <p>Make a good decision </p>
                 </Link>
               </div>
             </div>
@@ -127,7 +124,9 @@ const Services = () => {
               <div id="for-you-start">
                 <h3 className="text-md mt-8 ">
                   After finishing a website project, we don&apos;t just walk
-                  away — we&apos;re here to support you at every step
+                  away — we&apos;re here to support you at every step including
+                  technical support, security updates and accessibility
+                  implementation.
                 </h3>
               </div>
 

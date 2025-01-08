@@ -5,10 +5,10 @@ import { FaQuoteRight } from "react-icons/fa";
 
 const Reviews = () => {
   return (
-    <div id="reviews" className="bg-green mx-8 p-8 md:p-12 lg:pt-20">
+    <div id="reviews" className="bg-green mx-8 p-8 md:p-12">
       <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-12">
         {/* COL 01 */}
-        <div className="col-start-1 md:row-span-2 justify-start content-start md:mt-60">
+        <div className="col-start-1 md:row-span-2 justify-center self-center">
           <h2 className="text-center text-white font-bold text-3xl my-8">
             Happy Client Reviews
           </h2>
@@ -23,7 +23,7 @@ const Reviews = () => {
         </div>
 
         {/* COL 02 */}
-        <div className="col-start-1 md:col-start-2 md:row-start-1 lg:pt-32">
+        <div className="col-start-1 md:col-start-2 md:row-start-1">
           {/* REVIEW 01*/}
           <div className="bg-white rounded-lg p-4 md:p-12 lg:mx-36 mb-12">
             <div className="flex justify-center my-6">
@@ -52,7 +52,7 @@ const Reviews = () => {
           </div>
 
           {/* REVIEW 02*/}
-          <div className="bg-white rounded-lg p-4 md:p-12 lg:mx-36 mb-12">
+          <div className="bg-white rounded-lg p-4 md:p-12 lg:mx-36 ">
             <div className="flex justify-center my-6">
               <FaQuoteLeft size={20} className="mr-2 text-accent" />
               <h2 className="text-lg text-center font-bold bg-accent text-white p-2">
