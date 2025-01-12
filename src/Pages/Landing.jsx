@@ -39,11 +39,11 @@ const Landing = () => {
 
           {/* TITLES */}
           <h1 className="text-green text-5xl leading-snug font-bold my-8 text-center md:text-left ">
-            High Performance Websites in York
+            High Performance Websites for Start-Ups
           </h1>
 
           <h2 className="text-blue font-bold text-xl mb-8 text-center md:text-left ">
-            Web design & SEO for small and local businesses
+            Build a website that works from the word go
           </h2>
 
           {/* SALES POINT */}
